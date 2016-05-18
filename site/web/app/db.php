@@ -1,0 +1,1 @@
+/srv/www/delapiedralawfirm.com/current/web/app/plugins/query-monitor/wp-content/db.php
