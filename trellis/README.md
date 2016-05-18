@@ -31,7 +31,7 @@ Trellis will configure a server with the following and more:
 
 Make sure all dependencies have been installed before moving on:
 
-* [Ansible](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip) >= 2.0.0.2
+* [Ansible](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip) >= 2.0.2
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads) >= 4.3.10
 * [Vagrant](http://www.vagrantup.com/downloads.html) >= 1.5.4
 * [vagrant-bindfs](https://github.com/gael-ian/vagrant-bindfs#installation) >= 0.3.1 (Windows users may skip this)
@@ -42,7 +42,7 @@ Make sure all dependencies have been installed before moving on:
 The recommended directory structure for a Trellis project looks like:
 
 ```shell
-delapiedralawfirm.com/      # → Root folder for the project
+example.com/      # → Root folder for the project
 ├── trellis/      # → Your clone of this repository
 └── site/         # → A Bedrock-based WordPress site
     └── web/
@@ -52,7 +52,7 @@ delapiedralawfirm.com/      # → Root folder for the project
 
 See a complete working example in the [roots-example-project.com repo](https://github.com/roots/roots-example-project.com).
 
-1. Create a new project directory: `$ mkdir delapiedralawfirm.com && cd delapiedralawfirm.com`
+1. Create a new project directory: `$ mkdir example.com && cd example.com`
 2. Clone Trellis: `$ git clone --depth=1 git@github.com:roots/trellis.git && rm -rf trellis/.git`
 3. Clone Bedrock: `$ git clone --depth=1 git@github.com:roots/bedrock.git site && rm -rf site/.git`
 4. Install the Ansible Galaxy roles: `$ cd trellis && ansible-galaxy install -r requirements.yml`
