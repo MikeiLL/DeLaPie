@@ -41,7 +41,7 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/wordpress-importer": "0.6.2",
     "wpackagist-plugin/comet-cache": "160417",
-    "wpackagist-plugin/simple-wp-maintenance-mode": "1.0"
+    "wpackagist-plugin/wp-maintenance-mode": "2.0.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

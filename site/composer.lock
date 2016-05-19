@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "65c0c5868d1041f78c5aee3c32fe509c",
-    "content-hash": "0891fb51b034692ac9419e636dba3b8b",
+    "hash": "0a31684e7960e745c5e1e30c7e8af3e6",
+    "content-hash": "7097a45bfdab520c7c20b2667401c0e7",
     "packages": [
         {
             "name": "composer/installers",
@@ -362,26 +362,6 @@
             "homepage": "https://wordpress.org/plugins/comet-cache/"
         },
         {
-            "name": "wpackagist-plugin/simple-wp-maintenance-mode",
-            "version": "1.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/simple-wp-maintenance-mode/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-wp-maintenance-mode.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-wp-maintenance-mode/"
-        },
-        {
             "name": "wpackagist-plugin/wordpress-importer",
             "version": "0.6.2",
             "source": {
@@ -400,6 +380,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-maintenance-mode",
+            "version": "2.0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-maintenance-mode/",
+                "reference": "tags/2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-maintenance-mode.2.0.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-maintenance-mode/"
         }
     ],
     "packages-dev": [
