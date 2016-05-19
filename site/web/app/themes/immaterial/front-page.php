@@ -1,5 +1,5 @@
 <?php
-
+phpinfo();
 use Roots\Sage\Assets;
 
 /**
@@ -18,7 +18,7 @@ use Roots\Sage\Assets;
         Together</h2>
         <a href="#" id="buildcase">
         <?php echo file_get_contents(Assets\asset_path('images/arrow-down.svg')) ?></a><br />
-        <img class="fallback" src="<?= Assets\asset_path('images/arrow-down.png') ?>" />
+        <img class="fallbackx" src="<?= Assets\asset_path('images/arrow-down.png') ?>" />
       </div>
   </div>
 

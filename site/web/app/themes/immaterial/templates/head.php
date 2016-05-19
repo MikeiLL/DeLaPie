@@ -41,7 +41,7 @@ use Roots\Sage\Assets;
 	if ( !supports ) return;
 
 	// Add `.svg` class to <html> element
-	document.documentElement.className += (document.documentElement.className ? ' ' : '') + 'cfsvg';
+	document.documentElement.className += (document.documentElement.className ? ' ' : '') + 'svg';
 
 })(window, document);
 //https://github.com/iamdustan/smoothscroll
