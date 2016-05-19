@@ -1,0 +1,19 @@
+.comment-list {
+  @include list-unstyled;
+}
+.comment-list ol {
+  list-style: none;
+}
+.comment-form p {
+  @extend .mdl-textfield__label;
+}
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+  @extend .mdl-textfield__input;
+}
+.comment-form input[type="submit"] {
+  @extend .mdl-button;
+  //@extend .mdl-js-button .mdl-button--raised .mdl-js-ripple-effect;
+}
