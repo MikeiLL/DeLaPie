@@ -17,7 +17,4 @@ wordpress_sites:
       provider: letsencrypt
     cache:
       enabled: false
-    env:
-      wp_home: http://www.delapiedralawfirm.com
-      wp_siteurl: http://www.delapiedralawfirm.com/wp
     admin_email: mike@mzoo.org
