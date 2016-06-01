@@ -32,20 +32,25 @@ use Roots\Sage\Assets;
         <p>Some people see law as a tedious, drudging inevitability. For me, it’s an art.  Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
       </div>
 
-<label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
-  <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input">
-  <i class="mdl-icon-toggle__label material-icons">format_bold</i>
-</label>
+
 
     </div>
   </div>
 
 
 
+  <div class="content-grid mdl-grid mdl-grid--no-spacing front-page__cover">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+
+      <button data-gk-area-state="closed" data-gk-open-class="toggleDiv1">Toggle</button>
+      <div class="toggleDiv1">
+          <p>Expandable area 1</p>
+      </div>
+    </div>
+  </div>
 
 
-  <a name="yellow"></a>
-  	<div id="frontpage4" class="content-grid mdl-grid front-page__cover">
+  	<div id="frontpage5" class="content-grid mdl-grid front-page__cover">
       <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-50">
         50
       </div>
@@ -82,7 +87,7 @@ use Roots\Sage\Assets;
         A700
       </div>
   </div>
-<a name="grey"></a>
+
 <div class="content-grid mdl-grid" style="height:300px">
     <div class="mdl-cell mdl-cell--1-col mdl-color--grey-50">
       50
