@@ -66,13 +66,5 @@ document.addEventListener('DOMContentLoaded', function(e) { setTimeout(function(
     document.getElementById("arrow2").addEventListener("click", pageScrolling.bind(null, "frontpage3"));
   }, 2000) // /setTimeOut
 }, false); // /addEventListener
-
-// Fill viewport
-var vWidth = window.innerWidth;
-    vHeight = window.innerHeight;
-    cover = document.getElementsByClassName('front-page__cover')[0];
-
-cover.setAttribute("style", "height: " + vHeight + 'px');
-
 </script>
 <?php endif; ?>
