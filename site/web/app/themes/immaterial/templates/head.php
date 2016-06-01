@@ -27,10 +27,6 @@ use Roots\Sage\Assets;
     -moz-box-sizing: border-box;
 }
 
-.mdl-cell--biography p {
-  @include typo-headline();
-}
-
  #bio_image .hero {
     height: 632px;
     margin: 0 auto;
@@ -47,6 +43,14 @@ use Roots\Sage\Assets;
     width: 100%;
     position: relative;
     margin: 0 auto;
+}
+
+.biography {
+  margin: 1.8rem 1rem;
+}
+
+.biography p {
+  font-size: 1.2rem;
 }
 
 #bio_image .hero .picture_text {

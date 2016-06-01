@@ -24,12 +24,15 @@ use Roots\Sage\Assets;
   </div>
 
   <div class="content-grid mdl-grid mdl-grid--no-spacing front-page__cover">
-    <div style="text-align:center" class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-color--teal-500 mdl-color-text--yellow-50">
-       <p>After a decade in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become very skilled at representing people who have suffered injury or death in nursing homes and assisted living facilities. </p> 
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-color--teal-700 mdl-color-text--yellow-50">
 
-      <p>Identifying and litigating cases of nursing home abuse allows me to work intimately with individuals and families to protect our elders. And life is just too short not to make every day count.  </p>
+      <div class="biography">
+        <p>After a decade in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become very skilled at representing people who have suffered injury or death in nursing homes and assisted living facilities. </p> 
 
-      <p>Some people see law as a tedious, drudging inevitability. For me, it’s an art.  Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
+        <p>Identifying and litigating cases of nursing home abuse allows me to work intimately with individuals and families to protect our elders. And life is just too short not to make every day count.  </p>
+
+        <p>Some people see law as a tedious, drudging inevitability. For me, it’s an art.  Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
+      </div>
 
 <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
   <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input">
