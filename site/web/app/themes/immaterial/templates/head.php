@@ -21,87 +21,128 @@ use Roots\Sage\Assets;
       display: block;
     }
 
-    .arrow-pointer {
-      fill: hsla(253, 6%, 74%, 1);
-      width: 8rem;
-      height: auto;
-    }
-
-    .biopic {
-      width: 400px;
-      height: auto;
-    }
-
-    .front-page__cover {
-      min-height: 200px;
-      padding: 2rem 0;
-    }
-
-    .front-page__cover p {
-      font-size: 1.6rem;
-    }
-
-    .mdl-card__media > img {
-      max-width: 100%;
-    }
-
-    .front-page__card_two {
-      align-items: center;
-    }
-
-    .mdl-card__actions {
-      display: flex;
-      box-sizing:border-box;
-      align-items: center;
-    }
-    .mdl-card__actions > .mdl-button--icon {
-      margin-right: 3px;
-      margin-left: 3px;
-    }
-
-    .front-page__card_one .mdl-card__supporting-text > span {
-      font-weight: 900;
-      font-size: 2.5rem;
-      text-align: center;
-      line-height: 2rem;
-    }
-
-    .mdl-card__media {
-        margin: 0;
-    }
-
-    .hero {
-  background: hsla(201, 61%, 50%, 1) url("../images/Mediation-lawyer-tampa-bay1-1200.jpg") repeat scroll center center / 1200px 555px;
-  height:555px;
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .mdl-cell--biography p {
   @include typo-headline();
 }
 
-h2.front-page {
-  font-size: 3rem;
-  line-height: 3rem;
-  letter-spacing: -0.001rem;
-  text-decoration: none;
-  word-spacing: -0.1rem;
-  color: hsla(253, 6%, 74%, 1);
+ #bio_image .hero {
+    height: 632px;
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    background-position: -130px center;
+    }
+
+#bio_image .textholder {
+    height: 100%;
+    margin-left: 24%;
+    max-width: 200px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#bio_image .hero .picture_text {
+    color: #fffaf5;
+    font-family: "Helvetica Neue", Helvetica, sans serif;
+    font-size: 20px;
+    letter-spacing: 6px;
+    line-height: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: 600;
+    left: -58px;
+    line-height: 42px;
+    right: 0;
+    top: 70px;
+    width: 180px;
+}
+
+    /* h2 was
+  color: hsla(253, 6%, 74%, 1); */
+
+@media (min-width: 30rem) {
+
+#bio_image .textholder {
+    max-width: 1000px;
+}
+
+#bio_image .hero {
+    background-position: -130px center;
+}
+
+  #bio_image .hero .picture_text {
+    color: #fffaf5;
+    font-size: 3.4rem;
+    letter-spacing: 6px;
+    line-height: 4rem;
+    text-transform: uppercase;
+    top: 180px;
+    width: 290px;
+    position: absolute;
+    border: 1px solid red;
+    left: 400px
   }
 
+}
+
 @media (min-width: 37rem) {
-h2.front-page {
-  font-size: 5rem;
-  line-height: 5rem;
-  letter-spacing: -0.001rem;
-  text-decoration: none;
-  word-spacing: -0.1rem;
-  color: hsla(253, 6%, 74%, 1);
+
+#bio_image .textholder {
+    max-width: 1000px;
   }
+
+
+}
+
+@media (min-width: 45rem) {
+
+}
+
+@media (min-width: 52rem) {
+
+  #bio_image .textholder {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+    position: relative;
+  }
+
+  #bio_image .hero {
+    background-position: 0 center;
+  }
+
+  #bio_image .hero .picture_text {
+    left: inherit;
+    right: 164px;
+    top: 150px;
+    width: 290px;
+    left: 600px;
+  }
+
 }
 
 @media (min-width: 60rem) {
 
+  #bio_image .hero .picture_text {
+    left: 700px;
+  }
+
 }
+
+@media (min-width: 80rem) {
+  #bio_image .hero {
+    background-position: 0 -6rem;
+  }
+}
+
 
   </style>
 </head>
