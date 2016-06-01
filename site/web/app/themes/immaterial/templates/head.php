@@ -155,47 +155,7 @@ use Roots\Sage\Assets;
   }
 }
 
-.toggle-box {
-  display: none;
-}
 
-.toggle-box + label {
-  cursor: pointer;
-  display: block;
-  font-weight: bold;
-  line-height: 21px;
-  margin-bottom: 5px;
-}
-
-.toggle-box + label + div {
-  display: none;
-  margin-bottom: 10px;
-}
-
-.toggle-box:checked + label + div {
-  display: block;
-}
-
-.toggle-box + label:before {
-  background-color: #4F5150;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  color: #FFFFFF;
-  content: "+";
-  display: block;
-  float: left;
-  font-weight: bold;
-  height: 20px;
-  line-height: 20px;
-  margin-right: 5px;
-  text-align: center;
-  width: 20px;
-}
-
-.toggle-box:checked + label:before {
-  content: "\2212";
-}
   </style>
 </head>
 
@@ -219,8 +179,7 @@ use Roots\Sage\Assets;
 document.addEventListener('DOMContentLoaded', function(e) { setTimeout(function() {
 
 // Make header disappear when scrolling down and return when scroll up.
-  var didScroll = false;
-      main_header = document.getElementsByClassName('mdl-layout__header')[0];
+  var main_header = document.getElementsByClassName('mdl-layout__header')[0];
       main_container = document.getElementsByClassName('mdl-layout__content')[0];
       header_rows = document.getElementsByClassName("mdl-layout__header-row");
       fade_class = "mdl-layout__header-row fade_out";
@@ -229,30 +188,6 @@ document.addEventListener('DOMContentLoaded', function(e) { setTimeout(function(
       display_class = "mdl-layout__header-row";
       lastVal = 0;
 
-  main_container.onscroll = doThisStuffOnScroll;
-
-  function doThisStuffOnScroll() {
-    didScroll = true;
-  }
-
-  setInterval(function() {
-    if(didScroll) {
-      didScroll = false;
-      if (main_container.scrollTop >= 400) {
-        var st = main_container.scrollTop;
-          if (main_container.scrollTop > lastVal - 100){
-            modifyMainHeader(fade_class, transparent_class, true);
-          } else if (( main_container.scrollTop  + 400 ) <= (main_container.scrollHeight - main_container.offsetHeight)) {
-            // Scrolling up - show header
-            modifyMainHeader(display_class, opaque_class, false);
-          }
-          lastVal = st;
-        } else {
-          //show main header when in top 400 pixels
-          modifyMainHeader(display_class, opaque_class, false);
-        }
-      }
-    }, 500); // /setInterval
   }, 2000) // /setTimeOut
 }, false); // /addEventListener
 
