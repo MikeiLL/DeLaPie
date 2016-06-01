@@ -27,10 +27,8 @@ use Roots\Sage\Assets;
     <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-color--teal-700 mdl-color-text--yellow-50">
 
       <div class="biography">
-        <p>After a decade in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become very skilled at representing people who have suffered injury or death in nursing homes and assisted living facilities. </p> 
-
-        <p>Identifying and litigating cases of nursing home abuse allows me to work intimately with individuals and families to protect our elders. And life is just too short not to make every day count.  </p>
-
+        <p>After a decade in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become very skilled at representing people who have suffered injury or death in nursing homes and assisted living facilities.</p> 
+        <p>Identifying and litigating cases of nursing home abuse allows me to work intimately with individuals and families to protect our elders. And life is just too short not to make every day count.</p>
         <p>Some people see law as a tedious, drudging inevitability. For me, it’s an art.  Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
       </div>
 

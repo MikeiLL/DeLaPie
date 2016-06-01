@@ -72,7 +72,7 @@ use Roots\Sage\Assets;
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
 
-@media (min-width: 30rem) {
+@media (min-width: 480px) {
 
 #bio_image .textholder {
     max-width: 1000px;
@@ -91,26 +91,34 @@ use Roots\Sage\Assets;
     top: 180px;
     width: 290px;
     position: absolute;
-    border: 1px solid red;
-    left: 400px
+    left: 400px;
   }
+
+  .biography {
+  margin: 2rem 2rem;
+}
+
+.biography p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
 
 }
 
-@media (min-width: 37rem) {
+@media (min-width: 600px) {
 
 #bio_image .textholder {
     max-width: 1000px;
   }
 
+  #bio_image .hero {
+    background-position: -110px center;
+  }
 
 }
 
-@media (min-width: 45rem) {
 
-}
-
-@media (min-width: 52rem) {
+@media (min-width: 840px) {
 
   #bio_image .textholder {
     height: 100%;
@@ -133,7 +141,7 @@ use Roots\Sage\Assets;
 
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 960px) {
 
   #bio_image .hero .picture_text {
     left: 700px;
@@ -141,7 +149,7 @@ use Roots\Sage\Assets;
 
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 1280px) {
   #bio_image .hero {
     background-position: 0 -6rem;
   }
