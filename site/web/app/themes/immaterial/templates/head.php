@@ -108,6 +108,11 @@ use Roots\Sage\Assets;
   max-width: 95%;
   }
 
+.mdl-mega-footer__drop-down-section img {
+  max-width: 90%;
+  margin: .8rem;
+}
+
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
 
