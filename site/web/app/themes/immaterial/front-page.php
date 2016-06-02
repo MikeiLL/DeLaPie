@@ -48,17 +48,17 @@ use Roots\Sage\Assets;
       <ul>
               <li data-gk-area-state="closed" data-gk-open-class="howmanyhours" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number One</li>
 
-            <div class="howmanyhours">
+            <div class="response-definition howmanyhours">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
              <li data-gk-area-state="closed" data-gk-open-class="two" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Two</li>
 
-            <div class="two">
+            <div class="response-definition two">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
              <li data-gk-area-state="closed" data-gk-open-class="three" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Three</li>
 
-            <div class="three">
+            <div class="response-definition three">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
       </ul>
@@ -67,17 +67,17 @@ use Roots\Sage\Assets;
       <ul>
               <li data-gk-area-state="closed" data-gk-open-class="four" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Four</li>
 
-            <div class="four">
+            <div class="response-definition four">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
              <li data-gk-area-state="closed" data-gk-open-class="five" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Five</li>
 
-            <div class="five">
+            <div class="response-definition five">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
              <li data-gk-area-state="closed" data-gk-open-class="six" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Six</li>
 
-            <div class="six">
+            <div class="response-definition six">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
       </ul>
@@ -89,80 +89,15 @@ use Roots\Sage\Assets;
 
 
 
-  	<div id="frontpage5" class="content-grid mdl-grid front-page__cover">
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-50">
-        50
+  	<div id="frontpage5" class="content-grid mdl-grid mdl-grid--no-spacing">
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+        <?php get_template_part('templates/front-page/featured-articles'); ?>
       </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-100">
-        100
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+        <?php get_template_part('templates/front-page/recent-articles'); ?>
       </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-200">
-        200
-      </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-300">
-        300
-      </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-400">
-        400
-      </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-500">
-        500
-      </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-600">
-        600
-      </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-700">
-        700
-      </div><div class="mdl-cell mdl-cell--1-col mdl-color--yellow-A100">
-        A100
-      </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-A200">
-        A200
-      </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-A400">
-        A400
-      </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-color--yellow-A700">
-        A700
-      </div>
+
   </div>
 
-<div class="content-grid mdl-grid" style="height:300px">
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-50">
-      50
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-100">
-      100
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-200">
-      200
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-300">
-      300
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-400">
-      400
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-500">
-      500
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-600">
-      600
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-700">
-      700
-    </div><div class="mdl-cell mdl-cell--1-col mdl-color--grey-A100">
-      A100
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-A200">
-      A200
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-A400">
-      A400
-    </div>
-    <div class="mdl-cell mdl-cell--1-col mdl-color--grey-A700">
-      A700
-    </div>
-</div>
 
 <?php // endwhile; ?>

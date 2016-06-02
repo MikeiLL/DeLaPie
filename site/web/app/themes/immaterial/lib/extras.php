@@ -45,3 +45,22 @@ function container_class() {
   }
 }
 //*
+
+// BOF Featured Article
+function register_post_assets(){
+    add_meta_box('featured-post', __('Featured Post'), __NAMESPACE__ . '\\add_featured_meta_box', 'post', 'advanced', 'high');
+}
+add_action('admin_init', __NAMESPACE__ . '\\register_post_assets', 1);
+
+function add_featured_meta_box($post){
+	$featured = get_post_meta($post->ID, '_featured-post', true);
+	echo "<label for='_featured-post'>".__('Feature this post?', 'sage')."</label>";
+	echo " <input type='checkbox' name='featured-post' id='featured-post' value='1' ".checked(1, $featured)." />";
+	}
+
+function save_featured_meta($post_id){
+   if (isset($_REQUEST['featured-post']))
+        update_post_meta(esc_attr($post_id), '_featured-post', esc_attr($_REQUEST['featured-post']));
+        }
+add_action('save_post', __NAMESPACE__ . '\\save_featured_meta');
+// EOF Featured Article

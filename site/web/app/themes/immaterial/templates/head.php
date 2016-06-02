@@ -159,8 +159,7 @@ use Roots\Sage\Assets;
   width: 90%;
   list-style: none;
   font-size: 1.2rem;
-  padding-left: 1rem;
-  font-weight: 600;
+  padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
@@ -169,6 +168,10 @@ use Roots\Sage\Assets;
   background-color:rgba(0, 0, 0, 0.1);
   -webkit-transition: .5s all ease-out;
   transition: .5s all ease-out;
+  }
+
+.response-definition {
+  max-width: 80%;
   }
 
   </style>
