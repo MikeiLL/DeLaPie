@@ -30,8 +30,6 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
 function excerpt_more($source="general") {
   if ($source="mdl-card") {
     return '<div class="mdl-card__actions mdl-card--border">' .
-          '<button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons">favorite</i></button>' .
-          '<button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons">share</i></button>' .
           '<div class="mdl-layout-spacer"></div>' .
             '<a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>' .
           '</div>';

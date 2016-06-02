@@ -87,13 +87,11 @@ use Roots\Sage\Assets;
 
   </div>
 
-
-
-  	<div id="articles" class="content-grid mdl-grid mdl-grid--no-spacing front-page__cover">
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__articles">
+  	<div id="articles" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--teal-600 front-page__cover">
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__card-holder">
         <?php get_template_part('templates/front-page/featured-articles'); ?>
       </div>
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__articles">
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__card-holder">
         <?php get_template_part('templates/front-page/recent-articles'); ?>
       </div>
 

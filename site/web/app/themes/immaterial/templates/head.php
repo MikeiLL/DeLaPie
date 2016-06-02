@@ -32,7 +32,7 @@ use Roots\Sage\Assets;
   padding: 1rem;
   }
 
-.front-page__articles {
+.front-page__card-holder {
   padding: 1rem;
 }
 

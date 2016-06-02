@@ -11,7 +11,7 @@
 			$featured = new WP_Query($args);
 
 			if ($featured->have_posts()): while($featured->have_posts()): $featured->the_post(); ?>
-			<div class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+			<div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-shadow--2dp">
 			<?php if (has_post_thumbnail()) : ?>
         <figure class="mdl-card__media">
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array( 'class'	=> "post-img-responsive")); ?></a>
@@ -23,8 +23,8 @@
           <h1 class="mdl-card__title-text"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h1>
         </div>
         <div class="mdl-card__supporting-text">
-        </div>
 				<?php echo the_excerpt();?>
+        </div>
 
       </div>
 
