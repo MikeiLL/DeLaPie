@@ -45,28 +45,46 @@ use Roots\Sage\Assets;
     <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 
       <!-- Colored FAB button with ripple -->
+      <ul>
+              <li data-gk-area-state="closed" data-gk-open-class="howmanyhours" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number One</li>
 
-        <div data-gk-area-state="closed" data-gk-open-class="howmanyhours" data-gk-open-span-glyph="glyphicon-plus" data-gk-close-span-glyph="glyphicon-minus"></div>
-      How many hours without a checkin is acceptable?
-      <div class="howmanyhours">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
-      </div>
+            <div class="howmanyhours">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
+             <li data-gk-area-state="closed" data-gk-open-class="two" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Two</li>
 
+            <div class="two">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
+             <li data-gk-area-state="closed" data-gk-open-class="three" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Three</li>
+
+            <div class="three">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
+      </ul>
     </div>
     <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+      <ul>
+              <li data-gk-area-state="closed" data-gk-open-class="four" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Four</li>
 
-      <button type="button" class="" data-gk-open-text="What should I expect to pay?" data-gk-close-text="CLOSE" data-gk-area-state="open" data-gk-open-class="whatshouldipay">What should I expect to pay?</button>
-      <div class="whatshouldipay">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
-      </div>
+            <div class="four">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
+             <li data-gk-area-state="closed" data-gk-open-class="five" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Five</li>
+
+            <div class="five">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
+             <li data-gk-area-state="closed" data-gk-open-class="six" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Six</li>
+
+            <div class="six">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
+      </ul>
+
 
     </div>
-    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-      <button class="btn btn-primary" type="button" data-gk-open-class="howmanyhours" data-gk-open-class="toggleDiv1" data-gk-open-text="Open area 1" data-gk-close-text="Close area 1" data-gk-area-state="closed">Close area 1</button>
-        <div class="toggleDiv1 toggleDiv" style="display: block;">
-      <p>Expandable area 1.</p>
-      </div>
-    </div>
+
   </div>
 
 
