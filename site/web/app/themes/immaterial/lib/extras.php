@@ -27,8 +27,17 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
 /**
  * Clean up the_excerpt()
  */
-function excerpt_more() {
-  return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'immaterial') . '</a>';
+function excerpt_more($source="general") {
+  if ($source="mdl-card") {
+    return '<div class="mdl-card__actions mdl-card--border">' .
+          '<button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons">favorite</i></button>' .
+          '<button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons">share</i></button>' .
+          '<div class="mdl-layout-spacer"></div>' .
+            '<a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>' .
+          '</div>';
+  } else {
+  return '<a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">' . __('Read More', 'immaterial') . '</a>';
+  }
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 

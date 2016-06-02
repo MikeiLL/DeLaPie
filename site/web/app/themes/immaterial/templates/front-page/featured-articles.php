@@ -1,3 +1,4 @@
+
 			<h2 class="text-center">Featured Articles</h2>
 
 				<?php
@@ -10,11 +11,23 @@
 			$featured = new WP_Query($args);
 
 			if ($featured->have_posts()): while($featured->have_posts()): $featured->the_post(); ?>
-				<h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
-				<?php if (has_post_thumbnail()) : ?>
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumb', array( 'class'	=> "img-responsive")); ?></a>
+			<div class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+			<?php if (has_post_thumbnail()) : ?>
+        <figure class="mdl-card__media">
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array( 'class'	=> "post-img-responsive")); ?></a>
+        </figure>
+
 				<?php endif; ?>
+
+        <div class="mdl-card__title">
+          <h1 class="mdl-card__title-text"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h1>
+        </div>
+        <div class="mdl-card__supporting-text">
+        </div>
 				<?php echo the_excerpt();?>
+
+      </div>
+
 			<?php endwhile; else:
 			endif;
 			?>

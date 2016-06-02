@@ -27,6 +27,19 @@ use Roots\Sage\Assets;
     -moz-box-sizing: border-box;
 }
 
+.front-page__cover {
+  min-width:100%;
+  padding: 1rem;
+  }
+
+.front-page__articles {
+  padding: 1rem;
+}
+
+.mdl-card__media > img {
+  max-width: 100%;
+}
+
  #bio_image .hero {
     height: 632px;
     margin: 0 auto;
