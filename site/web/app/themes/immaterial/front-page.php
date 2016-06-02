@@ -24,7 +24,7 @@ use Roots\Sage\Assets;
   </div>
 
   <div class="content-grid mdl-grid mdl-grid--no-spacing front-page__cover">
-    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-color--teal-700 mdl-color-text--yellow-50">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-color--teal-600 mdl-color-text--yellow-50">
 
       <div class="biography">
         <p>After a decade in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become very skilled at representing people who have suffered injury or death in nursing homes and assisted living facilities.</p> 
@@ -39,15 +39,36 @@ use Roots\Sage\Assets;
 
 
 
-  <div class="content-grid mdl-grid mdl-grid--no-spacing front-page__cover">
-    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+  <div class="content-grid mdl-grid mdl-grid--no-spacing" style="min-width:100%; padding:1rem;">
 
-      <button data-gk-area-state="closed" data-gk-open-class="toggleDiv1">Toggle</button>
-      <div class="toggleDiv1">
-          <p>Expandable area 1</p>
+
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+
+      <!-- Colored FAB button with ripple -->
+
+        <div data-gk-area-state="closed" data-gk-open-class="howmanyhours" data-gk-open-span-glyph="glyphicon-plus" data-gk-close-span-glyph="glyphicon-minus"></div>
+      How many hours without a checkin is acceptable?
+      <div class="howmanyhours">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+      </div>
+
+    </div>
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+
+      <button type="button" class="" data-gk-open-text="What should I expect to pay?" data-gk-close-text="CLOSE" data-gk-area-state="open" data-gk-open-class="whatshouldipay">What should I expect to pay?</button>
+      <div class="whatshouldipay">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+      </div>
+
+    </div>
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+      <button class="btn btn-primary" type="button" data-gk-open-class="howmanyhours" data-gk-open-class="toggleDiv1" data-gk-open-text="Open area 1" data-gk-close-text="Close area 1" data-gk-area-state="closed">Close area 1</button>
+        <div class="toggleDiv1 toggleDiv" style="display: block;">
+      <p>Expandable area 1.</p>
       </div>
     </div>
   </div>
+
 
 
   	<div id="frontpage5" class="content-grid mdl-grid front-page__cover">

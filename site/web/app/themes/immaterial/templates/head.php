@@ -155,6 +155,46 @@ use Roots\Sage\Assets;
   }
 }
 
+.glyphicon-plus, .glyphicon-minus {
+  width: 30px;
+  display: inline-block;
+  height: 30px;
+  margin: 0 .4rem;
+  border: 1px solid #999;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  float: left;
+  text-align: center;
+  font-size: 24px;
+  font-weight:bold;
+  line-height: 30px;
+}
+
+.glyphicon-plus:before {
+  content: '+';
+}
+
+.glyphicon-minus:before {
+  content: '-';
+}
+
+.glyphicon-minus {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transition: .5s all ease-out;
+  transition: .5s all ease-out;
+}
+
+.glyphicon-plus:hover {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  -webkit-transition: .5s all ease-out;
+  transition: .5s all ease-out;
+  }
 
   </style>
 </head>
