@@ -32,12 +32,18 @@ use Roots\Sage\Assets;
   padding: 1rem;
   }
 
+.front-page__cover h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .front-page__card-holder {
   padding: 1rem;
 }
 
-.mdl-card__media > img {
+.mdl-card__media img {
   max-width: 100%;
+  height: auto;
 }
 
  #bio_image .hero {
@@ -64,6 +70,7 @@ use Roots\Sage\Assets;
 
 .biography p {
   font-size: 1.2rem;
+  margin: 1.2rem;
 }
 
 #bio_image .hero .picture_text {
@@ -82,18 +89,37 @@ use Roots\Sage\Assets;
     width: 180px;
 }
 
+.active, .closed {
+  width: 100%;
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.active {
+  background-color:rgba(0, 0, 0, 0.1);
+  -webkit-transition: .5s all ease-out;
+  transition: .5s all ease-out;
+  }
+
+.response-definition {
+  max-width: 95%;
+  }
+
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
 
 @media (min-width: 480px) {
 
-#bio_image .textholder {
-    max-width: 1000px;
-}
+  #bio_image .textholder {
+      max-width: 1000px;
+  }
 
-#bio_image .hero {
-    background-position: -130px center;
-}
+  #bio_image .hero {
+      background-position: -130px center;
+  }
 
   #bio_image .hero .picture_text {
     color: #fffaf5;
@@ -109,23 +135,27 @@ use Roots\Sage\Assets;
 
   .biography {
   margin: 2rem 2rem;
-}
+  }
 
-.biography p {
-  font-size: 1.6rem;
-  line-height: 2rem;
-}
+  .biography p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 
 }
 
 @media (min-width: 600px) {
 
-#bio_image .textholder {
+  #bio_image .textholder {
     max-width: 1000px;
   }
 
   #bio_image .hero {
     background-position: -110px center;
+  }
+
+  .biography p {
+    margin: inherit 5%;
   }
 
 }
@@ -152,6 +182,18 @@ use Roots\Sage\Assets;
     left: 600px;
   }
 
+  .biography p {
+    margin: inherit 15%;
+  }
+
+  .active, .closed {
+    width: 90%;
+  }
+
+  .response-definition {
+    max-width: 80%;
+  }
+
 }
 
 @media (min-width: 960px) {
@@ -168,24 +210,6 @@ use Roots\Sage\Assets;
   }
 }
 
-.active, .closed {
-  width: 90%;
-  list-style: none;
-  font-size: 1.2rem;
-  padding: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.active {
-  background-color:rgba(0, 0, 0, 0.1);
-  -webkit-transition: .5s all ease-out;
-  transition: .5s all ease-out;
-  }
-
-.response-definition {
-  max-width: 80%;
-  }
 
   </style>
 </head>
