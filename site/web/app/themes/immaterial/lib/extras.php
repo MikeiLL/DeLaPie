@@ -29,12 +29,12 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
  */
 function excerpt_more($source="general") {
   if ($source="mdl-card") {
-    return '<div class="mdl-card__actions mdl-card--border">' .
+    return '&hellip; <div class="mdl-card__actions mdl-card--border">' .
           '<div class="mdl-layout-spacer"></div>' .
             '<a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>' .
           '</div>';
   } else {
-  return '<a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">' . __('Read More', 'immaterial') . '</a>';
+  return '&hellip; <a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">' . __('Read More', 'immaterial') . '</a>';
   }
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
