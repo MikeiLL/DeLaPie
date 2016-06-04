@@ -88,13 +88,13 @@ var vWidth = window.innerWidth;
     cover = document.getElementsByClassName('front-page__cover')[0];
 
 //cover.setAttribute("style", "height: " + vHeight + 'px');
-var drawer_container = document.getElementsByClassName('mdl-layout')[0];
-drawer_container.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
-  var obfuscator = document.querySelector('.mdl-layout__obfuscator');
-  if (obfuscator.classList.contains('is-visible')) {
-    obfuscator.classList.remove('is-visible');
-    this.classList.remove('is-visible');
-  }
-}, false);
+
+// Close MDL drawer on click so works with anchor links
+function close() {
+  var d = document.querySelector('.mdl-layout');
+  d.MaterialLayout.toggleDrawer();
+}
+
+document.querySelector('.mdl-layout__drawer').addEventListener('click', close);
 </script>
 <?php endif; ?>
