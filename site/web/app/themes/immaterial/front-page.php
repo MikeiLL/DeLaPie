@@ -23,9 +23,10 @@ use Roots\Sage\Assets;
     </div>
   </div>
 
-  <div class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--teal-600 mdl-color-text--yellow-50 front-page__cover">
+  <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--turquoise-500 mdl-color-text--yellow-50 front-page__cover">
 
-      <div class="biography">
+      <div>
+        <h2>Nursing Home Abuse. It's Not What I Do. It's All I Do.</h2>
         <p>After a decade in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become very skilled at representing people who have suffered injury or death in nursing homes and assisted living facilities.</p>
         <p>Identifying and litigating cases of nursing home abuse allows me to work intimately with individuals and families to protect our elders. And life is just too short not to make every day count.</p>
         <p>Some people see law as a tedious, drudging inevitability. For me, it’s an art. Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
@@ -35,10 +36,10 @@ use Roots\Sage\Assets;
   </div>
 
 
-
+<a name="faq"></a>
   <div class="content-grid mdl-grid front-page__cover">
 
-    <h2>Frequently Asked Questions and Common Scenarios</h2>
+    <h2>How Can I Help You?</h2>
 
     <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 
@@ -84,7 +85,7 @@ use Roots\Sage\Assets;
 
   </div>
 
-  	<div id="articles" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--teal-600 front-page__cover mdl-color-text--yellow-50">
+  	<div id="articles" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--turquoise-500 front-page__cover mdl-color-text--yellow-50 front-page__cover">
       <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__card-holder">
         <?php get_template_part('templates/front-page/featured-articles'); ?>
       </div>

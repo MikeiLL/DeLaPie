@@ -21,20 +21,20 @@ use Roots\Sage\Assets;
       display: block;
     }
 
-* {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
 .front-page__cover {
   min-width:100%;
   padding: 1rem;
+  min-height: 540px;
+  }
+
+  .mdl-color--turquoise-500 {
+  background-color: rgba(25, 230, 216, 1);
   }
 
 .front-page__cover h2 {
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .front-page__card-holder {
@@ -64,11 +64,11 @@ use Roots\Sage\Assets;
     margin: 0 auto;
 }
 
-.biography {
+#biography > div {
   margin: 1.8rem 1rem;
 }
 
-.biography p {
+#biography p {
   font-size: 1.2rem;
   margin: 1.2rem;
 }
@@ -138,11 +138,11 @@ use Roots\Sage\Assets;
     left: 400px;
   }
 
-  .biography {
+  #biography > div {
   margin: 2rem 2rem;
   }
 
-  .biography p {
+  #biography p {
     font-size: 1.6rem;
     line-height: 2rem;
   }
@@ -159,7 +159,7 @@ use Roots\Sage\Assets;
     background-position: -110px center;
   }
 
-  .biography p {
+  #biography p {
     margin: inherit 5%;
   }
 
@@ -187,8 +187,8 @@ use Roots\Sage\Assets;
     left: 600px;
   }
 
-  .biography p {
-    margin: inherit 15%;
+  #biography > div {
+    margin: inherit 20%;
   }
 
   .active, .closed {

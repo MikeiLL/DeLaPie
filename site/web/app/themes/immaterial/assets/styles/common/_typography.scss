@@ -1,0 +1,41 @@
+h1 {
+  @include typo-display-1();
+  }
+
+h2 {
+      @include typo-title();
+      text-transform: uppercase;
+  }
+
+h3 {
+  @include typo-title();
+  }
+
+
+@media (min-width: 37rem) {
+  h1 {
+    @include typo-display-2();
+  }
+
+  h2 {
+      @include typo-display-1();
+    }
+
+  h3 {
+    @include typo-headline();
+    }
+}
+
+@media (min-width: 60rem) {
+  h1 {
+    @include typo-display-3();
+  }
+
+  h2 {
+    @include typo-display-2();
+    }
+
+  h3 {
+    @include typo-display-1();
+    }
+}

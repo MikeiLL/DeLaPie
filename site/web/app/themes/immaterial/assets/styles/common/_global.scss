@@ -10,46 +10,7 @@ p {
     font-size: 16px;
   }
 
-h1 {
-  @include typo-display-1();
-  }
 
-h2 {
-      @include typo-headline();
-  }
-
-h3 {
-  @include typo-title();
-  }
-
-
-@media (min-width: 37rem) {
-  h1 {
-    @include typo-display-2();
-  }
-
-  h2 {
-      @include typo-display-1();
-    }
-
-  h3 {
-    @include typo-headline();
-    }
-}
-
-@media (min-width: 60rem) {
-  h1 {
-    @include typo-display-3();
-  }
-
-  h2 {
-    @include typo-display-2();
-    }
-
-  h3 {
-    @include typo-display-1();
-    }
-}
 
 //Breakpoints 480, 600, 840, 960, 1280, 1440, and 1600dp.
 //rems 30, 37, 52, 60, 80, 90, 100

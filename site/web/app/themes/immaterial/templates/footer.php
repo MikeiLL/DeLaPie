@@ -1,6 +1,7 @@
 <?php
 
 use Roots\Sage\Assets;
+use Roots\Sage\Extras;
 
 ?>
 <?php if ( is_active_sidebar( 'sidebar-mega-footer' ) ) { ?>
@@ -42,14 +43,46 @@ use Roots\Sage\Assets;
 
 
     <div class="mdl-mega-footer__drop-down-section">
-      <img src="<?php echo Assets\asset_path('images/avvo_badge.jpg') ?>" />
+      <div class="mdl-mega-footer__heading">FAQ</div>
+      <?php
+
+    $posts = get_posts(array(
+      'posts_per_page'	=> 3,
+      'post_type'			=> 'faq',
+      'orderby'				=> 'title',
+      'order' 				=> 'ASC'
+    ));
+
+    if( $posts ): ?>
+      <ul class="mdl-mega-footer__link-list">
+
+
+      <?php foreach( $posts as $post ): setup_postdata( $post ) ?>
+
+						  <a href="FAQ#<?php echo Extras\formatUrl(get_the_title(), '-'); ?>">
+
+									<li class="list-group-item-heading"><?php the_title(); ?></li>
+
+							</a>
+
+
+
+
+							<?php endforeach; ?>
+
+				</ul>
+
+				<?php wp_reset_postdata(); ?>
+
+				<?php endif; ?>
     </div>
 
     <div class="mdl-mega-footer__drop-down-section">
-      <img src="<?php echo Assets\asset_path('images/super-lawyers_badge.jpg') ?>" />
     </div>
     <div class="mdl-mega-footer__drop-down-section">
       <img src="<?php echo Assets\asset_path('images/martindale_badge.jpg') ?>" />
+      <img src="<?php echo Assets\asset_path('images/super-lawyers_badge.jpg') ?>" />
+      <img src="<?php echo Assets\asset_path('images/avvo_badge.jpg') ?>" />
     </div>
 
 
