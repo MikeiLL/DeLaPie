@@ -13,6 +13,7 @@ use Roots\Sage\Extras;
 </footer>
 <?php } ?>
 <footer class="mdl-mega-footer">
+
   <div class="mdl-mega-footer__middle-section">
 
     <div class="mdl-mega-footer__drop-down-section">
@@ -43,38 +44,26 @@ use Roots\Sage\Extras;
 
 
     <div class="mdl-mega-footer__drop-down-section">
-      <div class="mdl-mega-footer__heading">FAQ</div>
+      <div class="mdl-mega-footer__heading">Details</div>
+      <div class="mdl-logo"></div>
+     <!-- <ul class="mdl-mini-footer__link-list"> -->
       <?php
 
-    $posts = get_posts(array(
-      'posts_per_page'	=> 3,
-      'post_type'			=> 'faq',
-      'orderby'				=> 'title',
-      'order' 				=> 'ASC'
-    ));
+    if ( has_nav_menu( 'footer_links' ) ) :
+      $cleanermenu = wp_nav_menu(array(
+      'theme_location' => 'footer_links',
+      'container' => false,
+      'items_wrap' => '<nav class="mdl-mega-footer__link-list">%3$s</nav>',
+      'echo' => false,
+      'depth' => 2,
+      ) );
 
-    if( $posts ): ?>
-      <ul class="mdl-mega-footer__link-list">
+    echo $cleanermenu;
 
+  endif;
+  ?>
+    </ul>
 
-      <?php foreach( $posts as $post ): setup_postdata( $post ) ?>
-
-						  <a href="FAQ#<?php echo Extras\formatUrl(get_the_title(), '-'); ?>">
-
-									<li class="list-group-item-heading"><?php the_title(); ?></li>
-
-							</a>
-
-
-
-
-							<?php endforeach; ?>
-
-				</ul>
-
-				<?php wp_reset_postdata(); ?>
-
-				<?php endif; ?>
     </div>
 
     <div class="mdl-mega-footer__drop-down-section">
