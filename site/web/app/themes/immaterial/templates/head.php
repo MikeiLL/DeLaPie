@@ -28,13 +28,16 @@ use Roots\Sage\Assets;
   }
 
   .mdl-color--turquoise-500 {
-  background-color: rgba(25, 230, 216, 1);
+  background-color: rgba(18, 131, 116, 0.9)
   }
 
 .front-page__cover h2 {
   text-align: center;
   text-transform: uppercase;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  border-bottom: 1px solid rgba(36, 36, 35, 0.6);
+  padding-bottom: .7em;
 }
 
 .front-page__card-holder {
@@ -71,8 +74,6 @@ use Roots\Sage\Assets;
 #biography p {
   font-size: 1.2rem;
   margin: 1.2rem;
-  text-align: justify;
-  text-justify: inter-character;
 }
 
 #bio_image .hero .picture_text {
@@ -92,7 +93,6 @@ use Roots\Sage\Assets;
 }
 
 .active, .closed {
-  width: 100%;
   list-style: none;
   font-size: 1.2rem;
   padding: 1rem;
@@ -115,6 +115,20 @@ use Roots\Sage\Assets;
   margin: .8rem;
 }
 
+/* MDL LIST */
+
+.list__item:hover, .list__item:hover:focus, .list__icon:hover, .list__icon:hover:focus
+{
+  background: rgba(0, 0, 0, 0.15);
+  transition: all 1s;
+}
+
+/* ./MDL List - https://github.com/Nebularco/mdl-list */
+
+#faq ul {
+    margin-left: -1em;
+    margin-right: 2em;
+  }
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
 
@@ -149,6 +163,14 @@ use Roots\Sage\Assets;
     line-height: 2rem;
   }
 
+  .front-page__cover h2 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 60%;
+    margin-left: 20%;
+    border-bottom: 1px solid rgba(36, 36, 35, 0.6);
+  }
+
 }
 
 @media (min-width: 600px) {
@@ -163,6 +185,11 @@ use Roots\Sage\Assets;
 
   #biography p {
     margin: inherit 5%;
+  }
+
+  #faq ul {
+    margin-left: 0;
+    margin-right: 2em;
   }
 
 }

@@ -28,7 +28,7 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
  * Clean up the_excerpt()
  */
 function excerpt_more($source="general") {
-  if ($source="mdl-card") {
+  if ($source == "mdl-card") {
     return '&hellip; <div class="mdl-card__actions mdl-card--border">' .
           '<div class="mdl-layout-spacer"></div>' .
             '<a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>' .

@@ -12,7 +12,7 @@ use Roots\Sage\Assets;
   <?php //get_template_part('templates/page', 'header'); ?>
   <?php //get_template_part('templates/content', 'page'); ?>
 
-<div class="content-grid mdl-grid mdl-grid--no-spacing ">
+<div class="content-grid mdl-grid mdl-grid--no-spacing">
   <div id="bio_image" class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
     <div class="mdl-grid hero">
       <div class="textholder">
@@ -23,7 +23,7 @@ use Roots\Sage\Assets;
     </div>
   </div>
 
-  <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--turquoise-500 mdl-color-text--yellow-50 front-page__cover">
+  <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--turquoise-500 mdl-color-text--black-50 front-page__cover">
 
       <div>
         <h2>Nursing Home Abuse. It's Not What I Do. It's All I Do.</h2>
@@ -36,50 +36,47 @@ use Roots\Sage\Assets;
   </div>
 
 
-<a name="faq"></a>
-  <div class="content-grid mdl-grid front-page__cover">
+  <div id="faq" class="content-grid mdl-grid mdl-grid--no-spacing front-page__cover">
 
     <h2>How Can I Help You?</h2>
-
-    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 
       <ul>
-              <li data-gk-area-state="closed" data-gk-open-class="howmanyhours" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number One</li>
+            <li class="list__item" data-gk-area-state="closed" data-gk-open-class="one" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Proin vehicula convallis mi, in vestibulum magna laoreet eget. </li>
 
-            <div class="response-definition howmanyhours">
+            <div class="response-definition one">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
-             <li data-gk-area-state="closed" data-gk-open-class="two" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Two</li>
+             <li class="list__item" data-gk-area-state="closed" data-gk-open-class="two" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Two</li>
 
             <div class="response-definition two">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
-             <li data-gk-area-state="closed" data-gk-open-class="three" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Three</li>
+             <li class="list__item" data-gk-area-state="closed" data-gk-open-class="three" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Three</li>
 
             <div class="response-definition three">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
       </ul>
     </div>
-    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+    <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
       <ul>
-              <li data-gk-area-state="closed" data-gk-open-class="four" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Four</li>
+              <li class="list__item" data-gk-area-state="closed" data-gk-open-class="four" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Four</li>
 
             <div class="response-definition four">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
-             <li data-gk-area-state="closed" data-gk-open-class="five" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Five</li>
+             <li class="list__item" data-gk-area-state="closed" data-gk-open-class="five" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Five</li>
 
             <div class="response-definition five">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
-             <li data-gk-area-state="closed" data-gk-open-class="six" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Six</li>
+             <li class="list__item" data-gk-area-state="closed" data-gk-open-class="six" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Six</li>
 
             <div class="response-definition six">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
       </ul>
-
 
     </div>
 

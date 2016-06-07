@@ -41,7 +41,7 @@
 
 @mixin typo-display-3($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 400;
   line-height: 1.35;
   letter-spacing: -0.02em;
@@ -64,7 +64,7 @@
 
 @mixin typo-display-1($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 34px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 40px;
 
@@ -87,7 +87,7 @@
 
 @mixin typo-title($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 20px;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em;
