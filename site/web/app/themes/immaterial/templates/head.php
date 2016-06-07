@@ -71,6 +71,8 @@ use Roots\Sage\Assets;
 #biography p {
   font-size: 1.2rem;
   margin: 1.2rem;
+  text-align: justify;
+  text-justify: inter-character;
 }
 
 #bio_image .hero .picture_text {
