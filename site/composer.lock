@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2ed5ad9cc3c8389e85d9c635673e69d6",
-    "content-hash": "7d65e2d3c248734a946021aac98adfb9",
+    "hash": "a820d2dd0c98cde3ed9b1dcbe1b0cb9b",
+    "content-hash": "a79eb874512f5edad2b68754aafbcb54",
     "packages": [
         {
             "name": "composer/installers",
@@ -360,6 +360,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/comet-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "4.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
