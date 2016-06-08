@@ -21,6 +21,18 @@ use Roots\Sage\Assets;
       display: block;
     }
 
+.nav-icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  fill: #f0eeeb;
+  margin: .5em;
+}
+
+.mdl-layout__drawer-button > i {
+  display: none;
+}
+
 .front-page__cover {
   min-width:100%;
   padding: 1rem;
@@ -76,6 +88,19 @@ use Roots\Sage\Assets;
   margin: 1.2rem;
 }
 
+.response-definition p:first-of-type {
+    margin-top: 1em;
+  }
+
+.response-definition p {
+    margin-left: .4em;
+  }
+
+.response-definition p:last-of-type {
+    border-bottom: 1px solid rgba(36, 36, 35, 0.1);
+    padding-bottom: 0.5em;
+  }
+
 #bio_image .hero .picture_text {
     color: #fffaf5;
     font-family: "Helvetica Neue", Helvetica, sans serif;
@@ -129,6 +154,15 @@ use Roots\Sage\Assets;
     margin-left: -1em;
     margin-right: 2em;
   }
+
+.evaluation::before {
+    font-family: 'Material Icons';
+    content: "&#xE8D3;";
+    content: "supervisor_account";
+    -webkit-font-feature-settings: 'liga';
+    padding-right: 1em;
+}
+
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
 

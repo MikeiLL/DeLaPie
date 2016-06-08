@@ -3,6 +3,7 @@
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
 use Roots\Sage\Extras;
+use Roots\Sage\Assets;
 
 ?>
 
@@ -10,9 +11,11 @@ use Roots\Sage\Extras;
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
-    <!--[if IE]>
+  <?php echo file_get_contents(Assets\asset_path('images/sprites/sprite-defs.svg')); ?>
+
+    <!--[if lt IE 9]>
       <div class="alert alert-warning">
-        <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
+        <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'immaterial'); ?>
       </div>
     <![endif]-->
     <div class="mdl-layout__container">

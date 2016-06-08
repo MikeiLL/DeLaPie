@@ -1,4 +1,4 @@
-<header class="mdl-layout__header mdl-color--grey-800 mdl-color-text--yellow-500">
+ <header class="mdl-layout__header mdl-color--grey-800 mdl-color-text--yellow-500">
 <div class="mdl-layout__header-row mdl-layout__header-row-sliver mdl-color-text--grey-200 mdl-color--yellow-50">
   <div class="mdl-layout-spacer"></div>
     <svg height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
@@ -20,6 +20,7 @@
     <!-- Add spacer, to align navigation to the right -->
     <div class="mdl-layout-spacer"></div>
     <!-- Navigation -->
+
     <?php
     if ( has_nav_menu( 'header_navigation' ) ) :
 
@@ -57,7 +58,7 @@
     $cleanermenu = wp_nav_menu( array(
       'theme_location' => 'drawer_navigation',
       'container' => false,
-      'items_wrap' => '<nav class="mdl-navigation">%3$s</nav>',
+      'items_wrap' => '<nav class="mdl-color--yellow-500 mdl-navigation">%3$s</nav>',
       'echo' => false,
       'depth' => 2,
     ) );
