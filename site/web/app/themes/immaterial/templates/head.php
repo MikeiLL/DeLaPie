@@ -169,6 +169,18 @@ use Roots\Sage\Assets;
   margin: 1rem 2rem;
 }
 
+.mdl-mega-footer {
+  margin: 0;
+}
+
+#biography div > ul {
+  font-size: 1.4em;
+}
+
+#biography ul li > ul {
+  font-size: .9em;
+}
+
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
 
