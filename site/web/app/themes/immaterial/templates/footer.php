@@ -44,7 +44,7 @@ use Roots\Sage\Extras;
 
 
     <div class="mdl-mega-footer__drop-down-section">
-      <div class="mdl-mega-footer__heading">Details</div>
+      <div class="mdl-mega-footer__heading">Helpful Links</div>
       <div class="mdl-logo"></div>
      <!-- <ul class="mdl-mini-footer__link-list"> -->
       <?php

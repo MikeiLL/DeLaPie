@@ -29,6 +29,16 @@ $contact_our_office = '<p>Please contact my office for a free case evaluation. <
             <div class="response-definition eight">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
+             <li class="list__item" data-gk-area-state="closed" data-gk-open-class="nine" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Six</li>
+
+            <div class="response-definition nine">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
+             <li class="list__item" data-gk-area-state="closed" data-gk-open-class="ten" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Six</li>
+
+            <div class="response-definition ten">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
       </ul>
     </div>
     <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
@@ -51,6 +61,16 @@ $contact_our_office = '<p>Please contact my office for a free case evaluation. <
              <li class="list__item" data-gk-area-state="closed" data-gk-open-class="seven" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Six</li>
 
             <div class="response-definition seven">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
+             <li class="list__item" data-gk-area-state="closed" data-gk-open-class="eleven" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Six</li>
+
+            <div class="response-definition eleven">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
+            </div>
+             <li class="list__item" data-gk-area-state="closed" data-gk-open-class="twelve" data-gk-open-span-glyph="closed" data-gk-close-span-glyph="active">Situation Number Six</li>
+
+            <div class="response-definition twelve">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat. </p>
             </div>
       	</ul>

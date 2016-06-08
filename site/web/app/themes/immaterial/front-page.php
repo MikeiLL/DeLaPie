@@ -47,9 +47,9 @@ use Roots\Sage\Assets;
   </div>
 
 
-  <div id="faq" class="content-grid mdl-grid mdl-grid--no-spacing front-page__cover">
+  <div id="situations" class="content-grid mdl-grid front-page__cover">
 
-    <h2>How Can I Help You?</h2>
+    <h2>Typical Nursing Home Injuries</h2>
     <?php get_template_part('templates/front-page/situations'); ?>
 
   </div>

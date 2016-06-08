@@ -33,10 +33,15 @@ use Roots\Sage\Assets;
   display: none;
 }
 
+.mdl-layout__header-row .mdl-navigation a {
+  display: none;
+}
+
 .front-page__cover {
   min-width:100%;
   padding: 1rem;
   min-height: 540px;
+  padding-bottom: 2em;
   }
 
   .mdl-color--turquoise-500 {
@@ -87,6 +92,10 @@ use Roots\Sage\Assets;
 #biography p {
   font-size: 1.2rem;
   margin: 1.2rem;
+}
+
+#situations > h2 {
+  max-height: 1em;
 }
 
 .response-definition p:first-of-type {
@@ -227,6 +236,11 @@ use Roots\Sage\Assets;
 
 @media (min-width: 600px) {
 
+
+.mdl-layout__header-row .mdl-navigation a {
+  display: block;
+}
+
   #bio_image .textholder {
     max-width: 1000px;
   }
@@ -246,7 +260,7 @@ use Roots\Sage\Assets;
 
   #biography > div {
     width: 80%;
-    margin: 0 10%;
+    margin: 2em 10%;
   }
 
 }
@@ -274,7 +288,7 @@ use Roots\Sage\Assets;
   }
 
   #biography > div {
-    margin: 0 15%;
+    margin: 2em 15%;
     width: 70%;
   }
 
