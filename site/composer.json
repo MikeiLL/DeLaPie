@@ -39,6 +39,7 @@
     "johnpbloch/wordpress": "4.5",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/wp-lorem-ipsum-generator": "0.3",
     "wpackagist-plugin/wordpress-importer": "0.6.2",
     "wpackagist-plugin/comet-cache": "160417",
     "wpackagist-plugin/wp-maintenance-mode": "2.0.3"
