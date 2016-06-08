@@ -50,6 +50,7 @@ use Roots\Sage\Assets;
   margin-left: 5%;
   border-bottom: 1px solid rgba(36, 36, 35, 0.6);
   padding-bottom: .7em;
+  line-height: 1.1em;
 }
 
 .front-page__card-holder {
@@ -163,6 +164,11 @@ use Roots\Sage\Assets;
     padding-right: 1em;
 }
 
+#articles .mdl-cell--12-col, #articles .mdl-cell--8-col-tablet {
+  width: calc(100% - 4rem);
+  margin: 1rem 2rem;
+}
+
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
 
@@ -226,6 +232,11 @@ use Roots\Sage\Assets;
     margin-right: 2em;
   }
 
+  #biography > div {
+    width: 80%;
+    margin: 0 10%;
+  }
+
 }
 
 
@@ -251,7 +262,8 @@ use Roots\Sage\Assets;
   }
 
   #biography > div {
-    margin: inherit 20%;
+    margin: 0 15%;
+    width: 70%;
   }
 
   .active, .closed {

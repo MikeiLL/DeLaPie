@@ -26,7 +26,7 @@ use Roots\Sage\Assets;
   <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--turquoise-500 mdl-color-text--black-50 front-page__cover">
 
       <div>
-        <h2>Nursing Home Abuse. It's Not What I Do. It's All I Do.</h2>
+        <h2>Nursing Home Abuse. <br />It's Not Just <em>What</em> I Do. <br />It's <em>All</em> I Do.</h2>
         <p>After a decade in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become very skilled at representing people who have suffered injury or death in nursing homes and assisted living facilities.</p>
         <p>Identifying and litigating cases of nursing home abuse allows me to work intimately with individuals and families to protect our elders. And life is just too short not to make every day count.</p>
         <p>Some people see law as a tedious, drudging inevitability. For me, it’s an art. Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
