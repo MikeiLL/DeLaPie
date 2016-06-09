@@ -50,5 +50,44 @@ use Roots\Sage\Assets;
         </div><!-- /.mdl-layout__content -->
       </div><!-- /.mdl-layout -->
     </div>
+    <script type="text/javascript">
+    //Replace MDL icon with our sprite
+    function mdl_drawer_btn() {
+        var mdl_drawer_button = document.querySelector('.mdl-layout__drawer-button');
+        if (mdl_drawer_button != null) {
+            mdl_drawer_button.innerHTML = '<svg viewBox="0 0 100 100" class="icon nav-icon"><use xlink:href="#nav-icon"></use></svg>';
+          } else {
+            setTimeout(mdl_drawer_btn, 100);
+          }
+      }
+
+    setTimeout(mdl_drawer_btn, 100);
+
+    </script>
+
+    <?php if ( is_front_page() || is_home() ): ?>
+
+    <script type="text/javascript">
+
+    // Fill viewport
+    var vWidth = window.innerWidth;
+        vHeight = window.innerHeight;
+        cover = document.getElementsByClassName('front-page__cover')[0];
+
+    //cover.setAttribute("style", "height: " + vHeight + 'px');
+
+
+
+    // Close MDL drawer on click so works with anchor links
+    function close() {
+      var d = document.querySelector('.mdl-layout');
+      d.MaterialLayout.toggleDrawer();
+    }
+
+    document.querySelector('.mdl-layout__drawer').addEventListener('click', close);
+
+    </script>
+
+  <?php endif; ?>
   </body>
 </html>
