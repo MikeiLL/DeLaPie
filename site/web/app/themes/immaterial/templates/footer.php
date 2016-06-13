@@ -67,11 +67,10 @@ use Roots\Sage\Extras;
     </div>
 
     <div class="mdl-mega-footer__drop-down-section">
+
     </div>
     <div class="mdl-mega-footer__drop-down-section">
-      <img src="<?php echo Assets\asset_path('images/martindale_badge.jpg') ?>" />
-      <img src="<?php echo Assets\asset_path('images/super-lawyers_badge.jpg') ?>" />
-      <img src="<?php echo Assets\asset_path('images/avvo_badge.jpg') ?>" />
+
     </div>
 
 
@@ -79,7 +78,7 @@ use Roots\Sage\Extras;
 
   <div class="mdl-mega-footer__bottom-section">
     <div class="mdl-logo"></div>
-     <!-- <ul class="mdl-mini-footer__link-list"> -->
+     <?php /*<!-- <ul class="mdl-mini-footer__link-list"> -->
       <?php
 
     if ( has_nav_menu( 'footer_links' ) ) :
@@ -94,6 +93,7 @@ use Roots\Sage\Extras;
     echo $cleanermenu;
 
   endif;
+  */
   ?>
     </ul>
     <?php echo Extras\bns_dynamic_copyright() ?>

@@ -2,6 +2,7 @@
 
 use Roots\Sage\Assets;
 
+
 ?>
 <head>
   <meta charset="utf-8">
@@ -92,6 +93,10 @@ use Roots\Sage\Assets;
 #biography p {
   font-size: 1.2rem;
   margin: 1.2rem;
+}
+
+#situations {
+  background-color: #bfc9ca;
 }
 
 #situations > h2 {
