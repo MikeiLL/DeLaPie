@@ -195,6 +195,25 @@ use Roots\Sage\Assets;
   font-size: .9em;
 }
 
+/* Typography */
+abbr {
+  letter-spacing: 0.1em;
+}
+/* ./Typography */
+
+#commentform {
+  position: relative;
+}
+
+.mdl-button, input[type="submit"], .search-form input.search-submit[type="submit"], input.mdl-button[type="submit"] {
+    border: 1px solid #999;
+    margin: 0.5em;
+    }
+
+.mdl-card__supporting-text .mdl-button {
+    float: right;
+  }
+
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
 
