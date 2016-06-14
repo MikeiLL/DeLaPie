@@ -91,11 +91,13 @@
 @function renderSVG(
   $backgroundName,
   $color,
-  $stroke-color: black,
-  $stroke-width: 1px,
+  $stroke-color: transparent,
+  $stroke-width: 0,
   $css: '', // arbitrary css
   $width: '100%',
-  $height: '100%'
+  $height: '100%',
+  $viewboxw:'100',
+  $viewboxh:'100'
   ){
     $parameters: (
       'color': $color,
@@ -106,10 +108,11 @@
 
     $backgrounds: (
       bishop: _buildPath('M142.875,133.254c-2.445,0.459 -9.707,1.823 -11.649,2.187c-4.049,0.795 -4.049,0.795 -4.968,-3.423c-4.487,-23.915 -12.495,-66.626 -15.751,-83.996c-0.718,-3.829 -0.718,-3.829 -5.285,0.011c-15.435,13.555 -31.879,34.306 -31.879,63.278c0,21.094 4.218,42.188 16.875,67.5c0,0 -8.438,0 -8.438,4.219c0,4.219 8.438,4.219 8.438,4.219c0,0 0,12.656 -4.219,16.875c0,0 -12.656,0 -12.656,8.437c0,8.438 12.656,8.438 12.656,8.438c-12.656,0 -25.313,0 -25.313,12.656c0,12.656 12.657,12.656 25.313,12.656c8.437,16.875 8.437,101.25 -12.656,147.657c-4.219,4.218 -12.657,4.218 -12.657,4.218c0,37.969 -54.843,46.407 -54.843,71.719c0,12.656 21.093,21.094 21.093,21.094c0,0 -25.312,4.219 -25.312,8.437l0,4.219c0,4.219 0,4.219 4.219,4.219l261.562,0c4.219,0 4.219,0 4.219,-4.219l0,-4.219c0,-4.218 -25.313,-8.437 -25.313,-8.437c0,0 21.094,-8.438 21.094,-21.094c0,-25.312 -54.844,-33.75 -54.844,-71.719c0,0 -8.437,0 -12.656,-4.218c-21.094,-46.407 -21.094,-130.782 -12.656,-147.657c12.656,0 25.312,0 25.312,-12.656c0,-12.656 -12.656,-12.656 -25.312,-12.656c0,0 12.656,0 12.656,-8.438c0,-8.437 -12.656,-8.437 -12.656,-8.437c-4.219,-4.219 -4.219,-16.875 -4.219,-16.875c0,0 8.438,0 8.438,-4.219c0,-4.219 -8.438,-4.219 -8.438,-4.219c12.656,-25.312 16.875,-46.406 16.875,-67.5c0,-46.406 -42.187,-71.718 -54.844,-80.156c12.657,-16.875 4.219,-29.531 -8.437,-29.531c-12.656,0 -21.094,12.656 -8.438,29.531c2.022,10.786 13.758,73.382 18.226,97.212c0.701,4.066 0.701,4.066 -3.537,4.887l0,0Z', $parameters),
+      heart: _buildPath('M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z', $parameters),
       star: _buildPath('M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z', $parameters)
     );
 
-    $background: _buildSVG(map-get($backgrounds, $backgroundName), $width, $height);
+    $background: _buildSVG(map-get($backgrounds, $backgroundName), $width, $height, $viewboxw, $viewboxh);
     @return url("data:image/svg+xml;charset=utf8,#{$background}");
   }
 
@@ -199,6 +202,8 @@
   $stroke-color: transparent,
   $stroke-width: 0,
   $repeat-scroll-placement-size: no-repeat scroll 100% / 100% auto,
+  $viewboxw: 100,
+  $viewboxh: 100,
   $css: '',
   $direction: 180deg,
   $color-stops...) {
@@ -207,9 +212,9 @@
     $direction: 180deg;
   }
 
-  background: renderSVG($shape, $color) $repeat-scroll-placement-size, nth(nth($color-stops, 1), 1);
-  background: renderSVG($shape, $color) $repeat-scroll-placement-size, -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-  background: renderSVG($shape, $color) $repeat-scroll-placement-size, linear-gradient($direction, $color-stops);
+  background: renderSVG(bishop, green, red, 2, repeat scroll 0 / 30% auto, 274, 510, 'stroke-dasharray: 2px, 1px;') $repeat-scroll-placement-size, nth(nth($color-stops, 1), 1);
+  background: renderSVG(bishop, green, red, 2, repeat scroll 0 / 30% auto, 274, 510, 'stroke-dasharray: 2px, 1px;') $repeat-scroll-placement-size, -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: renderSVG(bishop, green, red, 2, repeat scroll 0 / 30% auto, 274, 510, 'stroke-dasharray: 2px, 1px;') $repeat-scroll-placement-size, linear-gradient($direction, $color-stops);
 }
 
 // Tests
@@ -222,10 +227,10 @@
 }
 
 .wrap {
-  @include linear-gradient-svg(bishop, green, black, 2, no-repeat scroll 10px 100% / 10% auto, '', 42deg, #B58234 0%, #D2B545 50%, #D7C04D 50.01%, #FFFFFF 100%);
+  @include linear-gradient-svg(heart, green, red, 2, repeat scroll 0 / 30% auto, 124, 124, 'stroke-dasharray: 2px, 1px;', 42deg, #B58234 0%, #D2B545 50%, #D7C04D 50.01%, #FFFFFF 100%);
 }
 
-#biography         { background-image: renderSVG(bishop, blue); }
+#biography         { background-image: renderSVG(bishop, green, red, 2, repeat scroll 0 / 30% auto, 274, 510, 'stroke-dasharray: 2px, 1px;'); }
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *

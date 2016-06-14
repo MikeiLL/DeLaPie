@@ -215,11 +215,6 @@ abbr {
   }
 
 .wrap {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   width: 100%;
   text-align: center;
 }
