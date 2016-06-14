@@ -12,10 +12,11 @@
     width: 100%;
 }
 
-#biography {
+#xxbiography {
   background-color: #37c6c8; // Old browsers
-  background-image: url("../images/backgrounds/chess_bishop.svg") no-repeat scroll -50px 100% / 10em auto; // fallback
-  background: url("../images/backgrounds/chess_bishop.svg") no-repeat scroll -50px 100% / 10em auto, linear-gradient(to top,  hsla(181,31%,50%,1) 0%,hsla(181,45%,46%,1) 40%,hsla(181,57%,50%,1) 100%);
+  background-color: linear-gradient(to top,  hsla(181,31%,50%,1) 0%,hsla(181,45%,46%,1) 40%,hsla(181,57%,50%,1) 100%);
+  //background-image: url("../images/backgrounds/sculpture1.svg") no-repeat scroll 10px 100% / 30% auto; // fallback
+  //background: url("../images/backgrounds/sculpture1.svg") no-repeat scroll 10px 100% / 30% auto, linear-gradient(to top,  hsla(181,31%,50%,1) 0%,hsla(181,45%,46%,1) 40%,hsla(181,57%,50%,1) 100%);
 }
 
 // Needs latest Compass, add '@import "compass"' to your scss

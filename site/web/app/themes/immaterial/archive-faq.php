@@ -16,7 +16,7 @@ $hwr_loop = new WP_Query( $args );
 
 	<?php while ($hwr_loop->have_posts()) : $hwr_loop->the_post(); ?>
 	  <a name="<?php echo Extras\formatUrl(get_the_title(), '-'); ?>"></a>
-		<?php get_template_part('templates/content', get_post_type() != 'faq' ? get_post_type() : get_post_format()); ?>
+		<?php get_template_part('templates/content-faq', get_post_type() != 'faq' ? get_post_type() : get_post_format()); ?>
 	<?php endwhile; ?>
 
 <?php the_posts_navigation(); ?>
