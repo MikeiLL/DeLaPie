@@ -3,6 +3,116 @@
   list-style: none;
 }
 
+//Following set of functions for building icons
+// From http://codepen.io/noahblon/post/coloring-svgs-in-css-background-images
+@function _buildIcon($icon) {
+  $icon: '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2224%22%20height%3D%2224%22%3E#{$icon}%3C%2Fsvg%3E';
+  @return $icon;
+}
+
+@function _buildPath($path, $parameters) {
+  $icon: '%3Cpath%20fill%3D%22#{map-get($parameters, color)}%22%20stroke%3D%22#{map-get($parameters, stroke-color)}%22%20stroke-width%3D%22#{map-get($parameters, stroke-width)}%22%20style%3D%22#{map-get($parameters, css)}%22%20d%3D%22#{$path}%22%20%2F%3E';
+  @return $icon;
+}
+
+@function icon(
+  $icon-name,
+  $color,
+  $stroke-color: transparent,
+  $stroke-width: 0,
+  $css: '' // arbitrary css
+  ){
+    $parameters: (
+      'color': $color,
+      'stroke-color': $stroke-color,
+      'stroke-width': $stroke-width,
+      'css': $css
+    );
+
+    $icons: (
+      heart: _buildPath('M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z', $parameters),
+      star: _buildPath('M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z', $parameters)
+    );
+
+
+    $icon: _buildIcon(map-get($icons, $icon-name));
+    @return url("data:image/svg+xml;charset=utf8,#{$icon}");
+  }
+
+  .test-icon {
+  width: 48px;
+  height: 48px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart-sprite.svg) no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+/* Examples */
+.icon-red    { background-image: icon(heart, red); }
+.icon-orange { background-image: icon(heart, orange); }
+.icon-yellow { background-image: icon(heart, yellow) }
+.icon-green  { background-image: icon(heart, green) }
+.icon-blue   { background-image: icon(heart, blue) }
+.icon-indigo { background-image: icon(heart, indigo) }
+.icon-violet { background-image: icon(heart, violet) }
+
+.icon-cyan    { background-image: icon(heart, cyan); }
+.icon-magenta { background-image: icon(heart, magenta); }
+.icon-lime    { background-image: icon(heart, lime); }
+.icon-olive   { background-image: icon(heart, olive); }
+.icon-maroon  { background-image: icon(heart, maroon); }
+.icon-purple  { background-image: icon(heart, purple); }
+
+.icon-white  { background-image: icon(heart, white); }
+.icon-gray10 { background-image: icon(heart, 'rgb(230, 230, 230)'); }
+.icon-gray20 { background-image: icon(heart, 'rgb(204, 204, 204)'); }
+.icon-gray30 { background-image: icon(heart, 'rgb(179, 179, 179)'); }
+.icon-gray40 { background-image: icon(heart, 'rgb(153, 153, 153))'); }
+.icon-gray50 { background-image: icon(heart, 'rgb(127, 127, 127)'); }
+.icon-gray60 { background-image: icon(heart, 'rgb(102, 102, 102)'); }
+.icon-gray70 { background-image: icon(heart, 'rgb(76, 76, 76)'); }
+.icon-gray80 { background-image: icon(heart, 'rgb(51, 51, 51)'); }
+.icon-gray90 { background-image: icon(heart, 'rgb(25, 25, 25)'); }
+.icon-black  { background-image: icon(heart, black); }
+
+.icon-stroke       { background-image: icon(heart, transparent, red, 2); }
+.icon-stroke-color { background-image: icon(heart, red, black, 2); }
+.icon-dashstroke   { background-image: icon(heart, red, black, 2, 'stroke-dasharray : 2px, 1px;'); }
+.icon-star         { background-image: icon(star, blue); }
+
+
+//Functiona to create svg backgrounds:
+
+@function _buildBackground($bg) {
+  $bg: '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%23#{$bg}%3C%2Fsvg%3E';
+  @return $bg;
+}
+
+@function background(
+  $backgroundName,
+  $color,
+  $stroke-color: transparent,
+  $stroke-width: 0,
+  $css: '' // arbitrary css
+  ){
+    $parameters: (
+      'color': $color,
+      'stroke-color': $stroke-color,
+      'stroke-width': $stroke-width,
+      'css': $css
+    );
+
+    $backgrounds: (
+      bishop: _buildPath('M142.875,133.254c-2.445,0.459 -9.707,1.823 -11.649,2.187c-4.049,0.795 -4.049,0.795 -4.968,-3.423c-4.487,-23.915 -12.495,-66.626 -15.751,-83.996c-0.718,-3.829 -0.718,-3.829 -5.285,0.011c-15.435,13.555 -31.879,34.306 -31.879,63.278c0,21.094 4.218,42.188 16.875,67.5c0,0 -8.438,0 -8.438,4.219c0,4.219 8.438,4.219 8.438,4.219c0,0 0,12.656 -4.219,16.875c0,0 -12.656,0 -12.656,8.437c0,8.438 12.656,8.438 12.656,8.438c-12.656,0 -25.313,0 -25.313,12.656c0,12.656 12.657,12.656 25.313,12.656c8.437,16.875 8.437,101.25 -12.656,147.657c-4.219,4.218 -12.657,4.218 -12.657,4.218c0,37.969 -54.843,46.407 -54.843,71.719c0,12.656 21.093,21.094 21.093,21.094c0,0 -25.312,4.219 -25.312,8.437l0,4.219c0,4.219 0,4.219 4.219,4.219l261.562,0c4.219,0 4.219,0 4.219,-4.219l0,-4.219c0,-4.218 -25.313,-8.437 -25.313,-8.437c0,0 21.094,-8.438 21.094,-21.094c0,-25.312 -54.844,-33.75 -54.844,-71.719c0,0 -8.437,0 -12.656,-4.218c-21.094,-46.407 -21.094,-130.782 -12.656,-147.657c12.656,0 25.312,0 25.312,-12.656c0,-12.656 -12.656,-12.656 -25.312,-12.656c0,0 12.656,0 12.656,-8.438c0,-8.437 -12.656,-8.437 -12.656,-8.437c-4.219,-4.219 -4.219,-16.875 -4.219,-16.875c0,0 8.438,0 8.438,-4.219c0,-4.219 -8.438,-4.219 -8.438,-4.219c12.656,-25.312 16.875,-46.406 16.875,-67.5c0,-46.406 -42.187,-71.718 -54.844,-80.156c12.657,-16.875 4.219,-29.531 -8.437,-29.531c-12.656,0 -21.094,12.656 -8.438,29.531c2.022,10.786 13.758,73.382 18.226,97.212c0.701,4.066 0.701,4.066 -3.537,4.887l0,0Z', $parameters),
+      star: _buildPath('M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z', $parameters)
+    );
+
+    $background: _buildBackground(map-get($backgrounds, $backgroundName));
+    @return url("data:image/svg+xml;charset=utf8,#{$background}");
+  }
+
+
+#biography         { background-image: background(bishop, blue); }
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
