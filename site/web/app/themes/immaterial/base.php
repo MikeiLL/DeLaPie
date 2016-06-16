@@ -53,6 +53,11 @@ use Roots\Sage\Assets;
     <script type="text/javascript">
     //Replace MDL icon with our sprite
     function mdl_drawer_btn() {
+
+        // Exit if browser does not support SVG
+        var supports = !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
+        if ( !supports ) return;
+
         var mdl_drawer_button = document.querySelector('.mdl-layout__drawer-button');
         if (mdl_drawer_button != null) {
             mdl_drawer_button.innerHTML = '<svg viewBox="0 0 100 100" class="icon nav-icon"><use xlink:href="#nav-icon"></use></svg>';
@@ -62,7 +67,7 @@ use Roots\Sage\Assets;
       }
 
     setTimeout(mdl_drawer_btn, 100);
-
+    // ./Replace MDL icon with our sprite
     </script>
 
     <?php if ( is_front_page() || is_home() ): ?>
