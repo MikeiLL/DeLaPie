@@ -25,7 +25,7 @@ use Roots\Sage\Assets;
 
 
 
-  <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--turquoise-500 mdl-color-text--black-50 front-page__cover">
+  <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--turquoise-500 mdl-color-text--yellow-400 front-page__cover">
 
       <div>
         <p>After a decade in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become experienced at representing people who have suffered injury or death in nursing homes and assisted living facilities.</p>

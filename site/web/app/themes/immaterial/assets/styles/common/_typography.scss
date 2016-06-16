@@ -10,6 +10,10 @@ h3 {
   @include typo-title();
   }
 
+.entry-content p, .front-page__cover p, .mdl-card p  {
+  text-indent: 1em;
+  }
+
 
 @media (min-width: 37rem) {
   h1 {

@@ -195,6 +195,7 @@ use Roots\Sage\Assets;
   font-size: .9em;
 }
 
+
 /* Typography */
 abbr {
   letter-spacing: 0.1em;
@@ -256,6 +257,22 @@ abbr {
     line-height: 2rem;
   }
 
+  #biography > div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #biography {
+    position: relative;
+  }
+
+  #biography p {
+    margin: 0;
+    padding: 10px;
+    vertical-align: middle;
+  }
+
   .front-page__cover h2 {
     text-align: center;
     text-transform: uppercase;
@@ -283,6 +300,8 @@ abbr {
 
   #biography p {
     margin: inherit 5%;
+    font-size: 1.7em;
+    line-height: 1em;
   }
 
   #faq ul {
@@ -292,7 +311,7 @@ abbr {
 
   #biography > div {
     width: 80%;
-    margin: 2em 10%;
+    margin: 0 10%;
   }
 
 }
@@ -320,7 +339,7 @@ abbr {
   }
 
   #biography > div {
-    margin: 2em 15%;
+    margin: 0 15%;
     width: 70%;
   }
 
@@ -338,6 +357,11 @@ abbr {
 
   #bio_image .hero .picture_text {
     left: 700px;
+  }
+
+  #biography p {
+    font-size: 1.8em;
+    line-height: 1.2em;
   }
 
 }
