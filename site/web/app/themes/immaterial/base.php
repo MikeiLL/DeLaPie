@@ -76,8 +76,6 @@ use Roots\Sage\Assets;
 
     //cover.setAttribute("style", "height: " + vHeight + 'px');
 
-
-
     // Close MDL drawer on click so works with anchor links
     function close() {
       var d = document.querySelector('.mdl-layout');

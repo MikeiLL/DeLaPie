@@ -15,8 +15,7 @@
 #biography {
   background-color: #37c6c8; // Old browsers
   background-color: linear-gradient(to top,  hsla(181,31%,50%,1) 0%,hsla(181,45%,46%,1) 40%,hsla(181,57%,50%,1) 100%);
-  //background-image: url("../images/backgrounds/sculpture1.svg") no-repeat scroll 10px 100% / 30% auto; // fallback
-  //background: url("../images/backgrounds/sculpture1.svg") no-repeat scroll 10px 100% / 30% auto, linear-gradient(to top,  hsla(181,31%,50%,1) 0%,hsla(181,45%,46%,1) 40%,hsla(181,57%,50%,1) 100%);
+  @include linear-gradient-svg(female_bust, hsla(181,85%,46%,.6), hsla(181,85%,46%,.6), 1, no-repeat scroll 30% 100% / 30% auto, '100%', '100%', '0 0 100 125', '', to top, hsla(190, 43%, 61%, 1) 0%, hsla(181,45%,46%,1) 60%, hsla(181,57%,50%,1) 100%);
 }
 
 // Needs latest Compass, add '@import "compass"' to your scss

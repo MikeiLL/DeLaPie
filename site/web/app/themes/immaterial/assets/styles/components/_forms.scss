@@ -1,15 +1,15 @@
 // Search form
 .search-form {
-  //@extend .mdl-textfield;
+  @extend .mdl-textfield;
 }
-.search-form label {
+.search-form label, .wpcf7 label {
   font-weight: normal;
-  //@extend .mdl-textfield__label;
+  @extend .mdl-textfield__label;
 }
-.search-form .search-field {
+.search-form .search-field, .wpcf7-form input {
   @extend .mdl-textfield__input;
 }
-.search-form .search-submit {
+.search-form .search-submit, .wpcf7-form .wpcf7-submit {
   @extend .mdl-button;
   //@extend .mdl-js-button .mdl-button--raised .mdl-js-ripple-effect;
 }

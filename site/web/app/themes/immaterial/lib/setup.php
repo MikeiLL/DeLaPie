@@ -96,7 +96,8 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
-    is_page_template('template-full-width.php'),
+    is_page_template('template-full-width.php')
+    //is_page_template('archive-faq.php') //not working might not need.
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

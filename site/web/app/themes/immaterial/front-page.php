@@ -13,7 +13,7 @@ use Roots\Sage\Assets;
   <?php //get_template_part('templates/content', 'page'); ?>
 
 <div class="content-grid mdl-grid mdl-grid--no-spacing">
-  <div id="bio_image" class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+  <div id="bio_image" class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-color--grey-300">
     <div class="mdl-grid hero">
       <div class="textholder">
         <div class="picture_text">
