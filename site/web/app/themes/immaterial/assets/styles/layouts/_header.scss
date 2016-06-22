@@ -5,11 +5,15 @@
 
 .mdl-layout-title {
     color: inherit;
-    font-size: 1.3rem;
-    letter-spacing: -0.001rem;
+    font-size: 1.65rem;
+    letter-spacing: -0.005rem;
     text-decoration: none;
-    word-spacing: -0.1rem;
-    margin-top: 0.6rem;
+    word-spacing: -0.2rem;
+    margin-top: 1.6rem;
+
+    abbr {
+      letter-spacing: -0.05rem;
+    }
 }
 
 .mdl-layout__header-row {
@@ -60,7 +64,7 @@
 }
 
 .mdl-layout__header {
-  min-height: 5rem;
+  min-height: 8rem;
 }
 
 .mdl-layout--large-screen-only {
@@ -86,10 +90,11 @@
 @media (min-width: 37rem) {
   .mdl-layout-title {
       color: inherit;
-      font-size: 1.5rem;
+      font-size: 3rem;
       letter-spacing: .4rem;
       text-decoration: none;
       word-spacing: .1rem;
+      margin-top: 3.6;
   }
 
   .mdl-layout__header-row {
@@ -120,10 +125,7 @@
 
 @media (min-width: 60rem) {
   .mdl-layout-title {
-      color: inherit;
-      font-size: 1.5rem;
       letter-spacing: .5rem;
-      text-decoration: none;
       word-spacing: .3rem;
       line-height: 2rem;
   }

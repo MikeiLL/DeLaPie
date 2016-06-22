@@ -135,3 +135,35 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
   }
 }
 // End BNS Dynamic Copyright
+
+// define the get_search_form callback 
+function filter_get_search_form( $form ) {
+    //$format = apply_filters( 'search_form_format', $format );
+    //if ( 'html5' == $format ) {
+			$form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
+				<label>
+					<span class="screen-reader-text">' . _x( 'Search for:', 'label' ) . '</span>
+					<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder' ) . '" value="' . get_search_query() . '" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="'. esc_attr_x( 'Search', 'submit button' ) .'" />
+			</form>';
+			$form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
+        <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="search" id="site-search" />
+            <label class="mdl-textfield__label" for="site-search">Search</label>
+         </div>
+        <input type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect" value="'. esc_attr_x( 'Search', 'submit button' ) .'" />
+      </form>';
+		/*} else {
+			$form = '<form role="search" method="get" id="searchform" class="searchform" action="' . esc_url( home_url( '/' ) ) . '">
+				<div>
+					<label class="screen-reader-text" for="s">' . _x( 'Search for:', 'label' ) . '</label>
+					<input type="text" value="' . get_search_query() . '" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="'. esc_attr_x( 'Search', 'submit button' ) .'" />
+				</div>
+			</form>';
+		}*/
+    return $form;
+    }
+
+add_filter( 'get_search_form', __NAMESPACE__ . '\\filter_get_search_form', 10, 1 );

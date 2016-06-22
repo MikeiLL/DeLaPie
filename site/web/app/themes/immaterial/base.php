@@ -19,7 +19,7 @@ use Roots\Sage\Assets;
       </div>
     <![endif]-->
     <div class="mdl-layout__container">
-      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <div class="mdl-layout mdl-layout--no-desktop-drawer-button mdl-js-layout mdl-layout--fixed-header">
         <?php
           do_action('get_header');
           get_template_part('templates/header');
@@ -54,11 +54,12 @@ use Roots\Sage\Assets;
     //Replace MDL icon with our sprite
     function mdl_drawer_btn() {
 
+      // Only do this on phones
+      var mdl_drawer_button = document.querySelector('.mdl-layout__drawer-button');
         // Exit if browser does not support SVG
         var supports = !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
         if ( !supports ) return;
 
-        var mdl_drawer_button = document.querySelector('.mdl-layout__drawer-button');
         if (mdl_drawer_button != null) {
             mdl_drawer_button.innerHTML = '<svg viewBox="0 0 100 100" class="icon nav-icon"><use xlink:href="#nav-icon"></use></svg>';
           } else {
@@ -66,8 +67,12 @@ use Roots\Sage\Assets;
           }
       }
 
-    setTimeout(mdl_drawer_btn, 100);
+      //var vWidth = window.innerWidth;
+      //if (vWidth < 960)
+        setTimeout(mdl_drawer_btn, 100);
+
     // ./Replace MDL icon with our sprite
+
     </script>
 
     <?php if ( is_front_page() || is_home() ): ?>

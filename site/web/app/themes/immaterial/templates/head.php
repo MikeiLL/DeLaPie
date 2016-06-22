@@ -40,13 +40,17 @@ use Roots\Sage\Assets;
 
 .front-page__cover {
   min-width:100%;
-  padding: 1rem;
+  padding: 1rem 0 ;
   min-height: 540px;
   padding-bottom: 2em;
   }
 
+.front-page-cover:odd {
+   background-color: hsla(190, 43%, 61%, 1);
+   }
+
   .mdl-color--turquoise-500 {
-  background-color: rgba(18, 131, 116, 0.9)
+  background-color: hsla(190, 43%, 61%, 1);
   }
 
 .front-page__cover h2 {
@@ -54,9 +58,19 @@ use Roots\Sage\Assets;
   text-transform: uppercase;
   width: 90%;
   margin-left: 5%;
-  border-bottom: 1px solid rgba(36, 36, 35, 0.6);
+  /*border-bottom: 1px solid rgba(36, 36, 35, 0.6);*/
   padding-bottom: .7em;
   line-height: 1.1em;
+}
+
+.front-page__cover h3 {
+  text-align: center;
+  text-transform: uppercase;
+  /*border-bottom: 1px solid rgba(36, 36, 35, 0.6);*/
+  padding-bottom: .7em;
+  width: 100%;
+  margin-top: 0;
+  font-size: 1.1rem;
 }
 
 .front-page__card-holder {
@@ -94,6 +108,30 @@ use Roots\Sage\Assets;
   font-size: 1.2rem;
   margin: 1.2rem;
 }
+
+
+#biography {
+    text-align-last: justify;
+    -moz-text-align-last: justify;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+#biography p em {
+    color: hsla(30, 2%, 34%, 1);
+    font-style: normal;
+}
+
+#biography p:first-child:first-letter {
+  float: left;
+  font-size: 3.7rem;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 5px;
+  padding-left: 3px;
+ }
 
 #situations {
   background-color: #bfc9ca;
@@ -134,11 +172,13 @@ use Roots\Sage\Assets;
 
 .active, .closed {
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+  cursor: pointer;;
+  margin-left: 10%;
+  width: 60%;
 }
+
 
 .active {
   background-color:rgba(0, 0, 0, 0.1);
@@ -154,16 +194,6 @@ use Roots\Sage\Assets;
   max-width: 90%;
   margin: .8rem;
 }
-
-/* MDL LIST */
-
-.list__item:hover, .list__item:hover:focus, .list__icon:hover, .list__icon:hover:focus
-{
-  background: rgba(0, 0, 0, 0.15);
-  transition: all 1s;
-}
-
-/* ./MDL List - https://github.com/Nebularco/mdl-list */
 
 #faq ul {
     margin-left: -1em;
@@ -187,44 +217,40 @@ use Roots\Sage\Assets;
   margin: 0;
 }
 
-#biography div > ul {
-  font-size: 1.4em;
-}
-
-#biography ul li > ul {
-  font-size: .9em;
-}
-
-
 /* Typography */
 abbr {
   letter-spacing: 0.1em;
 }
 /* ./Typography */
 
-#commentform {
-  position: relative;
-}
-
-.mdl-button, input[type="submit"], .search-form input.search-submit[type="submit"], input.mdl-button[type="submit"] {
-    border: 1px solid #999;
-    margin: 0.5em;
-    }
-
-.mdl-card__supporting-text .mdl-button {
-    float: right;
-  }
-
 .wrap {
   width: 100%;
   text-align: center;
 }
 
-
-
-
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
+
+/* MDL LIST SRC - https://github.com/Nebularco/mdl-list */
+
+.items .list__item {
+  background: #e0ddd5;
+  color: #171e42;
+  box-sizing: border-box;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+/* SRC - https://github.com/Nebularco/mdl-l */
+.list__item:hover, .list__item:hover:focus, .list__icon:hover, .list__icon:hover:focus
+{
+  background: rgba(0, 0, 0, 0.15);
+  transition: all 1s;
+  color: #e0ddd5;
+}
+
+/* ./MDL List - */
+
 
 @media (min-width: 480px) {
 
@@ -276,9 +302,6 @@ abbr {
   .front-page__cover h2 {
     text-align: center;
     text-transform: uppercase;
-    width: 60%;
-    margin-left: 20%;
-    border-bottom: 1px solid rgba(36, 36, 35, 0.6);
   }
 
 }
@@ -362,6 +385,10 @@ abbr {
   #biography p {
     font-size: 1.8em;
     line-height: 1.2em;
+  }
+
+  .front-page__cover h2 {
+    font-size: 3.4em;
   }
 
 }

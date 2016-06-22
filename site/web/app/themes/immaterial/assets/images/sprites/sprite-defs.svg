@@ -6,8 +6,10 @@
     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
   </symbol>
 
-  <symbol id="shape-icon-2" viewBox="0 26 100 48">
-    <!-- <path>s and whatever other shapes in here -->
+  <symbol id="forward" viewBox="0 0 18 18">
+    <path d="M12 8V4l8 8-8 8v-4H4V8z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
   </symbol>
 
 </svg>
+

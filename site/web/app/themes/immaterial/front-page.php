@@ -28,9 +28,9 @@ use Roots\Sage\Assets;
   <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color--turquoise-500 mdl-color-text--yellow-400 front-page__cover">
 
       <div>
-        <p>After a decade in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become experienced at representing people who have suffered injury or death in nursing homes and assisted living facilities.</p>
-        <p>Identifying and litigating cases of nursing home abuse allows me to work intimately with individuals and families to protect our elders. And life is just too short not to make every day count.</p>
-        <p>Some people see law as a tedious, drudging inevitability. For me, it’s an art. Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
+        <p>After a <em>decade</em> in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become experienced at representing people who have suffered injury or death in nursing homes and assisted living facilities.
+        Identifying and litigating cases of nursing home abuse allows me to work intimately with individuals and families to <em>protect our elders.</em> And life is just too short not to make every day count.
+        Some people see law as a tedious, drudging inevitability. For me, <em>it’s an art.</em> Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
       </div>
 
 
@@ -39,7 +39,8 @@ use Roots\Sage\Assets;
 
   <div id="situations" class="content-grid mdl-grid mdl-color--grey-500 mdl-color-text--yellow-50 front-page__cover">
 
-    <h2>Typical Nursing Home Injuries</h2>
+    <h2>Nursing Home Abuse and Neglect Cases</h2>
+    <h3>Not just what I do, <br class="mdl-cell--hide-desktop" />it's <em>all</em> I do.</h3>
     <?php get_template_part('templates/front-page/situations'); ?>
 
   </div>

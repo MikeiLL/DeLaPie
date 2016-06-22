@@ -10,7 +10,19 @@ p {
     font-size: 16px;
   }
 
+.widget_recent_entries ul li {
+  font-size: 1.2em;
+  line-height: 1.5;
+  list-style: outside none none;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  display: inline-block;
+  //background: transparent url('../images/sprites/sprite-defs.svg#forward') no-repeat;
+}
 
+// Generate code for flexbox responsive lists.
+@include n-columns(200px,  10px, true, 3);
 
 //Breakpoints 480, 600, 840, 960, 1280, 1440, and 1600dp.
 //rems 30, 37, 52, 60, 80, 90, 100

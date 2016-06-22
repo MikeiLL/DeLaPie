@@ -81,4 +81,22 @@
       $this.attr('src', $this.attr('src').replace(/svg$/, 'png'));
     });
   }
+
+  $('.mdl_drawer_button').click(function(){
+   if($('.mdl-layout__drawer').hasClass('active')){
+      $('.mdl-layout__drawer').removeClass('active');
+   }
+   else{
+      $('.mdl-layout__drawer').addClass('active');
+   }
+  });
+
+  $('.mdl-layout__obfuscator-right').click(function(){
+   if($('.mdl-layout__drawer').hasClass('active')){
+      $('.mdl-layout__drawer').removeClass('active');
+   }
+   else{
+      $('.mdl-layout__drawer').addClass('active');
+   }
+  });
 })(jQuery); // Fully reference jQuery after this point.

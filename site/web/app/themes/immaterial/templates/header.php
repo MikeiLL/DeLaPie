@@ -15,7 +15,7 @@
 <div  id="header_main">
   <div class="mdl-layout__header-row">
     <!-- Title -->
-    <a class="mdl-layout-title" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <a class="mdl-layout-title" href="<?= esc_url(home_url('/')); ?>">De La Piedra Law Firm <abbr>PA</abbr></a>
 
     <!-- Add spacer, to align navigation to the right -->
     <div class="mdl-layout-spacer"></div>
@@ -40,21 +40,17 @@
     endif;
     ?>
   </div>
-  <div class="mdl-layout__header-row mdl-layout__header-row-thin">
-    <a class="mdl-layout-subtitle" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('description'); ?></a>
-  </div>
+
 </div>
 
 
 </header>
-<div class="mdl-layout__drawer mdl-color-text--grey-800 mdl-color--yellow-500">
+<div class="mdl-cell--hide-desktop mdl-layout__drawer mdl-color-text--grey-800 mdl-color--yellow-500">
   <a class="mdl-layout-title" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
 
   <?php
   if ( has_nav_menu( 'drawer_navigation' ) ) :
 
-    // Remove wrapping <li> from around links
-    // https://css-tricks.com/snippets/wordpress/remove-li-elements-from-output-of-wp_nav_menu/#comment-542093
     $cleanermenu = wp_nav_menu( array(
       'theme_location' => 'drawer_navigation',
       'container' => false,

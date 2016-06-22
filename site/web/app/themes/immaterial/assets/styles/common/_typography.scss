@@ -1,17 +1,21 @@
 h1 {
-  @include typo-display-1();
+    @include typo-display-1();
   }
 
 h2 {
-      @include typo-title();
+    @include typo-title();
   }
 
 h3 {
-  @include typo-title();
+    @include typo-title();
   }
 
-.entry-content p, .front-page__cover p, .mdl-card p  {
-  text-indent: 1em;
+.entry-content p, .front-page__cover p, .mdl-card__supporting-text > p  {
+  //text-indent: 1em;
+  }
+
+.mdl-card__actions p {
+  text-indent: 0;
   }
 
 
@@ -21,12 +25,12 @@ h3 {
   }
 
   h2 {
-      @include typo-display-1();
-    }
+    @include typo-display-1();
+  }
 
   h3 {
     @include typo-headline();
-    }
+  }
 }
 
 @media (min-width: 60rem) {
@@ -36,9 +40,9 @@ h3 {
 
   h2 {
     @include typo-display-2();
-    }
+  }
 
   h3 {
     @include typo-display-1();
-    }
+  }
 }
