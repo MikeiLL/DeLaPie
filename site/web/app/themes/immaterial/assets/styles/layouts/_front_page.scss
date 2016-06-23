@@ -1,19 +1,210 @@
-.hero {
-    background: rgba(0, 0, 0, 0) url("../images/callmejack.jpg") no-repeat scroll 34% 20% / cover ;
-    height: 632px;
-}
+/* Styling for the various elements on the front page */
 
 .hero {
-  background: hsla(201, 61%, 50%, 1) url("../images/callmejack.jpg") no-repeat scroll 34% 20% / cover ;
+  background: url("../images/callmejack.jpg") no-repeat scroll 34% 20% / cover ;
   height:632px;
-    margin: 0 auto;
-    position: relative;
-    transition: all 0.5s ease 0s;
-    width: 100%;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  width: 100%;
 }
 
 #biography {
   background-color: hsla(190, 43%, 61%, 1); // Old browsers
   //background-color: linear-gradient(to top,  hsla(181,31%,50%,1) 0%,hsla(181,45%,46%,1) 40%,hsla(181,57%,50%,1) 100%);
   //@include linear-gradient-svg(female_bust, hsla(181,85%,46%,.6), hsla(181,85%,46%,.6), 1, no-repeat scroll 30% 100% / 30% auto, '100%', '100%', '0 0 100 125', '', to top, hsla(190, 43%, 61%, 1) 0%, hsla(181,45%,46%,1) 60%, hsla(181,57%,50%,1) 100%);
+}
+
+.front-page__cover {
+  min-width:100%;
+  padding: 1rem 0 ;
+  min-height: 540px;
+  padding-bottom: 2em;
+  }
+
+.front-page-cover:odd {
+   background-color: hsla(190, 43%, 61%, 1);
+   }
+
+.mdl-color--turquoise-500 {
+  background-color: hsla(190, 43%, 61%, 1);
+  }
+
+.front-page__cover {
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 90%;
+    margin-left: 5%;
+    /*border-bottom: 1px solid rgba(36, 36, 35, 0.6);*/
+    padding-bottom: .7em;
+    line-height: 1.1em;
+  }
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    /*border-bottom: 1px solid rgba(36, 36, 35, 0.6);*/
+    padding-bottom: .7em;
+    width: 100%;
+    margin-top: 0;
+    font-size: 1.1rem;
+    }
+}
+
+.front-page__card-holder {
+  padding: 1rem;
+}
+
+.mdl-card__media img {
+  max-width: 100%;
+  height: auto;
+}
+
+ #bio_image {
+
+ .hero {
+      height: 632px;
+      margin: 0 auto;
+      position: relative;
+      transition: all 0.5s ease 0s;
+      width: 100%;
+      background-position: -95px center;
+    }
+
+  .textholder {
+      height: 100%;
+      margin-left: 24%;
+      max-width: 200px;
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+    }
+}
+
+#biography > div {
+  margin: 1.8rem 1rem;
+}
+
+
+#biography {
+    text-align-last: justify;
+    -moz-text-align-last: justify;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    vertical-align: middle;
+
+    p {
+    font-size: 1.2rem;
+    margin: 1.2rem;
+    em {
+      color: hsla(30, 2%, 34%, 1);
+      font-style: normal;
+    }
+    p:first-child:first-letter {
+      float: left;
+      font-size: 3.7rem;
+      line-height: 60px;
+      padding-top: 4px;
+      padding-right: 5px;
+      padding-left: 3px;
+    }
+  }
+}
+
+#situations {
+  background-color: #bfc9ca;
+}
+
+#situations > h2 {
+  max-height: 1em;
+}
+
+.response-definition p:first-of-type {
+    margin-top: 1em;
+  }
+
+.response-definition p {
+    margin-left: .4em;
+    color: #f0eeeb;
+  }
+
+.response-definition p:last-of-type {
+    border-bottom: 1px solid rgba(36, 36, 35, 0.1);
+    padding-bottom: 0.5em;
+  }
+
+.response-definition {
+  max-width: 88%;
+  background: #31312f; /* Iron Mountain Grey */
+  z-index: 1000;
+  margin-top: 10px;
+  }
+
+.definitions {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* MDL LIST SRC - https://github.com/Nebularco/mdl-list */
+
+.items .list__item {
+  margin-left: -10px;
+  margin-right: 20px;
+  list-style: none;
+}
+
+/* SRC - https://github.com/Nebularco/mdl-l */
+.list__item .btn:hover, .list__item .btn:hover:focus, .list__icon:hover, .list__icon:hover:focus
+{
+  background: rgba(0, 0, 0, 0.15);
+  transition: all 1s;
+  color: white;
+}
+
+
+/* ./MDL List - */
+.active, .closed {
+    cursor: pointer;
+    font-size: 1.4rem;
+    list-style: outside none none;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.active {
+  background-color:rgba(0, 0, 0, 0.1);
+  color: #f0eeeb;
+  -webkit-transition: .5s all ease-out;
+  transition: .5s all ease-out;
+  }
+
+@media (min-width: 480px) {
+  .items .list__item {
+    min-width: 300px;
+  }
+
+  .response-definition {
+    position: absolute;
+  }
+}
+
+@media (min-width: 600px) {
+
+}
+
+
+@media (min-width: 840px) {
+
+}
+
+@media (min-width: 960px) {
+
+}
+
+@media (min-width: 1280px) {
+
 }

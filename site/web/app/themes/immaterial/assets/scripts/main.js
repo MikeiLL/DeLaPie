@@ -101,8 +101,6 @@
   });
 
   $(".list__item").click(function () {
-    //var associated_box = $(this).find("btn").data("gkOpenClass"));
-    console.log($(this).siblings());
     $(this).siblings().each(function (index) {
       $(this).find('div').hide();
     });
