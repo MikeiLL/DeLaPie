@@ -99,4 +99,12 @@
       $('.mdl-layout__drawer').addClass('active');
    }
   });
+
+  $(".list__item").click(function () {
+    var associated_box = $("." + $(this).data("gkOpenClass"));
+     $('[data-gk-area-state]').each(function (index) {
+      associated_box.siblings('div').hide();
+    });
+  });
+
 })(jQuery); // Fully reference jQuery after this point.
