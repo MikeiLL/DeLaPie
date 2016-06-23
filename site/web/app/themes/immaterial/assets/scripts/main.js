@@ -101,9 +101,10 @@
   });
 
   $(".list__item").click(function () {
-    var associated_box = $("." + $(this).data("gkOpenClass"));
-     $('[data-gk-area-state]').each(function (index) {
-      associated_box.siblings('div').hide();
+    //var associated_box = $(this).find("btn").data("gkOpenClass"));
+    console.log($(this).siblings());
+    $(this).siblings().each(function (index) {
+      $(this).find('div').hide();
     });
   });
 

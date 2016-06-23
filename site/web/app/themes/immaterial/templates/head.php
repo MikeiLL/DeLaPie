@@ -147,12 +147,45 @@ use Roots\Sage\Assets;
 
 .response-definition p {
     margin-left: .4em;
+    color: #f0eeeb;
   }
 
 .response-definition p:last-of-type {
     border-bottom: 1px solid rgba(36, 36, 35, 0.1);
     padding-bottom: 0.5em;
   }
+
+.response-definition {
+  max-width: 95%;
+  position: absolute;
+  background: black;
+  z-index: 1000;
+  margin-top: 10px;
+  }
+
+.definitions {
+  position: relative;
+}
+
+/* MDL LIST SRC - https://github.com/Nebularco/mdl-list */
+
+.items .list__item {
+  margin-left: -10px;
+  margin-right: 20px;
+  list-style: none;
+}
+
+/* SRC - https://github.com/Nebularco/mdl-l */
+.list__item .btn:hover, .list__item .btn:hover:focus, .list__icon:hover, .list__icon:hover:focus
+{
+  background: rgba(0, 0, 0, 0.15);
+  transition: all 1s;
+  color: white;
+}
+
+
+/* ./MDL List - */
+
 
 #bio_image .hero .picture_text {
     color: #fffaf5;
@@ -171,24 +204,22 @@ use Roots\Sage\Assets;
 }
 
 .active, .closed {
-  list-style: none;
-  font-size: 1.4rem;
-  padding: 1rem;
-  cursor: pointer;;
-  margin-left: 10%;
-  width: 60%;
+    cursor: pointer;
+    font-size: 1.4rem;
+    list-style: outside none none;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
 }
 
 
 .active {
   background-color:rgba(0, 0, 0, 0.1);
+  color: #f0eeeb;
   -webkit-transition: .5s all ease-out;
   transition: .5s all ease-out;
   }
 
-.response-definition {
-  max-width: 95%;
-  }
 
 .mdl-mega-footer__drop-down-section img {
   max-width: 90%;
@@ -230,27 +261,6 @@ abbr {
 
     /* h2 was
   color: hsla(253, 6%, 74%, 1); */
-
-/* MDL LIST SRC - https://github.com/Nebularco/mdl-list */
-
-.items .list__item {
-  background: #e0ddd5;
-  color: #171e42;
-  box-sizing: border-box;
-  margin-left: -10px;
-  margin-right: 20px;
-}
-
-/* SRC - https://github.com/Nebularco/mdl-l */
-.list__item:hover, .list__item:hover:focus, .list__icon:hover, .list__icon:hover:focus
-{
-  background: rgba(0, 0, 0, 0.15);
-  transition: all 1s;
-  color: #e0ddd5;
-}
-
-/* ./MDL List - */
-
 
 @media (min-width: 480px) {
 
