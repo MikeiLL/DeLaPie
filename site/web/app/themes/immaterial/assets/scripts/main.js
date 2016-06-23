@@ -101,9 +101,12 @@
   });
 
   $(".list__item").click(function () {
-    $(this).siblings().each(function (index) {
-      $(this).find('div').hide();
-    });
+    var vWidth = window.innerWidth;
+    if (vWidth > 480) {
+      $(this).siblings().each(function (index) {
+        $(this).find('div').hide();
+      });
+    }
   });
 
 })(jQuery); // Fully reference jQuery after this point.
