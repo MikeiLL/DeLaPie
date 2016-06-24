@@ -1,5 +1,31 @@
 /* Styling for the various elements on the front page */
 
+/* 1. Hero
+ * 2. Biography
+ * 3. Situations
+ * 4. Articles
+ * 5. Media Queries
+ */
+
+
+
+/* 1. Hero  */
+#bio_image .hero .picture_text {
+    color: #fffaf5;
+    font-family: "Helvetica Neue", Helvetica, sans serif;
+    font-size: 20px;
+    letter-spacing: 6px;
+    line-height: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: 600;
+    left: -58px;
+    line-height: 42px;
+    right: 0;
+    top: 70px;
+    width: 180px;
+}
+
 .hero {
   background: url("../images/callmejack.jpg") no-repeat scroll 34% 20% / cover ;
   height:632px;
@@ -9,20 +35,13 @@
   width: 100%;
 }
 
-#biography {
+#biography, #articles {
   background-color: hsla(190, 43%, 61%, 1); // Old browsers
   //background-color: linear-gradient(to top,  hsla(181,31%,50%,1) 0%,hsla(181,45%,46%,1) 40%,hsla(181,57%,50%,1) 100%);
   //@include linear-gradient-svg(female_bust, hsla(181,85%,46%,.6), hsla(181,85%,46%,.6), 1, no-repeat scroll 30% 100% / 30% auto, '100%', '100%', '0 0 100 125', '', to top, hsla(190, 43%, 61%, 1) 0%, hsla(181,45%,46%,1) 60%, hsla(181,57%,50%,1) 100%);
 }
 
-.front-page__cover {
-  min-width:100%;
-  padding: 1rem 0 ;
-  min-height: 540px;
-  padding-bottom: 2em;
-  }
-
-.front-page-cover:odd {
+.front-page__cover:nth-of-type(odd) {
    background-color: hsla(190, 43%, 61%, 1);
    }
 
@@ -31,6 +50,10 @@
   }
 
 .front-page__cover {
+  min-width:100%;
+  padding: 1rem 0 ;
+  min-height: 540px;
+  padding-bottom: 2em;
 
   h2 {
     text-align: center;
@@ -103,15 +126,15 @@
       color: hsla(30, 2%, 34%, 1);
       font-style: normal;
     }
+  }
     p:first-child:first-letter {
       float: left;
       font-size: 3.7rem;
       line-height: 60px;
-      padding-top: 4px;
+      padding-top: 6px;
       padding-right: 5px;
       padding-left: 3px;
     }
-  }
 }
 
 #situations {
@@ -126,9 +149,21 @@
     margin-top: 1em;
   }
 
-.response-definition p {
-    margin-left: .4em;
-    color: #f0eeeb;
+.response-definition {
+    p {
+      margin-left: .4em;
+      color: #f0eeeb;
+      font-family: Georgia;
+    }
+
+    p:first-child:first-letter {
+      float: left;
+      font-size: 3.7rem;
+      line-height: 40px;
+      padding-top: 4px;
+      padding-right: 5px;
+      padding-left: 3px;
+    }
   }
 
 .response-definition p:last-of-type {
@@ -145,14 +180,13 @@
 
 .definitions {
   position: relative;
-  margin: 0 auto;
+  max-width:83%;
 }
 
 /* MDL LIST SRC - https://github.com/Nebularco/mdl-list */
 
 .items .list__item {
-  margin-left: -10px;
-  margin-right: 20px;
+  margin: .4em auto;
   list-style: none;
 }
 
@@ -182,29 +216,144 @@
   transition: .5s all ease-out;
   }
 
+/* 5. Media Queries */
 @media (min-width: 480px) {
   .items .list__item {
-    min-width: 300px;
+    min-width: 340px;
   }
 
   .response-definition {
     position: absolute;
   }
+
+  .definitions {
+    max-width: 100%;
+  }
+
+    #bio_image .textholder {
+      max-width: 1000px;
+  }
+
+  #bio_image .hero {
+      background-position: -130px center;
+  }
+
+  #bio_image .hero .picture_text {
+    color: #fffaf5;
+    font-size: 3.4rem;
+    letter-spacing: 6px;
+    line-height: 4rem;
+    text-transform: uppercase;
+    top: 90px;
+    width: 290px;
+    position: absolute;
+    left: 420px;
+  }
+
+  #biography > div {
+  margin: 2rem 2rem;
+  }
+
+  #biography p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  #biography > div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #biography {
+    position: relative;
+  }
+
+  #biography p {
+    margin: 0;
+    padding: 10px;
+    vertical-align: middle;
+  }
+
+  .front-page__cover h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: 600px) {
+  #bio_image .textholder {
+    max-width: 1000px;
+  }
 
+  #bio_image .hero {
+    background-position: -110px center;
+  }
+
+  #biography p {
+    margin: inherit 5%;
+    font-size: 1.7em;
+    line-height: 1em;
+  }
+
+  #biography > div {
+    width: 80%;
+    margin: 0 10%;
+  }
 }
 
 
 @media (min-width: 840px) {
+  #bio_image .textholder {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+    position: relative;
+  }
 
+  #bio_image .hero {
+    background-position: 0 center;
+  }
+
+  #bio_image .hero .picture_text {
+    left: inherit;
+    right: 164px;
+    top: 150px;
+    width: 290px;
+    left: 600px;
+  }
+
+  #biography > div {
+    margin: 0 15%;
+    width: 70%;
+  }
+
+  .active, .closed {
+    width: 90%;
+  }
+
+  .response-definition {
+    max-width: 80%;
+  }
 }
 
 @media (min-width: 960px) {
+  #bio_image .hero .picture_text {
+    left: 700px;
+  }
 
+  #biography p {
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
+
+  .front-page__cover h2 {
+    font-size: 3.4em;
+  }
 }
 
 @media (min-width: 1280px) {
-
+  #bio_image .hero {
+    background-position: 0 -6rem;
+  }
 }
