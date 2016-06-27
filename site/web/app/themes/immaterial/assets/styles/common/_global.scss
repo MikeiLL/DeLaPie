@@ -24,6 +24,21 @@ p {
 // Generate code for flexbox responsive lists.
 @include n-columns(200px,  10px, true, 3);
 
+#cta-button {
+  text-align: center;
+  background: white;
+  //background: -moz-linear-gradient(center top , #00DD88 0%, #00CC00 100%) repeat scroll 0 0 transparent;
+  border-radius: 1px;
+  border: 1px solid $palette-grey-500;
+  text-shadow: 0;
+  margin: 5px 0 10px 15px;
+  position: absolute;
+  right: -980px;
+  width: 200px;
+  display: none;
+  z-index: 100;
+}
+
 //Breakpoints 480, 600, 840, 960, 1280, 1440, and 1600dp.
 //rems 30, 37, 52, 60, 80, 90, 100
 

@@ -22,7 +22,7 @@
     <!-- Navigation -->
 
     <?php
-    if ( has_nav_menu( 'header_navigation' ) ) :
+    if ( has_nav_menu( 'header_navigationx' ) ) :
 
       // Remove wrapping <li> from around links
       // https://css-tricks.com/snippets/wordpress/remove-li-elements-from-output-of-wp_nav_menu/#comment-542093
@@ -65,3 +65,4 @@
   endif;
   ?>
 </div>
+<a id="cta-button" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20" href="http://delapiedralawfirm.dev/free-case-evaluation/">Free Case Evaluation</a>

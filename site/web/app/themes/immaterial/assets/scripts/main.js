@@ -109,4 +109,13 @@
     }
   });
 
+  $('#cta-button').animate({
+    opacity: 1,
+    right: "10px",
+    bottom: "10px",
+    height: "toggle"
+    }, 1000, function() {
+    // Animation complete.
+    }).css('position','fixed');
+
 })(jQuery); // Fully reference jQuery after this point.
