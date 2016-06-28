@@ -22,7 +22,7 @@
     <!-- Navigation -->
 
     <?php
-    if ( has_nav_menu( 'header_navigationx' ) ) :
+    if ( has_nav_menu( 'header_navigation' ) ) :
 
       // Remove wrapping <li> from around links
       // https://css-tricks.com/snippets/wordpress/remove-li-elements-from-output-of-wp_nav_menu/#comment-542093
@@ -33,8 +33,8 @@
         'echo' => false,
         'depth' => 1,
       ) );
-      $find = array('><a','li');
-      $replace = array('','a');
+      $find = array('><a','<li ','</li>');
+      $replace = array('','<a ','');
       echo str_replace( $find, $replace, $cleanermenu );
 
     endif;
@@ -56,10 +56,14 @@
       'container' => false,
       'items_wrap' => '<nav class="mdl-color--yellow-500 mdl-navigation">%3$s</nav>',
       'echo' => false,
-      'depth' => 2,
+      'depth' => 1,
     ) );
-    $find = array('><a','li');
-    $replace = array('','a');
+    //$find = array('><a','li');
+    //$replace = array('','a');
+    //mz_pr($cleanermenu);
+    //mz_pr(str_replace( $find, $replace, $cleanermenu ));
+    $find = array('><a','<li ','</li>');
+    $replace = array('','<a ','');
     echo str_replace( $find, $replace, $cleanermenu );
 
   endif;
