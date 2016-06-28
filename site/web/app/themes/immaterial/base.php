@@ -63,7 +63,7 @@ function modifyMainHeader(visibility_class, opacity_class, hide) {
       </div>
     <![endif]-->
     <div class="mdl-layout__container">
-      <div class="mdl-layout mdl-layout--no-desktop-drawer-button mdl-js-layout mdl-layout--fixed-header">
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <?php
           do_action('get_header');
           get_template_part('templates/header');
@@ -126,7 +126,7 @@ function modifyMainHeader(visibility_class, opacity_class, hide) {
     // Fill viewport
     var vWidth = window.innerWidth;
         vHeight = window.innerHeight;
-        cover = document.getElementsByClassName('front-page__cover')[0];
+        //cover = document.getElementsByClassName('front-page__cover')[0];
 
     //cover.setAttribute("style", "height: " + vHeight + 'px');
 
@@ -136,7 +136,7 @@ function modifyMainHeader(visibility_class, opacity_class, hide) {
       d.MaterialLayout.toggleDrawer();
     }
 
-    document.querySelector('.mdl-layout__drawer').addEventListener('click', close);
+    //document.querySelector('.mdl-layout__drawer').addEventListener('click', close);
 
     </script>
 

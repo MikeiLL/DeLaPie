@@ -45,7 +45,7 @@
 
 
 </header>
-<div class="mdl-cell--hide-desktop mdl-layout__drawer mdl-color-text--grey-800 mdl-color--yellow-500">
+<div class="mdl-layout__drawer mdl-color-text--grey-800 mdl-color--yellow-500">
   <a class="mdl-layout-title" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
 
   <?php
