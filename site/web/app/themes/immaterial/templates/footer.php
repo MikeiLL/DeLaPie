@@ -57,8 +57,9 @@ use Roots\Sage\Extras;
       'echo' => false,
       'depth' => 2,
       ) );
-
-    echo $cleanermenu;
+      $find = array('><a','<li ','</li>');
+      $replace = array('','<a ','');
+      echo str_replace( $find, $replace, $cleanermenu );
 
   endif;
   ?>

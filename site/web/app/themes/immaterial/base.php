@@ -77,7 +77,7 @@ function modifyMainHeader(visibility_class, opacity_class, hide) {
               $col = 'mdl-cell--12-col';
             endif;
             ?>
-            <main class="mdl-cell <?php echo $col; ?>" role="main">
+            <main class="mdl-cell <?php echo $col; ?>">
               <?php include Wrapper\template_path(); ?>
             </main><!-- main -->
             <?php if (Setup\display_sidebar()) : ?>

@@ -39,7 +39,7 @@ use Roots\Sage\Assets;
     <h3>Not just what I do, <br class="mdl-cell--hide-desktop" />it's <em>all</em> I do.</h3>
     <?php get_template_part('templates/front-page/situations'); ?>
 
-  </div> <!-- ./#situations -->
+  </div><!-- ./#situations -->
 
   	<div id="articles" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color-text--yellow-50 front-page__cover">
       <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__card-holder">
@@ -48,8 +48,9 @@ use Roots\Sage\Assets;
       <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__card-holder">
         <?php get_template_part('templates/front-page/recent-articles'); ?>
       </div>
+    </div>
 
-  </div>
+  </div><!-- ./content-grid -->
 
 
 <?php // endwhile; ?>
