@@ -90,12 +90,14 @@ use Roots\Sage\Extras;
       'depth' => 2,
       ) );
 
-    echo $cleanermenu;
+      $find = array('><a','<li ','</li>');
+      $replace = array('','<a ','');
+      echo str_replace( $find, $replace, $cleanermenu );
 
   endif;
   */
   ?>
-    </ul>
+
     <?php echo Extras\bns_dynamic_copyright() ?>
   </div>
 
