@@ -63,7 +63,6 @@ use Roots\Sage\Extras;
 
   endif;
   ?>
-    </ul>
 
     </div>
 
