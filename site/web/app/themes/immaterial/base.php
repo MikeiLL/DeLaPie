@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function(e) { setTimeout(function(
       main_container = document.getElementsByClassName('mdl-layout__content')[0];
       header_rows = document.getElementsByClassName("mdl-layout__header-row");
       fade_class = "mdl-layout__header-row fade_out";
-      opaque_class = "mdl-layout__header mdl-color--grey-800 mdl-color-text--yellow-500 mdl-layout__header--waterfall";
+      opaque_class = "mdl-layout__header mdl-color--grey-800 mdl-color-text--alabaster-500 mdl-layout__header--waterfall";
       transparent_class = "mdl-layout__header mdl-layout__header--transparent";
       display_class = "mdl-layout__header-row";
       lastVal = 0;

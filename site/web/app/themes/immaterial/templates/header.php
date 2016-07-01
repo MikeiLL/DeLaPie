@@ -1,5 +1,5 @@
- <header class="mdl-layout__header mdl-color--grey-800 mdl-color-text--yellow-500">
-<div class="mdl-layout__header-row mdl-layout__header-row-sliver mdl-color-text--grey-200 mdl-color--yellow-50">
+ <header class="mdl-layout__header mdl-color--grey-800 mdl-color-text--alabaster-500">
+<div class="mdl-layout__header-row mdl-layout__header-row-sliver mdl-color-text--grey-200 mdl-color--alabaster-50">
   <div class="mdl-layout-spacer"></div>
     <svg height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0h24v24H0z" fill="none"/>
@@ -15,8 +15,8 @@
 <div  id="header_main">
   <div class="mdl-layout__header-row">
     <!-- Title -->
-    <a class="mdl-layout-title" href="<?= esc_url(home_url('/')); ?>">De La Piedra Law Firm <abbr>PA</abbr></a>
-
+    <a class="mdl-layout-title" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <?php //bloginfo('description'); ?>
     <!-- Add spacer, to align navigation to the right -->
     <div class="mdl-layout-spacer"></div>
     <!-- Navigation -->
@@ -42,10 +42,12 @@
   </div>
 
 </div>
-
+  <div class="mdl-layout__header-row mdl-layout__header-row-thin">
+     <a class="mdl-layout-subtitle" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('description'); ?></a>
+   </div>
 
 </header>
-<div class="mdl-layout__drawer mdl-color-text--grey-800 mdl-color--yellow-500">
+<div class="mdl-layout__drawer mdl-color-text--grey-800 mdl-color--alabaster-500">
   <a class="mdl-layout-title" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
 
   <?php
@@ -54,7 +56,7 @@
     $cleanermenu = wp_nav_menu( array(
       'theme_location' => 'drawer_navigation',
       'container' => false,
-      'items_wrap' => '<nav class="mdl-color--yellow-500 mdl-navigation">%3$s</nav>',
+      'items_wrap' => '<nav class="mdl-color--alabaster-500 mdl-navigation">%3$s</nav>',
       'echo' => false,
       'depth' => 1,
     ) );

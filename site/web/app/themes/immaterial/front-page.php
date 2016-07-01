@@ -22,7 +22,7 @@ use Roots\Sage\Assets;
     </div>
   </div>
 
-  <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color-text--yellow-400 front-page__cover">
+  <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color-text--alabaster-400 front-page__cover">
 
       <div>
         <p>After a <em>decade</em> in civil law, I’m able to focus on a field that is meaningful and fulfilling. I have become experienced at representing people who have suffered injury or death in nursing homes and assisted living facilities.
@@ -33,7 +33,7 @@ use Roots\Sage\Assets;
 
   </div>
 
-  <div id="situations" class="content-grid mdl-grid mdl-color--grey-500 mdl-color-text--yellow-50 front-page__cover">
+  <div id="situations" class="content-grid mdl-grid mdl-color--grey-500 mdl-color-text--alabaster-50 front-page__cover">
 
     <h2>Nursing Home Abuse and Neglect Cases</h2>
     <h3>Not just what I do, <br class="mdl-cell--hide-desktop" />it's <em>all</em> I do.</h3>
@@ -41,12 +41,9 @@ use Roots\Sage\Assets;
 
   </div><!-- ./#situations -->
 
-  	<div id="articles" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color-text--yellow-50 front-page__cover">
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__card-holder">
+  	<div id="articles" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color-text--alabaster-50 front-page__cover">
+      <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__card-holder">
         <?php get_template_part('templates/front-page/featured-articles'); ?>
-      </div>
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone front-page__card-holder">
-        <?php get_template_part('templates/front-page/recent-articles'); ?>
       </div>
     </div>
 

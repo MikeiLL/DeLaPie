@@ -164,7 +164,6 @@
   }
 
 .response-definition {
-  max-width: 88%;
   background: #31312f; /* Iron Mountain Grey */
   z-index: 1000;
   margin-top: 10px;
@@ -207,6 +206,12 @@
   -webkit-transition: .5s all ease-out;
   transition: .5s all ease-out;
   }
+
+#articles {
+  p {
+    text-align: justify;
+  }
+}
 
 /* 5. Media Queries */
 @media (min-width: 480px) {
@@ -283,7 +288,7 @@
   }
 
   #biography p {
-    margin: inherit 5%;
+    margin: 0 5%;
     font-size: 1.7em;
     line-height: 1em;
   }

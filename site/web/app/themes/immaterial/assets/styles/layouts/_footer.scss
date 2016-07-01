@@ -27,11 +27,11 @@
   }
 
   span {
-    @extend .mdl-color-text--yellow-600;
+    @extend .mdl-color-text--alabaster-600;
   }
 
   a {
-    @extend .mdl-color-text--orange-100;
+    @extend .mdl-color-text--mandarin-100;
   }
 }
 
@@ -44,7 +44,7 @@
 .mdl-mega-footer {
       flex-flow: row wrap;
       margin: 1.8rem 0;
-      @extend .mdl-color-text--yellow-100;
+      @extend .mdl-color-text--alabaster-100;
   }
 
 .mdl-mega-footer__address {

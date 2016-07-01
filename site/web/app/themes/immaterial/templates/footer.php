@@ -67,7 +67,8 @@ use Roots\Sage\Extras;
     </div>
 
     <div class="mdl-mega-footer__drop-down-section">
-
+      <img src="<?=get_stylesheet_directory_uri();?>/dist/images/martindale_badge.jpg" title="Martindale Hubbell Badge" /><br />
+      <img src="<?=get_stylesheet_directory_uri();?>/dist/images/super-lawyers_badge.jpg" title="Super Lawyers Badge" />
     </div>
     <div class="mdl-mega-footer__drop-down-section">
 

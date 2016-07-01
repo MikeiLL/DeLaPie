@@ -100,6 +100,7 @@
    }
   });
 
+  //This is so that on larger screens, only one response-definition will show at a time.
   $(".list__item").click(function () {
     var vWidth = window.innerWidth;
     if (vWidth > 480) {

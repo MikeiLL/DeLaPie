@@ -273,11 +273,20 @@
   background: renderSVG($shape, $color, $stroke-color, $stroke-width, $width, $height, $viewbox) $repeat-scroll-placement-size, linear-gradient($direction, $color-stops);
 }
 
-/* Test
+/* Examples
 
 .wrap {
   @include linear-gradient-svg(bishop, yellow, blue, 2, no-repeat scroll 10px 100% / 10% auto, '100%', '100%', '0 0 274 510', '', 42deg, #B58234 0%, #D2B545 50%, #D7C04D 50.01%, #FFFFFF 100%);
 }
+
+.selector-2 {
+  @include linear-gradient(to right, #E47D7D 0%, #C195D3 50%, #4FB4E8 100%);
+}
+
+.selector-3 {
+  @include linear-gradient(42deg, #B58234 0%, #D2B545 50%, #D7C04D 50.01%, #FFFFFF 100%);
+}
+
 */
 
             //to top,  hsla(181,31%,50%,1) 0%,hsla(181,45%,46%,1) 40%,hsla(181,57%,50%,1) 100%
