@@ -26,14 +26,13 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more_card');
 
 			if ($featured->have_posts()): while($featured->have_posts()): $featured->the_post(); ?>
 			<?php if (has_post_thumbnail()) : ?>
-        <figure class="mdl-card__media">
+        <!-- <figure class="mdl-card__media">
             <?php the_post_thumbnail('medium_large', array( 'class'	=> "post-img-responsive")); ?>
-        </figure>
+        </figure> -->
 
 				<?php endif; ?>
 
-          <h1>3 Questions to Ask<?php //the_title(); ?></h1>
-          <h2>in choosing a facility</h2>
+          <h2>3 Questions to Ask in choosing a facility<?php //the_title(); ?></h2>
 
 				<?php echo the_content();?>
 

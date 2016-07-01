@@ -22,15 +22,6 @@ use Roots\Sage\Assets;
       display: block;
     }
 
-.front-page__card-holder h1:first-child:first-letter {
-      float: left;
-      font-size: 3.7rem;
-      line-height: 40px;
-      padding-top: 4px;
-      padding-right: 5px;
-      padding-left: 3px;
-      }
-
 .mdl-layout__drawer-button > i {
   display: none;
 }
@@ -48,6 +39,8 @@ use Roots\Sage\Assets;
   width: calc(100% - 4rem);
   margin: 1rem 2rem;
 }
+
+
 
 .mdl-mega-footer {
   margin: 0;

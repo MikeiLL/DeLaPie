@@ -210,8 +210,45 @@
 #articles {
   p {
     text-align: justify;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    em, small {
+      color: hsla(30, 2%, 34%, 1);
+      font-style: normal;
+      }
   }
 }
+
+#articles h2:first-of-type::first-letter  {
+    float: left;
+    font-size: 8.5rem;
+    line-height: 40px;
+    padding-left: 3px;
+    padding-right: 5px;
+    padding-top: 4px;
+    color: unquote("rgb(#{$palette-turquoise-800})");
+}
+
+
+#articles h2:first-of-type {
+    // Using Lucida Grande font to style the numeral 3.
+    font-family: Lucida Grande, Georgia, Times, 'Times New Roman', serif;
+    line-height: 2.5rem;
+}
+
+#articles p:first-of-type {
+  font-size: 1.3em;
+}
+
+#articles h3 {
+    -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    background: unquote("rgb(#{$palette-turquoise-800})");;
+    font-size: 2rem;
+    padding: .5em 0;
+    }
+
+
 
 /* 5. Media Queries */
 @media (min-width: 480px) {
