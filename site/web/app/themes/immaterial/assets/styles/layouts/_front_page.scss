@@ -235,18 +235,23 @@
     line-height: 2.5rem;
 }
 
-#articles p:first-of-type {
+#articles p {
   font-size: 1.3em;
+  margin-bottom: 2em;
 }
 
 #articles h3 {
     -ms-transform: rotate(-7deg); /* IE 9 */
     -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
     transform: rotate(-7deg);
-    background: unquote("rgb(#{$palette-turquoise-800})");;
     font-size: 2rem;
     padding: .5em 0;
+    .turquoise{
+      background: unquote("rgb(#{$palette-turquoise-800})");
+      max-width: 500px;
+      padding: .5em;
     }
+}
 
 
 
