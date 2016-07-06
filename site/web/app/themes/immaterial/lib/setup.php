@@ -29,7 +29,8 @@ function setup() {
   register_nav_menus([
     'drawer_navigation' => __('Drawer Navigation', 'immaterial'),
     'header_navigation' => __('Header Navigation', 'immaterial'),
-    'footer_links' => __('Footer Links', 'immaterial')
+    'footer_links_one' => __('Footer Links One', 'immaterial'),
+    'footer_links_two' => __('Footer Links Two', 'immaterial')
   ]);
 
   // Enable post thumbnails

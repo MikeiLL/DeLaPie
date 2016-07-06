@@ -44,22 +44,41 @@ use Roots\Sage\Extras;
 
 
     <div class="mdl-mega-footer__drop-down-section">
-      <div class="mdl-mega-footer__heading">Helpful Links</div>
+      <div class="mdl-mega-footer__heading">More Info</div>
       <div class="mdl-logo"></div>
      <!-- <ul class="mdl-mini-footer__link-list"> -->
       <?php
 
-    if ( has_nav_menu( 'footer_links' ) ) :
-      $cleanermenu = wp_nav_menu(array(
-      'theme_location' => 'footer_links',
+    if ( has_nav_menu( 'footer_links_one' ) ) :
+      echo wp_nav_menu(array(
+      'theme_location' => 'footer_links_one',
       'container' => false,
       'items_wrap' => '<nav class="mdl-mega-footer__link-list">%3$s</nav>',
       'echo' => false,
-      'depth' => 2,
+      'depth' => 1,
       ) );
-      $find = array('><a','<li ','</li>');
-      $replace = array('','<a ','');
-      echo str_replace( $find, $replace, $cleanermenu );
+
+      //echo $cleanermenu;
+
+  endif;
+  ?>
+
+    </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+      <div class="mdl-mega-footer__heading">Dull But Necessary Details</div>
+      <div class="mdl-logo"></div>
+     <!-- <ul class="mdl-mini-footer__link-list"> -->
+      <?php
+
+    if ( has_nav_menu( 'footer_links_two' ) ) :
+      echo wp_nav_menu(array(
+      'theme_location' => 'footer_links_two',
+      'container' => false,
+      'items_wrap' => '<nav class="mdl-mega-footer__link-list">%3$s</nav>',
+      'echo' => false,
+      'depth' => 1,
+      ) );
 
   endif;
   ?>
@@ -70,34 +89,8 @@ use Roots\Sage\Extras;
       <img src="<?=get_stylesheet_directory_uri();?>/dist/images/martindale_badge.jpg" title="Martindale Hubbell Badge" /><br />
       <img src="<?=get_stylesheet_directory_uri();?>/dist/images/super-lawyers_badge.jpg" title="Super Lawyers Badge" />
     </div>
-    <div class="mdl-mega-footer__drop-down-section">
-
-    </div>
-
-
   </div>
 
-  <div class="mdl-mega-footer__bottom-section">
-    <div class="mdl-logo"></div>
-     <?php /*<!-- <ul class="mdl-mini-footer__link-list"> -->
-      <?php
-
-    if ( has_nav_menu( 'footer_links' ) ) :
-      $cleanermenu = wp_nav_menu(array(
-      'theme_location' => 'footer_links',
-      'container' => false,
-      'items_wrap' => '<nav class="mdl-mini-footer__link-list">%3$s</nav>',
-      'echo' => false,
-      'depth' => 2,
-      ) );
-
-      $find = array('><a','<li ','</li>');
-      $replace = array('','<a ','');
-      echo str_replace( $find, $replace, $cleanermenu );
-
-  endif;
-  */
-  ?>
 
     <?php echo Extras\bns_dynamic_copyright() ?>
   </div>
