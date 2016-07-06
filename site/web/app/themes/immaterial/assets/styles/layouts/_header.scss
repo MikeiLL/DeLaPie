@@ -43,7 +43,7 @@
     word-spacing: -0.1rem;
     margin-top: 0;
     border-bottom: 1px solid unquote("rgb(#{$palette-turquoise-A700})");
-    @include linear-gradient(42deg, unquote("rgb(#{$palette-turquoise-700})") 0%, unquote("rgb(#{$palette-turquoise-600})") 30%, unquote("rgb(#{$palette-turquoise-300})") 100%);
+    @include linear-gradient(42deg, unquote("rgb(#{$palette-turquoise-700})") 0%, unquote("rgb(#{$palette-turquoise-600})") 30%, unquote("rgb(#{$palette-grey-500})") 100%);
 }
 
 .mdl-layout-subtitle {
