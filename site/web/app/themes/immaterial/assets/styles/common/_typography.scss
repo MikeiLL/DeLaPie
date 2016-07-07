@@ -3,16 +3,28 @@ h1 {
   }
 
 h2 {
-    @include typo-title();
+    @include typo-headline();
   }
 
 h3 {
     @include typo-title();
   }
 
-.entry-content p, .front-page__cover p, .mdl-card__supporting-text > p  {
-  //text-indent: 1em;
+.nobr	{ white-space:nowrap; }
+
+.entry-content p, .mdl-card__supporting-text > p  {
+  font-family: Georgia, "times new roman", serif;
   }
+
+.entry-content p:first-of-type::first-letter  {
+    float: left;
+    font-size: 4rem;
+    line-height: 20px;
+    padding-left: 3px;
+    padding-right: 5px;
+    padding-top: 4px;
+    color: unquote("rgb(#{$palette-turquoise-800})");
+}
 
 .mdl-card__actions p {
   text-indent: 0;

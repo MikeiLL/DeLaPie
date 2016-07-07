@@ -111,8 +111,8 @@ function modifyMainHeader(visibility_class, opacity_class, hide) {
           }
       }
 
-      //var vWidth = window.innerWidth;
-      //if (vWidth < 960)
+      var vWidth = window.innerWidth;
+      if (vWidth < 480)
         setTimeout(mdl_drawer_btn, 100);
 
     // ./Replace MDL icon with our sprite

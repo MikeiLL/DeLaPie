@@ -47,6 +47,11 @@ p {
 //Breakpoints 480, 600, 840, 960, 1280, 1440, and 1600dp.
 //rems 30, 37, 52, 60, 80, 90, 100
 
+@media (min-width: 480px) {
+  .mdl-cell--phone-only {
+    display: none;
+  }
+}
 /* Rules for sizing the icon.
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }

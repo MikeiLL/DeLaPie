@@ -1,3 +1,21 @@
+
+
+.mdl-mega-footer--heading, .mdl-mega-footer__heading {
+  @extend .mdl-color-text--alabaster-600;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.mdl-mega-footer__drop-down-section {
+  img {
+    margin: .9rem 0 !important;
+    }
+  }
+
+.mdl-mini-footer__address {
+  margin-bottom: 2rem;
+}
+
 .mdl-mega-footer {
   ul {
     @extend .mdl-mega-footer__link-list;
@@ -37,7 +55,7 @@
 
 .mdl-mega-footer {
   svg {
-    fill: unquote("rgb(#{$palette-yellow-100})") !important;
+    fill: unquote("rgb(#{$palette-alabaster-100})") !important;
     }
 }
 
