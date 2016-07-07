@@ -166,10 +166,13 @@
   }
 
 .response-definition {
-  background: #31312f; /* Iron Mountain Grey */
-  z-index: 1000;
-  margin-top: 10px;
+    background: #31312f; /* Iron Mountain Grey */
+    z-index: 1000;
+    margin-top: 10px;
+    margin-right: 3rem;
   }
+
+
 
 .definitions {
   position: relative;
@@ -184,16 +187,18 @@
 }
 
 /* SRC - https://github.com/Nebularco/mdl-l */
-.list__item .btn:hover, .list__item .btn:hover:focus, .list__icon:hover, .list__icon:hover:focus
-{
-  background: rgba(0, 0, 0, 0.15);
-  transition: all 1s;
-  color: white;
+#situations {
+  .list__item .btn:hover, .list__item .btn:hover:focus
+  {
+    background: rgba(0, 0, 0, 0.15);
+    transition: all 1s;
+    color: white;
+  }
 }
 
 
 /* ./MDL List - */
-.active, .closed {
+#situations .active, #situations .closed {
     cursor: pointer;
     font-size: 1.4rem;
     list-style: outside none none;
@@ -206,7 +211,7 @@
     border-bottom: 1px solid white;
 }
 
-.active {
+#situations .active {
   background-color:rgba(0, 0, 0, 0.1);
   //color: #f0eeeb;
   -webkit-transition: .5s all ease-out;
