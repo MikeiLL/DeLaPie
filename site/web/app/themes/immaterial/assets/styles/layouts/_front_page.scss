@@ -138,27 +138,7 @@
   margin-bottom: 0;
 }
 
-.response-definition p:first-of-type {
-    margin-top: 1em;
-  }
 
-.response-definition {
-
-    p {
-      margin-left: .4em;
-      color: #f0eeeb;
-      font-family: Georgia;
-    }
-
-    p:first-child:first-letter {
-      float: left;
-      font-size: 3.7rem;
-      line-height: 40px;
-      padding-top: 4px;
-      padding-right: 5px;
-      padding-left: 3px;
-    }
-  }
 
 .response-definition p:last-of-type {
     border-bottom: 1px solid rgba(36, 36, 35, 0.1);
@@ -188,11 +168,28 @@
 
 /* SRC - https://github.com/Nebularco/mdl-l */
 #situations {
+
   .list__item .btn:hover, .list__item .btn:hover:focus
   {
     background: rgba(0, 0, 0, 0.15);
     transition: all 1s;
     color: white;
+  }
+
+  .response-definition p:first-of-type {
+    margin-top: 1em;
+  }
+
+  .response-definition {
+
+    p:first-child:first-letter {
+      float: left;
+      font-size: 3.7rem;
+      line-height: 40px;
+      padding-top: 4px;
+      padding-right: 5px;
+      padding-left: 3px;
+    }
   }
 }
 

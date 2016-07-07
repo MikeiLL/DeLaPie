@@ -36,7 +36,7 @@ p {
     color: unquote("rgb(#{$palette-mandarin-500})");
     cursor: pointer;
     font-size: 1.2rem;
-    margin-left: -3.2rem;
+    margin-left: -3.1rem;
     list-style: outside none none;
     padding: 0;
     text-align: left;
@@ -44,7 +44,12 @@ p {
   }
 
 .response-definition {
-  margin-left: -3.2rem;
+  margin-left: -3.1rem;
+    p {
+      margin: .6em;
+      color: #f0eeeb;
+      font-family: Georgia;
+    }
 }
 
 .widget_recent_entries ul li {
