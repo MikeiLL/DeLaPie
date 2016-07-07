@@ -183,4 +183,9 @@
   .mdl-navigation {
     display: block;
   }
+
+  .mdl-layout__header-row .mdl-navigation a {
+    display: inline-block !important;
+    margin-top: 4rem;
+  }
 }
