@@ -3,6 +3,10 @@
   display: none;
 }
 
+.mdl-layout__header, .mdl-layout__drawer, .mdl-mega-footer, .mdl-layout-title, .mdl-layout__title, .mdl-layout-subtitle, .mdl-layout__subtitle {
+  font-family: $sans-serif-font;
+}
+
 .nav-icon {
   display: inline-block;
   width: 100px;

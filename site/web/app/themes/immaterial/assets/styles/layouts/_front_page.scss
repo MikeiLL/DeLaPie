@@ -138,26 +138,9 @@
   margin-bottom: 0;
 }
 
-
-
-.response-definition p:last-of-type {
-    border-bottom: 1px solid rgba(36, 36, 35, 0.1);
-    padding-bottom: 0.5em;
-  }
-
-.response-definition {
-    background: #31312f; /* Iron Mountain Grey */
-    z-index: 1000;
-    margin-top: 10px;
+#situations .response-definition {
     margin-right: 3rem;
   }
-
-
-
-.definitions {
-  position: relative;
-  max-width:83%;
-}
 
 /* MDL LIST SRC - https://github.com/Nebularco/mdl-list */
 
@@ -181,7 +164,7 @@
   }
 
   .response-definition {
-
+    margin-left: 0;
     p:first-child:first-letter {
       float: left;
       font-size: 3.7rem;

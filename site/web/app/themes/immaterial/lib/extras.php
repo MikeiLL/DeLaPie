@@ -47,8 +47,10 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 function container_class() {
   if ( is_front_page() || 'movies' == get_post_type() ) {
     return 'mdl-grid--no-spacing';
+  } else if ( is_page_template('biography-template.php') || is_post_type_archive( 'faq' ) ) {
+    return 'entry-data';
   } else {
-    return;
+    return 'entry-content';
   }
 }
 //*

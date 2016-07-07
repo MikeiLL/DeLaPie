@@ -1,3 +1,23 @@
+p {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+
+ol, ul {
+    //list-style-type: none;
+    text-align: left;
+    line-height: 1.4rem;
+    list-style: none;
+    padding-left:0;
+  }
+
+.entry-content, .entry-data {
+  p {
+    text-align: justify;
+    font-family: Georgia, serif;
+    }
+}
+
 h1 {
     @include typo-display-1();
   }
@@ -11,6 +31,14 @@ h3 {
   }
 
 .nobr	{ white-space:nowrap; }
+
+.entry-content, .entry-data {
+    em {
+      color: unquote("rgb(#{$palette-turquoise-800})");
+      font-style: normal;
+    }
+    text-align: justify;
+  }
 
 .entry-content p, .mdl-card__supporting-text > p  {
   font-family: Georgia, "times new roman", serif;
