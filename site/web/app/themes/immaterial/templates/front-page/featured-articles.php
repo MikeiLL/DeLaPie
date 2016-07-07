@@ -18,7 +18,7 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more_card');
 				<?php
 
 						$args = array(
-			'posts_per_page' => 3,
+			'posts_per_page' => 1,
 			'meta_key' => '_featured-post',
 			'meta_value' => 1
 			);
