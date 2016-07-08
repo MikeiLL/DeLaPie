@@ -167,7 +167,7 @@
   }
 
   .response-definition {
-    margin-left: 0;
+    left: 10%;
     p:first-child:first-letter {
       float: left;
       font-size: 3.7rem;
@@ -176,6 +176,11 @@
       padding-right: 5px;
       padding-left: 3px;
     }
+  }
+
+  .definitions {
+    // Vertically position resonse-definitions relative the the entire list.
+    position: relative;
   }
 }
 

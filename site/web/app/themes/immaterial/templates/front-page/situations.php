@@ -25,13 +25,11 @@ foreach($situations as $situation => $definition):
     $definition = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna urna, pretium eu pretium in, dictum nec nisl. Proin vehicula convallis mi, in vestibulum magna laoreet eget. Duis quis dignissim nibh, at aliquet elit. Mauris ultrices a sapien quis hendrerit. Pellentesque in nisi dui. Pellentesque commodo diam sapien, eget egestas elit rutrum sodales. Etiam sapien nisi, pretium eu consequat ut, sollicitudin vitae erat.";
   ?>
          <li class="list__item">
-        <button class="btn active list-def" data-gk-close-span-glyph="active" data-gk-open-span-glyph="closed" data-gk-open-class="<?= $count ?>" data-gk-area-state="closed"><?= $situation ?></button>
-
-            <div class="response-definition <?= $count ?>">
-                <p><?= $definition ?></p>
-								<?= $contact_our_office ?>
-
-            </div>
-          </li>
+          <button class="btn active list-def" data-gk-close-span-glyph="active" data-gk-open-span-glyph="closed" data-gk-open-class="<?= $count ?>" data-gk-area-state="closed"><?= $situation ?></button>
+          <div class="response-definition <?= $count ?>">
+            <p><?= $definition ?></p>
+            <?= $contact_our_office ?>
+          </div>
+        </li>
   <?php endforeach; ?>
-      	</ul>
+      </ul>
