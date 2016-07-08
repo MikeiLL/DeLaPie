@@ -31,10 +31,10 @@ function excerpt_more($source="general") {
   if ($source == "mdl-card") {
     return '&hellip; <div class="mdl-card__actions mdl-card--border">' .
           '<div class="mdl-layout-spacer"></div>' .
-            '<a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>' .
+            '<a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect ">Read More</a>' .
           '</div>';
   } else {
-  return '&hellip; <a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">' . __('Read More', 'immaterial') . '</a>';
+  return '&hellip; <br /><a href="' . get_permalink() . '" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--read-more">' . __('Read More', 'immaterial') . '</a><br class="clear"/>';
   }
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');

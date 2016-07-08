@@ -22,6 +22,11 @@ $hwr_loop = new WP_Query( $args );
 ?>
 
 	<?php while ($hwr_loop->have_posts()) : $hwr_loop->the_post(); ?>
+    <?php if (has_post_thumbnail()) : ?>
+    <figure class="mdl-card__media">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium_large', array( 'class'	=> "post-img-responsive")); ?></a>
+    </figure>
+    <?php endif; ?>
 		<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 	<?php endwhile; ?>
 

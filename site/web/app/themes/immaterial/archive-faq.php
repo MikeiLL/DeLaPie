@@ -13,10 +13,11 @@ use Roots\Sage\Extras;
 $args = array( 'post_type' => 'faq', 'paged' => $paged );
 $hwr_loop = new WP_Query( $args );
 ?>
-
+  <ul class="questions">
 	<?php while ($hwr_loop->have_posts()) : $hwr_loop->the_post(); ?>
 	  <a name="<?php echo Extras\formatUrl(get_the_title(), '-'); ?>"></a>
 		<?php get_template_part('templates/content-faq', get_post_type() != 'faq' ? get_post_type() : get_post_format()); ?>
 	<?php endwhile; ?>
+	</ul>
 
 <?php the_posts_navigation(); ?>
