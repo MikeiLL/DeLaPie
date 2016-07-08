@@ -138,12 +138,7 @@
 
 #situations > h2 {
   max-height: 1em;
-  margin-bottom: 0;
 }
-
-#situations .response-definition {
-    margin-right: 3rem;
-  }
 
 /* MDL LIST SRC - https://github.com/Nebularco/mdl-list */
 
@@ -168,12 +163,15 @@
 
   .response-definition {
     left: 10%;
+    p {
+      padding: .7em .3em .3em;
+    }
     p:first-child:first-letter {
       float: left;
-      font-size: 3.7rem;
+      font-size: 3.2rem;
       line-height: 40px;
       padding-top: 4px;
-      padding-right: 5px;
+      padding-right: 2px;
       padding-left: 3px;
     }
   }
@@ -321,6 +319,11 @@
   #situations > h3 {
     max-height: 1em;
     margin-top: -1.5rem;
+  }
+
+  #situations > h2 {
+    max-height: 1em;
+    margin-bottom: 0;
   }
 
   #articles h2 {

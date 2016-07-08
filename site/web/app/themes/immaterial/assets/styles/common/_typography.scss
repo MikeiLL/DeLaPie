@@ -72,10 +72,6 @@ abbr {
 
 @media (min-width: 37rem) {
 
-  p {
-    font-size: 16px;
-  }
-
   h1 {
     @include typo-display-2();
   }
