@@ -50,7 +50,7 @@ function container_class() {
   } else if ( is_page_template('biography-template.php') || is_post_type_archive( 'faq' ) ) {
     return 'entry-data';
   } else {
-    return 'entry-content';
+    return;
   }
 }
 //*
