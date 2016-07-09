@@ -24,8 +24,11 @@
     margin-top: 3.7rem;
 }
 
-.mdl-layout__header-row .mdl-navigation a {
-    margin: 6rem 2em 2em;
+.mdl-layout__header-row .mdl-navigation {
+  margin-top: 3rem;
+ a {
+      margin: 0 2em;
+    }
 }
 
 .mdl-layout__header-row {
