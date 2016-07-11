@@ -69,7 +69,7 @@ function modifyMainHeader(visibility_class, opacity_class, hide) {
           get_template_part('templates/header');
         ?>
         <div class="mdl-layout__content" role="document">
-          <div class="mdl-grid">
+          <div class="mdl-grid <?= Extras\container_class(); ?>">
             <?php
             if (Setup\display_sidebar()) :
               $col = 'mdl-cell--8-col';
@@ -77,7 +77,7 @@ function modifyMainHeader(visibility_class, opacity_class, hide) {
               $col = 'mdl-cell--12-col';
             endif;
             ?>
-            <main class="mdl-cell <?php echo $col; ?> <?= Extras\container_class(); ?>">
+            <main class="mdl-cell <?php echo $col; ?>">
               <?php include Wrapper\template_path(); ?>
             </main><!-- main -->
             <?php if (Setup\display_sidebar()) : ?>
