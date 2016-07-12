@@ -25,7 +25,7 @@ use Roots\Sage\Assets;
   <div id="biography" class="content-grid mdl-grid mdl-grid--no-spacing mdl-color-text--alabaster-400 front-page__cover">
 
       <div>
-        <p>By 2016, after a decade in general civil law,  representing people who had suffered injury or death in nursing homes and assisted living facilities had become a <em>calling.</em> I have become experienced at identifying and litigating these special cases, working intimately with individuals and families to <em>protect our elders.</em> Life is just too short not to make every day count. Some people see law as a tedious, drudging inevitability. For me, <em>it’s an art.</em> Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
+        <p>By 2016, after a decade in general civil law, representing people who had suffered injury or death in nursing homes and assisted living facilities felt like a <em>calling.</em> I have become experienced at identifying and litigating these special cases, working intimately with individuals and families to <em>protect our elders.</em> Life is just too short not to make every day count. Some people see law as a tedious, drudging inevitability. For me, <em>it’s an art.</em> Each case is like a block of rough marble. Together we look at it from all possible angles and carve out its innate beauty: a true story that speaks to the heart and makes sense in relation to the laws of our society. And <em>that</em> is persuasive.</p>
       </div>
 
 

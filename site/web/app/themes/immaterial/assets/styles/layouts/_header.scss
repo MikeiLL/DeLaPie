@@ -7,6 +7,16 @@
   font-family: $sans-serif-font;
 }
 
+.mdl-layout__header-row-sliver a {
+  color: unquote("rgb(#{$palette-grey-200})");
+  text-decoration: none;
+}
+
+.mdl-layout__header-row-sliver a:hover {
+  color: unquote("rgb(#{$palette-grey-800})");
+  text-decoration: underline;
+}
+
 .nav-icon {
   display: inline-block;
   width: 100px;
