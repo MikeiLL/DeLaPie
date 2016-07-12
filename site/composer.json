@@ -36,14 +36,12 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.5",
+    "johnpbloch/wordpress": "4.5.3",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-plugin/wp-lorem-ipsum-generator": "0.3",
-    "wpackagist-plugin/contact-form-7": "4.4",
-    "wpackagist-plugin/wordpress-importer": "0.6.2",
-    "wpackagist-plugin/comet-cache": "160417",
-    "wpackagist-plugin/wp-maintenance-mode": "2.0.3"
+    "wpackagist-plugin/contact-form-7": "4.4.2",
+    "wpackagist-plugin/comet-cache": "160521",
+    "wpackagist-plugin/wp-maintenance-mode": "2.0.6"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

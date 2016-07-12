@@ -311,14 +311,16 @@
     vertical-align: middle;
   }
 
-  .front-page__cover h2 {
-    text-align: center;
-    text-transform: uppercase;
-  }
+  .front-page__cover {
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+    }
 
-  #situations > h3 {
-    max-height: 1em;
-    margin-top: -1.5rem;
+    h3 {
+      max-height: 1em;
+      margin-top: -1.5rem;
+    }
   }
 
   #situations > h2 {
@@ -336,6 +338,7 @@
 
   #articles h3 {
     font-size: 1.4rem;
+    margin-top: 1rem;
   }
 }
 
@@ -409,6 +412,11 @@
     font-size: 2.2em;
   }
 
+  .front-page__cover h3 {
+    font-size: 1.6em;
+    margin-top: -4.5rem;
+  }
+
   #articles {
     .front-page__card-holder > div {
       margin: 0 15%;
@@ -416,10 +424,12 @@
     }
   }
 
+  #bio_image .hero {
+    background-position: 0 .1rem;
+  }
+
 }
 
 @media (min-width: 1280px) {
-  #bio_image .hero {
-    background-position: 0 -6rem;
-  }
+
 }
