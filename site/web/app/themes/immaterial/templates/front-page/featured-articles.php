@@ -33,8 +33,9 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more_card');
 				<?php endif; ?>
 
           <h2>3 Questions to Ask in choosing a facility<?php //the_title(); ?></h2>
-
-				<?php echo the_content();?>
+        <div>
+				  <?php echo the_content();?>
+				</div>
 
 
 			<?php endwhile; else:

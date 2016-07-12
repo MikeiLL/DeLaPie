@@ -409,11 +409,13 @@
     font-size: 2.2em;
   }
 
-  #articles h2 {
-    line-height: 2.15rem !important;
-    margin: 0 30% 2rem;
-    width: 30%;
+  #articles {
+    .front-page__card-holder > div {
+      margin: 0 15%;
+      max-width: 900px;
+    }
   }
+
 }
 
 @media (min-width: 1280px) {
