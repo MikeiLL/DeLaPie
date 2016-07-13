@@ -3,9 +3,9 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  delapiedralawfirm.dev:
+  dlp.dev:
     site_hosts:
-      - delapiedralawfirm.dev
+      - dlp.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: mike@mzoo.org
     multisite:
