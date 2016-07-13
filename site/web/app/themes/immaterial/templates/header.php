@@ -71,4 +71,4 @@
   endif;
   ?>
 </div>
-<a id="cta-button" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20" href="http://delapiedralawfirm.dev/free-case-evaluation/">Free Case Evaluation</a>
+<a id="cta-button" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20" href="<?php echo home_url(); ?>/free-case-evaluation/">Free Case Evaluation</a>
