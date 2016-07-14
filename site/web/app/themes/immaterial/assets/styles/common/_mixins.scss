@@ -329,6 +329,47 @@
 /**
 
 
+/* Generate multi-column responsive list items using flexbox
+ *
+ * Src: Kevin Lamping http://codepen.io/klamping/pen/waMOeX
+ * For his tutorial: http://fourkitchens.com/blog/article/responsive-multi-column-lists-flexbox
+ */
+@mixin n-rows($min-height, $min-width, $gutter, $last-equal: false, $max-cols: 5) {
+  .items {
+    display: flex;
+    flex-wrap: column wrap;
+    margin-left: -$gutter;
+    margin-top: -$gutter;
+    flex-direction: column;
+    flex-flow: column wrap;
+
+    .list__item {
+      flex: 1 0 $min-height;
+      margin-left: $gutter;
+      margin-top: $gutter;
+      width: $min-width;
+
+      @if $last-equal {
+        @for $i from 2 through $max-cols {
+          $screen-width: ($min-width*$i)+($gutter*$i);
+          $column-width: (100%/$i);
+          @media (min-width: $screen-width) {
+            max-width: calc(#{$column-width} - #{$gutter});
+          }
+        }
+
+        $column-width: (100%/$max-cols);
+        @media (min-width: $min-width*$max-cols) {
+            min-width: calc(#{$column-width} - #{$gutter});
+        }
+      }
+    }
+  }
+}
+
+/**
+
+
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

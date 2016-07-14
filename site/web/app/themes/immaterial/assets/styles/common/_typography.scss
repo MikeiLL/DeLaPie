@@ -47,6 +47,17 @@ h3 {
     text-align: justify;
   }
 
+.page-template .mdl-cell {
+  p em {
+    font-style: normal;
+    font-weight: 900;
+  }
+}
+
+.home p em {
+  font-weight: 400;
+}
+
 .entry-content p, .mdl-card__supporting-text > p  {
   font-family: Georgia, "times new roman", serif;
   }

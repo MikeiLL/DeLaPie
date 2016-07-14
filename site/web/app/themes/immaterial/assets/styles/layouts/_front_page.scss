@@ -208,7 +208,7 @@
     text-align: justify;
     font-family: Georgia, Times, 'Times New Roman', serif;
     em, small {
-      color: hsla(30, 2%, 34%, 1);
+      color: unquote("rgb(#{$palette-grey-700})");
       font-style: normal;
       }
   }
@@ -221,7 +221,7 @@
     padding-left: 3px;
     padding-right: 5px;
     padding-top: 4px;
-    color: unquote("rgb(#{$palette-grey-500})");
+    color: unquote("rgb(#{$palette-grey-700})");
 }
 
 
@@ -319,7 +319,7 @@
 
     h3 {
       max-height: 1em;
-      margin-top: -1.5rem;
+      //margin-top: -1.5rem;
     }
   }
 
@@ -334,6 +334,7 @@
       margin: 0 20% 2rem;
       text-align: justify;
       width: 60%;
+      max-width:400px;
   }
 
   #articles h3 {
@@ -421,6 +422,15 @@
     .front-page__card-holder > div {
       margin: 0 15%;
       max-width: 900px;
+    }
+
+    h2 {
+      font-size: 2.7rem;
+      line-height: 3.2rem !important;
+      margin: 0 20% 2rem;
+      max-width: 500px;
+      text-align: justify;
+      width: 60%;
     }
   }
 

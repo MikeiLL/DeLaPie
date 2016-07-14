@@ -97,7 +97,30 @@ body { scroll-behavior: smooth; }
 }
 
 // Generate code for flexbox responsive lists.
-@include n-columns(200px,  10px, true, 3);
+//@include n-rows(20px, 400px, 10px, true, 3);
+/*.Bedsores {
+  order: 2
+  }
+.Falls {
+  order: 5
+  }
+.Dehydration--Malnutrition {
+  order: 2;
+  }*/
+
+/* TODO Consider making columns display vertically not horizontally
+@media (min-width: 480px) {
+  .items {
+    height: 300px;
+  }
+}
+@media (min-width: 840px) {
+  .items {
+    height: 200px;
+  }
+} */
+
+@include n-columns(200px, 10px, false, 3);
 
 #cta-button {
   text-align: center;
@@ -120,6 +143,7 @@ body { scroll-behavior: smooth; }
 
 //Breakpoints 480, 600, 840, 960, 1280, 1440, and 1600dp.
 //rems 30, 37, 52, 60, 80, 90, 100
+
 
 @media (min-width: 480px) {
   .mdl-cell--phone-only {

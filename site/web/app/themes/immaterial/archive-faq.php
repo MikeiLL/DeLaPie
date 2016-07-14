@@ -39,7 +39,7 @@ $args = array(
                 'value' => date('Y-m-d')
             )
         ),
-'meta_key' => 'sequence_meta_box',
+//'meta_key' => 'sequence_meta_box',
 'orderby' => 'meta_value title',
 'order' => 'ASC',
 'posts_per_page' => -1,
