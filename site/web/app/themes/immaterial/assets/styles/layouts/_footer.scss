@@ -17,6 +17,10 @@
 }
 
 .mdl-mega-footer {
+  padding-bottom: 3rem;
+}
+
+.mdl-mega-footer {
   ul {
     @extend .mdl-mega-footer__link-list;
   }

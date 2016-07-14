@@ -1,5 +1,17 @@
 .size-full {
-    max-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 1em 0;
+}
+
+.size-medium {
+  margin: 0 1em 1em 0;
+}
+
+
+@media (max-width: 479px) {
+  .alignleft, .alignright {
+    width: 100%;
     height: auto;
-    margin: 0 0 1em 0;
   }
+}

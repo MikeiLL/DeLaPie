@@ -110,9 +110,10 @@
     }
   });
 
+
   $('#cta-button').animate({
     opacity: 1,
-    right: "10px",
+    right: "3rem",
     bottom: "10px",
     height: "toggle"
     }, 1000, function() {
