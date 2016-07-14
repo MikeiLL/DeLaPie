@@ -10,9 +10,8 @@ use Roots\Sage\Extras;
 <?php endif; ?>
 
 <?php
-$args = array( 'post_type' => 'faq', 'paged' => $paged );
-/*$args= query_posts(
-    array(  'post_type' => 'faq',
+//$args = array( 'post_type' => 'faq', 'paged' => $paged );
+/*$args= array(  'post_type' => 'faq',
             'order'     => 'ASC',
             'meta_key' => 'sequence_meta_box',
             'orderby'   => 'meta_value', //or 'meta_value_num'
@@ -22,9 +21,33 @@ $args = array( 'post_type' => 'faq', 'paged' => $paged );
                                 )
                             ),
 	          'posts_per_page' => -1
-                )
             );*/
+$args = array(
+'post_type' => 'faq',
+
+ 'meta_query' => array(
+       'relation' => 'OR',
+        array( //check to see if date has been filled out
+                'key' => 'sequence_meta_box',
+                'compare' => '>=',
+                'value' => 0
+            ),
+          array( //if no sequence has been added show these posts too
+                // TODO Make this work so displays even if sequence not set.
+                'key' => 'sequence_meta_box',
+                'compare' => 'NOT EXISTS',
+                'value' => date('Y-m-d')
+            )
+        ),
+'meta_key' => 'sequence_meta_box',
+'orderby' => 'meta_value title',
+'order' => 'ASC',
+'posts_per_page' => -1,
+);
 $hwr_loop = new WP_Query( $args );
+//$hwr_loop = new WP_Meta_Query( $meta_query_args );
+
+
 ?>
   <ul class="questions">
 	<?php while ($hwr_loop->have_posts()) : $hwr_loop->the_post(); ?>
