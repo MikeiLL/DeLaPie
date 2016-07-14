@@ -11,6 +11,19 @@ use Roots\Sage\Extras;
 
 <?php
 $args = array( 'post_type' => 'faq', 'paged' => $paged );
+/*$args= query_posts(
+    array(  'post_type' => 'faq',
+            'order'     => 'ASC',
+            'meta_key' => 'sequence_meta_box',
+            'orderby'   => 'meta_value', //or 'meta_value_num'
+            'meta_query' => array(
+                                array('key' => 'order_in_archive',
+                                      'value' => 'some_value'
+                                )
+                            ),
+	          'posts_per_page' => -1
+                )
+            );*/
 $hwr_loop = new WP_Query( $args );
 ?>
   <ul class="questions">

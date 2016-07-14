@@ -80,6 +80,55 @@ function save_featured_meta($post_id){
 add_action('save_post', __NAMESPACE__ . '\\save_featured_meta');
 // EOF Featured Article
 
+// BOF Sequence Field For FAQs
+// Source https://www.sitepoint.com/adding-custom-meta-boxes-to-wordpress
+
+function sequence_meta_box_markup($object)
+{
+    wp_nonce_field(basename(__FILE__), "sequence_meta_box-nonce");
+
+    ?>
+        <div>
+            <input name="sequence_meta_box" type="text" size="4" value="<?php echo get_post_meta($object->ID, "sequence_meta_box", true); ?>">
+        </div>
+    <?php
+}
+
+function add_sequence_meta_box()
+{
+    add_meta_box("sequence_meta_box", "Sequence of Questions", __NAMESPACE__ . '\\sequence_meta_box_markup', "faq", "side", "high", null);
+}
+
+add_action("add_meta_boxes", __NAMESPACE__ . '\\add_sequence_meta_box');
+
+function save_sequence_meta_box($post_id, $post, $update)
+{
+    if (!isset($_POST["sequence_meta_box-nonce"]) || !wp_verify_nonce($_POST["sequence_meta_box-nonce"], basename(__FILE__)))
+        return $post_id;
+
+    if(!current_user_can("edit_post", $post_id))
+        return $post_id;
+
+    if(defined("DOING_AUTOSAVE") && DOING_AUTOSAVE)
+        return $post_id;
+
+    $slug = "faq";
+    if($slug != $post->post_type)
+        return $post_id;
+
+    $sequence_meta_box_value = "";
+
+    if(isset($_POST["sequence_meta_box"]))
+    {
+        $sequence_meta_box_value = $_POST["sequence_meta_box"];
+    }
+    update_post_meta($post_id, "sequence_meta_box", $sequence_meta_box_value);
+
+}
+
+add_action("save_post", __NAMESPACE__ . '\\save_sequence_meta_box', 10, 3);
+// EOF Sequence Field for FAQs
+
 /*
 * Replace spaces in url string with separator supplied as argument
 */
