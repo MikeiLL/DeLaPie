@@ -133,7 +133,12 @@
 }
 
 #situations {
-  //background-color: #bfc9ca;
+  .list__item a {
+    color: unquote("rgb(#{$palette-turquoise-100})");
+  }
+  .list__item a:hover {
+    color: unquote("rgb(#{$palette-turquoise-400})");
+  }
 }
 
 #situations > h2 {
@@ -415,7 +420,7 @@
 
   .front-page__cover h3 {
     font-size: 1.6em;
-    margin-top: -4.5rem;
+    margin-top: -1rem;
   }
 
   #articles {
@@ -441,5 +446,8 @@
 }
 
 @media (min-width: 1280px) {
-
+  .front-page__cover h3 {
+    font-size: 1.6em;
+    margin-top: -4.5rem;
+  }
 }
