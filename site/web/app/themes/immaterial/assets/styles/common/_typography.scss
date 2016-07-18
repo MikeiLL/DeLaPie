@@ -10,7 +10,7 @@ ul {
   list-style: none;
 }
 
-ol {
+ol.definitions {
   margin: 0 1rem 0 -1rem;
   div {
     font-family: Baskerville, “Baskerville Old Face”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
@@ -118,7 +118,7 @@ abbr {
 }
 
 @media (min-width: 480px) {
-  ol {
+  ol.definitions {
     margin: 0;
     /*div {
       font-family: Baskerville, “Baskerville Old Face”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
