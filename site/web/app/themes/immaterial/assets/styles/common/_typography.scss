@@ -21,9 +21,9 @@ ol {
 }
 
 figure {
-    border: 1px solid unquote("rgb(#{$palette-grey-200})");
-    padding: 0.4rem;
-    }
+  border: 1px solid unquote("rgb(#{$palette-grey-200})");
+  padding: 0.4rem;
+}
 
 figcaption {
   font-family: Helvetica, Arial, Sans-serif;
@@ -68,6 +68,12 @@ h3 {
     @include typo-title();
   }
 
+article[class*=" category-"] {
+  h2 {
+    text-align: center;
+  }
+}
+
 .nobr	{ white-space:nowrap; }
 
 .entry-content, .entry-data {
@@ -99,7 +105,7 @@ h3 {
   line-height: 20px;
   padding-left: 3px;
   padding-right: 5px;
-  padding-top: 4px;
+  padding-top: 2px;
   color: unquote("rgb(#{$palette-turquoise-800})");
 }
 

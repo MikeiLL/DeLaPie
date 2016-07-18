@@ -90,6 +90,7 @@ use Roots\Sage\Extras;
       <div class="mdl-mega-footer__heading">Distinctions</div>
       <img src="<?=get_stylesheet_directory_uri();?>/dist/images/martindale_badge.jpg" title="Martindale Hubbell Badge" /><br />
       <img src="<?=get_stylesheet_directory_uri();?>/dist/images/super-lawyers_badge.jpg" title="Super Lawyers Badge" />
+      <img src="<?=get_stylesheet_directory_uri();?>/dist/images/avvo.jpg" title="Avvo Badge" />
     </div>
   </div>
 

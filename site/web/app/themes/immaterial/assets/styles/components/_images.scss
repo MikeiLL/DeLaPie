@@ -8,6 +8,9 @@
   margin: 0 1em 1em 0;
 }
 
+.mdl-card__media {
+  background-color: transparent;
+}
 
 @media (max-width: 479px) {
   .alignleft, .alignright {
@@ -15,3 +18,16 @@
     height: auto;
   }
 }
+
+@media (min-width: 480px) {
+  .size-medium {
+    margin: 0 1em;
+  }
+
+  figure {
+    .size-medium {
+      margin: 0;
+    }
+  }
+}
+

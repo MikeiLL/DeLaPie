@@ -16,6 +16,10 @@ body { scroll-behavior: smooth; }
   //background: unquote("rgb(#{$palette-grey-100})");
 }
 
+img {
+  margin: 1rem;
+}
+
 .mdl-button--read-more {
   float: right;
   margin-top: 1rem;
