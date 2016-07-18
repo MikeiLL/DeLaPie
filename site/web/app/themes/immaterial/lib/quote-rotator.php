@@ -69,7 +69,7 @@ class immaterial_quote_widget extends WP_Widget {
 	    );
         $author = array_rand($quotes);
         $quote = $quotes[$author];
-        $display = '<div class="office-quotes"><blockquote>'.$quote.'<cite>'.$author.'</cite></blockquote></div>';
+        $display = '<div class="office-quotes"><blockquote>'.$quote.'</blockquote><cite>'.$author.'</cite><br class="clear"/></div>';
 	    return $display;
 	}
 

@@ -20,6 +20,27 @@ ol {
   }
 }
 
+figure {
+    border: 1px solid unquote("rgb(#{$palette-grey-200})");
+    padding: 0.4rem;
+    }
+
+figcaption {
+  font-family: Helvetica, Arial, Sans-serif;
+  color: unquote("rgb(#{$palette-grey-600})");
+}
+
+.office-quotes {
+  background: unquote("rgba(#{$palette-turquoise-800}, 0.4)");
+  padding: 0.1em 2em 1em 1rem;
+  cite {
+    float: right;
+  }
+  cite::before {
+    content: "- ";
+  }
+}
+
 .text-list {
   margin: 1em 0;
 }
