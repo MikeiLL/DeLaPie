@@ -41,10 +41,6 @@
   //@include linear-gradient-svg(female_bust, hsla(181,85%,46%,.6), hsla(181,85%,46%,.6), 1, no-repeat scroll 30% 100% / 30% auto, '100%', '100%', '0 0 100 125', '', to top, hsla(190, 43%, 61%, 1) 0%, hsla(181,45%,46%,1) 60%, hsla(181,57%,50%,1) 100%);
 }
 
-.front-page__cover:nth-of-type(odd) {
-   background-color: hsla(190, 43%, 61%, 1);
-   }
-
 .mdl-color--turquoise-500 {
   background-color: hsla(190, 43%, 61%, 1);
   }
@@ -74,10 +70,24 @@
     margin-top: 0;
     font-size: 1.1rem;
     }
+
   h1, h2, h3, h4, h5 {
     font-family: $sans-serif-font;
   }
+
+  blockquote {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
+
+.front-page__cover:nth-of-type(odd) {
+  background-color: hsla(190, 43%, 61%, 1);
+}
+
 
 .front-page__card-holder {
   padding: 1rem;
@@ -238,7 +248,7 @@
 
 #articles p {
   font-size: 1.3em;
-  margin-bottom: 2em;
+  //margin-bottom: 2em;
 }
 
 #articles h3 {
@@ -325,6 +335,11 @@
     h3 {
       max-height: 1em;
       //margin-top: -1.5rem;
+    }
+
+    blockquote {
+      font-size: 1.2rem;
+      margin: 1rem auto;
     }
   }
 
@@ -414,13 +429,20 @@
     line-height: 1.2em;
   }
 
-  .front-page__cover h2 {
-    font-size: 2.2em;
-  }
+  .front-page__cover {
+    h2 {
+      font-size: 2.2em;
+    }
 
-  .front-page__cover h3 {
-    font-size: 1.6em;
-    margin-top: -1rem;
+    h3 {
+      font-size: 1.6em;
+      margin-top: -1rem;
+    }
+
+    blockquote {
+      font-size: 1.6rem;
+      margin: 0 auto 3rem;
+    }
   }
 
   #articles {

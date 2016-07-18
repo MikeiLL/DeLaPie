@@ -20,6 +20,29 @@ ol.definitions {
   }
 }
 
+blockquote.paragraph {
+  p {
+    quotes: "“" "”" "‘" "’";
+    font-size: 1.6rem;
+  }
+
+  p::before {
+    content: open-quote;
+  }
+
+  p::after {
+    content: close-quote;
+  }
+}
+
+blockquote.paragraph::before {
+  content: "";
+}
+
+blockquote.paragraph::after {
+    content: "";
+}
+
 figure {
   border: 1px solid unquote("rgb(#{$palette-grey-200})");
   padding: 0.4rem;
