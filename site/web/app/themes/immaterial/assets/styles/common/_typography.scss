@@ -3,11 +3,21 @@ p {
     line-height: 1.4em;
   }
 
-ol, ul {
+ul {
   //list-style-type: none;
   text-align: left;
   line-height: 1.4rem;
   list-style: none;
+}
+
+ol {
+  margin: 0 1rem 0 -1rem;
+  div {
+    font-family: Baskerville, “Baskerville Old Face”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+    margin: 0.5em 0;
+    max-width: 600px;
+    font-size: 1.1em;
+  }
 }
 
 .text-list {
@@ -62,14 +72,14 @@ h3 {
   font-family: Georgia, "times new roman", serif;
   }
 
-.entry-content p:first-of-type::first-letter  {
-    float: left;
-    font-size: 3.4rem;
-    line-height: 20px;
-    padding-left: 3px;
-    padding-right: 5px;
-    padding-top: 4px;
-    color: unquote("rgb(#{$palette-turquoise-800})");
+.entry-content > p:first-of-type::first-letter, .entry-summary > p:first-of-type::first-letter{
+  float: left;
+  font-size: 3.4rem;
+  line-height: 20px;
+  padding-left: 3px;
+  padding-right: 5px;
+  padding-top: 4px;
+  color: unquote("rgb(#{$palette-turquoise-800})");
 }
 
 .mdl-card__actions p {
@@ -80,7 +90,17 @@ abbr {
   letter-spacing: 0.1em;
 }
 
-
+@media (min-width: 480px) {
+  ol {
+    margin: 0;
+    /*div {
+      font-family: Baskerville, “Baskerville Old Face”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+      margin: 0.5em 0;
+      max-width: 600px;
+      font-size: 1.2em;
+    }*/
+  }
+}
 @media (min-width: 37rem) {
 
   h1 {
