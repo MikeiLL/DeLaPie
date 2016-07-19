@@ -443,14 +443,14 @@
 
   #articles {
     .front-page__card-holder > div {
-      margin: 0 15%;
+      margin: 0 auto;
       max-width: 900px;
     }
 
     h2 {
       font-size: 2.7rem;
       line-height: 3.2rem !important;
-      margin: 0 20% 2rem;
+      margin: 2rem auto;
       max-width: 500px;
       text-align: justify;
       width: 60%;
@@ -467,5 +467,12 @@
   .front-page__cover h3 {
     font-size: 1.6em;
     margin-top: -4.5rem;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  #bio_image .hero {
+    height:832px;
   }
 }
