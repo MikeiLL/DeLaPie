@@ -91,11 +91,13 @@ h3 {
     @include typo-title();
   }
 
+/*
+Didn't look good when we added date. Maybe if date was also in a centered div.
 article[class*=" category-"] {
   h2 {
     text-align: center;
   }
-}
+}*/
 
 .nobr	{ white-space:nowrap; }
 
