@@ -34,7 +34,8 @@ use Roots\Sage\Assets;
   <div id="situations" class="content-grid mdl-grid mdl-color--grey-500 mdl-color-text--alabaster-50 front-page__cover">
 
     <h2>Nursing Home Abuse and Neglect Cases</h2>
-    <blockquote>Not just what I do, <br class="mdl-cell--phone-only" />it's <em>all</em> I do.</blockquote>
+    <blockquote class="paragraph"><p>Not just what I do,<br class="mdl-small-cell--phone-only" /> it's <em>all</em> I do.</p></blockquote>
+
     <?php get_template_part('templates/front-page/situations'); ?>
 
   </div><!-- ./#situations -->

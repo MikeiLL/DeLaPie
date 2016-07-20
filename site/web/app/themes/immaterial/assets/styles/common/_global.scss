@@ -144,11 +144,13 @@ img {
 //Breakpoints 480, 600, 840, 960, 1280, 1440, and 1600dp.
 //rems 30, 37, 52, 60, 80, 90, 100
 
-@media (min-width: 480px) {
-  .mdl-cell--phone-only {
+@media (min-width: 459px) {
+  .mdl-small-cell--phone-only {
     display: none;
   }
+}
 
+@media (min-width: 480px) {
   //Match Left Margin to Site Title in Header
   .mdl-cell--8-col, .mdl-cell--8-col-tablet.mdl-cell--8-col-tablet {
       margin-left: 3rem;
