@@ -1,6 +1,27 @@
 @import "common/custom-colors";
 @import "common/variables";
 
+/**
+ * Hide icons by default to prevent blank spaces
+ * in unsupported browsers
+ */
+.icon {
+	display: inline-block;
+	fill: currentColor;
+	height: 0;
+	width: 0;
+}
+
+/**
+ * Display icons when browser supports SVG.
+ * Inherit height, width, and color.
+ */
+
+.svg .icon {
+	height: 1em;
+	width: auto;
+}
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
