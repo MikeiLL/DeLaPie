@@ -18,8 +18,29 @@
  */
 
 .svg .icon {
-	height: 1em;
+	height: 1.4em;
 	width: auto;
+}
+
+/**
+ * Style fallback text in case browser doesn't support SVG
+ */
+.icon-fallback-text {
+	font-size: 12px;
+}
+
+/**
+ * Hide fallback text if browser supports SVG
+ */
+.svg .icon-fallback-text {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 .clearfix:after {
