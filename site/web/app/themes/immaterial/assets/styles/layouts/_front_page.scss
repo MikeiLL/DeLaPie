@@ -137,7 +137,7 @@
 // 3. Situations
 
 
-@include n-columns(200px, 10px, false, 3);
+@include n-columns(300px, 10px, false, 3);
 
 #situations {
   .list__item a {
@@ -265,7 +265,7 @@
 @media (min-width: 600px) {
 
   .items .list__item {
-    min-width: 340px;
+    //min-width: 340px;
   }
 
   .response-definition {
