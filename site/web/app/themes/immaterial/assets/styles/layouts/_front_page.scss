@@ -7,7 +7,13 @@
  * 5. Media Queries
  */
 
+// This became necessary when I removed the mdl-grid class from the first content grid on the page
+// because it was making the div not display in Safari
 
+.negative-grid {
+  margin: -1rem !important;
+  margin-left: 0 !important;
+}
 
 /* 1. Hero  */
  #bio_image {
@@ -127,6 +133,11 @@
     }
   }
 }
+
+// 3. Situations
+
+
+@include n-columns(200px, 10px, false, 3);
 
 #situations {
   .list__item a {

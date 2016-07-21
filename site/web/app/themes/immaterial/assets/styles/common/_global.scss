@@ -1,6 +1,15 @@
 @import "common/custom-colors";
 @import "common/variables";
 
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+
 .mdl-layout__header .mdl-layout__drawer-button {
     @extend .mdl-color-text--grey-50;
 }
@@ -119,8 +128,6 @@ img {
     height: 200px;
   }
 } */
-
-@include n-columns(200px, 10px, false, 3);
 
 #cta-button {
   text-align: center;

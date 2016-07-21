@@ -296,7 +296,7 @@
  * Src: Kevin Lamping http://codepen.io/klamping/pen/waMOeX
  * For his tutorial: http://fourkitchens.com/blog/article/responsive-multi-column-lists-flexbox
  */
-@mixin n-columns($min-width, $gutter, $last-equal: false, $max-cols: 5) {
+@mixin n-columns($min-width, $gutter, $last-equal: false, $max-cols: 3) {
   .items {
     display: flex;
     flex-wrap: wrap;
@@ -329,10 +329,9 @@
 /**
 
 
-/* Generate multi-column responsive list items using flexbox
+/* Generate multi-row responsive list items using flexbox
+ * Needs work and based on above mixin
  *
- * Src: Kevin Lamping http://codepen.io/klamping/pen/waMOeX
- * For his tutorial: http://fourkitchens.com/blog/article/responsive-multi-column-lists-flexbox
  */
 @mixin n-rows($min-height, $min-width, $gutter, $last-equal: false, $max-cols: 5) {
   .items {
