@@ -311,13 +311,13 @@ gulp.task('iconify', function () {
   });
 
 // ### SVG to PNG
-var svg2png = require('gulp-svg2png');
+/*var svg2png = require('gulp-svg2png');
 
 gulp.task('svg2png', function () {
   gulp.src([path.source + 'images/*.svg'])
     .pipe(svg2png())
     .pipe(gulp.dest(path.dist + 'images'));
-});
+});*/
 
 // ### SVG MIN - variation of svgo for Gulp
 var svgmin = require('gulp-svgmin');
