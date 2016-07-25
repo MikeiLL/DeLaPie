@@ -39,7 +39,7 @@ use Roots\Sage\Extras;
             <path d="M0 0h24v24H0z" fill="none"/>
         </svg><span class="icon-fallback-text">Fax: </span>
         <span property="fax">(850) 932-8129</span></span><br />
-        <a href="contact"><span property="email">info@delapiedralawfirm.com</span></a>
+        <a href="<?php echo home_url( '/contact' ); ?>"><span property="email">info@delapiedralawfirm.com</span></a>
       </div>
     </div>
 
