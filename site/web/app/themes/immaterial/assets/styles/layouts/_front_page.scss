@@ -223,6 +223,15 @@
       color: unquote("rgb(#{$palette-grey-700})");
       font-style: normal;
       }
+    a {
+      color: unquote("rgb(#{$palette-grey-700})");
+    }
+  }
+
+  blockquote {
+    a {
+      color: unquote("rgb(#{$palette-grey-700})");
+    }
   }
 
   h2:first-of-type::first-letter  {
