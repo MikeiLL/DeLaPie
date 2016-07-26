@@ -64,8 +64,17 @@ class immaterial_quote_widget extends WP_Widget {
 	        //'Willa Cather' => 'There are only two or three human stories and they go on repeating themselves as fiercely as if they had never happened before.',
 	        'John Steinbeck' => 'If the story is not about the hearer, he will not listen.',
 	        'African Proverb' => 'Until the lion tells his own story, the tale of the hunt will always glorify the hunter.',
-	        'Barbara Cook' => 'The place that seems most dangerous is exactly where safety lies.',
+	        //'Barbara Cook' => 'The place that seems most dangerous is exactly where safety lies.',
 	        'John Henry Newman' => 'Cor ad cor loquitur. (Heart speaks unto heart)',
+	        'William H. Whyte' => 'The biggest problem with communication is the illusion that it has been accomplished. ',
+          'Kristin Linklater' => "We don't hear the voice.  We hear the person."
+
+
+
+
+
+
+
 	    );
         $author = array_rand($quotes);
         $quote = $quotes[$author];
