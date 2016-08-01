@@ -41,7 +41,10 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/contact-form-7": "4.4.2",
     "wpackagist-plugin/comet-cache": "160521",
-    "wpackagist-plugin/wp-maintenance-mode": "2.0.6"
+    "wpackagist-plugin/wp-maintenance-mode": "2.0.6",
+    "wpackagist-plugin/generator-the-seo-framework": "1.0.3",
+    "wpackagist-plugin/the-seo-framework-title-fix": "1.0.1.2",
+    "wpackagist-plugin/google-sitemap-generator": "4.0.8"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
