@@ -227,10 +227,10 @@
   }
 
   a {
-    color: unquote("rgb(#{$palette-mandarin-800})");
+    color: unquote("rgb(#{$palette-grey-50})");
   }
   a:hover {
-    color: unquote("rgb(#{$palette-mandarin-100})");
+    color: unquote("rgb(#{$palette-mandarin-800})");
   }
 
   h2:first-of-type::first-letter  {
@@ -455,7 +455,13 @@
   #articles {
     .front-page__card-holder > div {
       margin: 0 auto;
-      max-width: 900px;
+      max-width: 1100px;
+      h2, h3, p {
+        max-width: 900px;
+      }
+      p {
+        margin: 3rem auto;
+      }
     }
 
     h2 {
