@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e29a9eed60e0c6a18a4f656394f05ff5",
-    "content-hash": "87cc407b69d4d36f1a59eee2610b56cf",
+    "hash": "3640215129b99b3182c6a859b9319df5",
+    "content-hash": "12d3c5340b5c1fc2c182426e466cf7d5",
     "packages": [
         {
             "name": "composer/installers",
@@ -342,6 +342,26 @@
             "time": "2016-06-14 14:14:52"
         },
         {
+            "name": "wpackagist-plugin/autodescription",
+            "version": "2.6.6.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autodescription/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autodescription/"
+        },
+        {
             "name": "wpackagist-plugin/comet-cache",
             "version": 160521,
             "source": {
@@ -380,26 +400,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
-        },
-        {
-            "name": "wpackagist-plugin/generator-the-seo-framework",
-            "version": "1.0.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/generator-the-seo-framework/",
-                "reference": "tags/1.0.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/generator-the-seo-framework.1.0.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/generator-the-seo-framework/"
         },
         {
             "name": "wpackagist-plugin/google-sitemap-generator",
