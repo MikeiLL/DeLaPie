@@ -16,7 +16,7 @@
 
   - name: Set remote user for each host
     set_fact:
-      ansible_user: "{{ root_status | default({'failed':false}) | success | ternary('root', admin_user) }}"
+      ansible_user: "{{ root_status | default({'failed':false}) | success | ternary('admin', admin_user) }}"
 
   when: ansible_user is not defined
 

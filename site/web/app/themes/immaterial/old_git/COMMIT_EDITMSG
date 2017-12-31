@@ -1,0 +1,51 @@
+Final commit before moving to other repo for whole site.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   assets/styles/layouts/_header.scss
+#	modified:   templates/footer.php
+#	new file:   upload.sh
+#
+# Untracked files:
+#	archive-faq.php
+#	assets/images/avvo.jpg
+#	assets/images/backgrounds/
+#	assets/images/callmejack.jpg
+#	assets/images/martindale_badge.jpg
+#	assets/images/sprites/
+#	assets/images/super-lawyers_badge.jpg
+#	assets/styles/common/_typography.scss
+#	assets/styles/components/_images.scss
+#	assets/styles/components/icons.fallback.scss
+#	assets/styles/components/icons.png.scss
+#	assets/styles/components/icons.svg.scss
+#	biography-template.php
+#	css/
+#	expandable-area-toggle/
+#	lib/404.php
+#	lib/base.php
+#	lib/faq-post-type.php
+#	lib/front-page-post-type.php
+#	lib/front-page.php
+#	lib/index.php
+#	lib/page.php
+#	lib/quote-rotator.php
+#	lib/search.php
+#	lib/single.php
+#	lib/style.css
+#	lib/template-custom.php
+#	lib/template-front-page.php
+#	sscs/
+#	template-full-width.php
+#	templates/colors-display.php
+#	templates/content-bio.php
+#	templates/content-faq.php
+#	templates/faq-header.php
+#	templates/front-page/
+#	undefinedimages/
+#

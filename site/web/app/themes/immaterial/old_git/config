@@ -1,0 +1,23 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "peiche"]
+	url = git@github.com:peiche/sage.git
+	fetch = +refs/heads/*:refs/remotes/peiche/*
+[branch "mdl"]
+	remote = peiche
+	merge = refs/heads/mdl
+[branch "mainStreamMaster"]
+[remote "origin"]
+	url = git@github.com:MikeiLL/MaterialSage.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "upstream"]
+	url = git@github.com:MikeiLL/sage.git
+	fetch = +refs/heads/*:refs/remotes/upstream/*

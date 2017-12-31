@@ -1,0 +1,49 @@
+0000000000000000000000000000000000000000 15fe81d1a8c4bc81eef0a429e33a0f74e3d44bbc Mike iLL Kilmer <mike@mzoo.org> 1461616898 -0500	branch: Created from HEAD
+15fe81d1a8c4bc81eef0a429e33a0f74e3d44bbc 52f37a407bad2f1be56c5520827cc27c59d55563 Mike iLL Kilmer <mike@mzoo.org> 1461621217 -0500	commit: Update textdomain, add second menu, add search to drawer.
+52f37a407bad2f1be56c5520827cc27c59d55563 4dd614af3e242c007ececc4d058aeefd42e5cdb4 Mike iLL Kilmer <mike@mzoo.org> 1461723763 -0500	commit: Match with latest Sage gulpfile.
+4dd614af3e242c007ececc4d058aeefd42e5cdb4 eda21caccb263c99fbdd59328e0e04429bbf98bf Mike iLL Kilmer <mike@mzoo.org> 1461723826 -0500	commit: Update basic theme detials and update header colors.
+eda21caccb263c99fbdd59328e0e04429bbf98bf 725b07b21f615033e5601b7cbd80de16b4b19044 Mike iLL Kilmer <mike@mzoo.org> 1461723847 -0500	commit: Initial addition.
+725b07b21f615033e5601b7cbd80de16b4b19044 f64d3e4f3b9f991f2ea27f8e7c92de43f7f59c4b Mike iLL Kilmer <mike@mzoo.org> 1461730491 -0500	commit: Use full width container on Front Page and remove "page content".
+f64d3e4f3b9f991f2ea27f8e7c92de43f7f59c4b 0ce41715d48b92a31e0bb4741399956e77f6f8c8 Mike iLL Kilmer <mike@mzoo.org> 1461912649 -0500	commit: Custom colors added.
+0ce41715d48b92a31e0bb4741399956e77f6f8c8 08268f1f1a220041bd20d4be883210a3b5fa3c50 Mike iLL Kilmer <mike@mzoo.org> 1462470646 -0500	commit: Begin styling the header for media queries.
+08268f1f1a220041bd20d4be883210a3b5fa3c50 b2dfa8d619501c867de3d114520822fc4b4f3e5f Mike iLL Kilmer <mike@mzoo.org> 1462827274 -0500	commit: Add phone number row to header.
+b2dfa8d619501c867de3d114520822fc4b4f3e5f 5012583e0b80906cdd47afeb50b577e732216a82 Mike iLL Kilmer <mike@mzoo.org> 1462829224 -0500	commit: Lighten color of phone, style menu link.
+5012583e0b80906cdd47afeb50b577e732216a82 df114723a4ea2cec7dc40f2772af2b13f21232f5 Mike iLL Kilmer <mike@mzoo.org> 1462829654 -0500	commit: Fix error with hidden nav items.
+df114723a4ea2cec7dc40f2772af2b13f21232f5 0f8454052b69f7fa2289067d8d7d4a64f21ffc7c Mike iLL Kilmer <mike@mzoo.org> 1462829964 -0500	commit: Our colors in drawer and adjust sliver bar color.
+0f8454052b69f7fa2289067d8d7d4a64f21ffc7c f30dd5b60d2a6f4e1748744f679146c644fb7ccc Mike iLL Kilmer <mike@mzoo.org> 1462831327 -0500	commit: Add link to Advertizing Legal page.
+f30dd5b60d2a6f4e1748744f679146c644fb7ccc db5d725b4501b8b117494f206661f49c0af3cadf Mike iLL Kilmer <mike@mzoo.org> 1462845688 -0500	commit: Add smoothscroll script and experiment with it.
+db5d725b4501b8b117494f206661f49c0af3cadf 0314afa2627b36e25220c740a1282663c50b4baa Mike iLL Kilmer <mike@mzoo.org> 1462846061 -0500	commit: More minimal scrolling js example.
+0314afa2627b36e25220c740a1282663c50b4baa 9eaafbd34a48922929554f3286fba63ff5d48510 Mike iLL Kilmer <mike@mzoo.org> 1462895348 -0500	commit: Play with teal in front page. Add button scrolling effect.
+9eaafbd34a48922929554f3286fba63ff5d48510 bde1f181c52c9d9834de8d5a44b743ddbff2a6c2 Mike iLL Kilmer <mike@mzoo.org> 1462917150 -0500	commit: Refine scrolling JS.
+bde1f181c52c9d9834de8d5a44b743ddbff2a6c2 aba1e70c89be5ae138d7f9a521c751e5ec65dc6f Mike iLL Kilmer <mike@mzoo.org> 1462917272 -0500	commit: Face image in phone number header.
+aba1e70c89be5ae138d7f9a521c751e5ec65dc6f 06ae2f8344aa76a2ce77ad57481f9c5866287675 Mike iLL Kilmer <mike@mzoo.org> 1462917333 -0500	commit: Use Permanent Identity icon.
+06ae2f8344aa76a2ce77ad57481f9c5866287675 6d2a47d5f05161eed0fc5c56decc01fe1aba3953 Mike iLL Kilmer <mike@mzoo.org> 1463072250 -0500	commit: Make container div height auto so onscroll works.
+6d2a47d5f05161eed0fc5c56decc01fe1aba3953 23b1e19acafe0d26913be4c3fd8880cc668afd6a Mike iLL Kilmer <mike@mzoo.org> 1463088051 -0500	commit: Beginning to have working header transition.
+23b1e19acafe0d26913be4c3fd8880cc668afd6a c8cb1f98fd7e1954cba01859158a00ca0eb5a53a Mike iLL Kilmer <mike@mzoo.org> 1463090500 -0500	commit: Header fades on scroll down and appears on scroll up.
+c8cb1f98fd7e1954cba01859158a00ca0eb5a53a 946ec70ce0c28aabce11809600b4ae36c9f7dd40 Mike iLL Kilmer <mike@mzoo.org> 1463091395 -0500	commit: Move header script to header and use a loop on rows.
+946ec70ce0c28aabce11809600b4ae36c9f7dd40 203f96677d0116d8ff8da0b501a216868d58b232 Mike iLL Kilmer <mike@mzoo.org> 1463107175 -0500	commit: Prevent header bar doing alterations when at page footer.
+203f96677d0116d8ff8da0b501a216868d58b232 5331d507f2f2868ae00b9d68b4a2e896f918d1ca Mike iLL Kilmer <mike@mzoo.org> 1463108346 -0500	commit: Clean up.
+5331d507f2f2868ae00b9d68b4a2e896f918d1ca bc619c531d1db77fb03b940533b3aa1db2ca9ea6 Mike iLL Kilmer <mike@mzoo.org> 1463108678 -0500	commit: Abstract the modify header class.
+bc619c531d1db77fb03b940533b3aa1db2ca9ea6 f3df58b24d046ca859da21dc1315b3240cb6a2c2 Mike iLL Kilmer <mike@mzoo.org> 1463438706 -0500	commit: Add footer menu and some styling.
+f3df58b24d046ca859da21dc1315b3240cb6a2c2 2356d21d2d93a0b03ce66d1fae8f659d21d5526c Mike iLL Kilmer <mike@mzoo.org> 1463440888 -0500	commit: gulp-iconify
+2356d21d2d93a0b03ce66d1fae8f659d21d5526c 62fd06f866c217cd9c7faf24bdbbb2c658c27b79 Mike iLL Kilmer <mike@mzoo.org> 1463440940 -0500	commit: Drawer menu is not layed our properly.
+62fd06f866c217cd9c7faf24bdbbb2c658c27b79 ba6477df62e9fda569b9cd1cbb9254e303e35d80 Mike iLL Kilmer <mike@mzoo.org> 1463441695 -0500	commit (merge): Merge branch 'fixed_drawer'
+ba6477df62e9fda569b9cd1cbb9254e303e35d80 991bf57fca83caa935b8e3c4094d6684d1f06590 Mike iLL Kilmer <mike@mzoo.org> 1463492687 -0500	commit: Adding iconify task, but not to main build process, nor complete to
+991bf57fca83caa935b8e3c4094d6684d1f06590 ba6477df62e9fda569b9cd1cbb9254e303e35d80 Mike iLL Kilmer <mike@mzoo.org> 1463493527 -0500	reset: moving to HEAD^
+ba6477df62e9fda569b9cd1cbb9254e303e35d80 5c06f91bdd744c4fea1653b643062146ff58cbfb Mike iLL Kilmer <mike@mzoo.org> 1463493840 -0500	commit: Gulp iconify but not to final destinations.
+5c06f91bdd744c4fea1653b643062146ff58cbfb e36ee9a7a831c0947c0817a1361a7a8099f22da8 Mike iLL Kilmer <mike@mzoo.org> 1463494870 -0500	commit (merge): Merge branch 'master' of github.com:MikeiLL/MaterialSage
+e36ee9a7a831c0947c0817a1361a7a8099f22da8 08b9f69d81c008b80e193076020a4b97a2d54bf0 Mike iLL Kilmer <mike@mzoo.org> 1463527424 -0500	commit: Working svgmin and svg3png tasks.
+08b9f69d81c008b80e193076020a4b97a2d54bf0 b467adb054c62de1ac5dcf34dd18186a0d753db8 Mike iLL Kilmer <mike@mzoo.org> 1463529122 -0500	commit: Add scrolling if front page OR index.
+b467adb054c62de1ac5dcf34dd18186a0d753db8 e63aa0be0567de54aaa555128f7be4de5671b857 Mike iLL Kilmer <mike@mzoo.org> 1463547069 -0500	commit: We do want width and height tags so ie will dislay svgs.
+e63aa0be0567de54aaa555128f7be4de5671b857 c7f31f894a16f55f19e50e4390bec15cbfc122f7 Mike iLL Kilmer <mike@mzoo.org> 1463599337 -0500	commit: Update the colors a bit.
+c7f31f894a16f55f19e50e4390bec15cbfc122f7 10f86156502f617437fe3d7b8acf4376ce31aa77 Mike iLL Kilmer <mike@mzoo.org> 1463599412 -0500	commit: Icons dir we might use, and new arrow svg.
+10f86156502f617437fe3d7b8acf4376ce31aa77 0b36940c81f1b3b1acd616f61dc7cd3d608256c8 Mike iLL Kilmer <mike@mzoo.org> 1464025663 -0500	commit: Tuning header modifications.
+0b36940c81f1b3b1acd616f61dc7cd3d608256c8 f7296d1dff697242ff54e0fa853e00795627db49 Mike iLL Kilmer <mike@mzoo.org> 1464101122 -0500	commit: Can we get images task to add fielname-based class to svg?
+f7296d1dff697242ff54e0fa853e00795627db49 5adf2184ab300b19d7f59304ed44d51e801a0263 Mike iLL Kilmer <mike@mzoo.org> 1464101181 -0500	commit: Update version of mdl which had been missing lists.
+5adf2184ab300b19d7f59304ed44d51e801a0263 87743d5a63458eac7610b08f571327e22a4f4a5f Mike iLL Kilmer <mike@mzoo.org> 1464101230 -0500	commit: Add front page post type which we may or may not use.
+87743d5a63458eac7610b08f571327e22a4f4a5f 6c48801d98d22ffef6ceaef9393ee3ec8f7728e1 Mike iLL Kilmer <mike@mzoo.org> 1464101300 -0500	commit: May use this for front page CPT.
+6c48801d98d22ffef6ceaef9393ee3ec8f7728e1 6c900269c86c921678d0ecb5b75aa42566b9d0b5 Mike iLL Kilmer <mike@mzoo.org> 1464101313 -0500	commit: Add some cards to front page.
+6c900269c86c921678d0ecb5b75aa42566b9d0b5 15d61b5312c2f5855eea514822f8f98c7a888f5a Mike iLL Kilmer <mike@mzoo.org> 1464221387 -0500	commit: Back to basics - call me bobby.
+15d61b5312c2f5855eea514822f8f98c7a888f5a e7b9dde2593388a030b964a708def1cbed4a9805 Mike iLL Kilmer <mike@mzoo.org> 1469055554 -0500	commit: This is mostly in full trellis repo, but just in case.
+e7b9dde2593388a030b964a708def1cbed4a9805 79d148abb0e2ae5f218aa802aba5559b56bc7ed4 Mike iLL Kilmer <mike@mzoo.org> 1471645182 -0500	commit: Change single work.
+79d148abb0e2ae5f218aa802aba5559b56bc7ed4 6dfa72cb4c848f9bbcdd41f9351d25f03bcfac0e Mike iLL Kilmer <mike@mzoo.org> 1511215825 -0600	commit: Final commit before moving to other repo for whole site.
