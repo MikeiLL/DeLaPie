@@ -100,3 +100,33 @@ use Roots\Sage\Extras;
 
 </footer>
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Attorney",
+  "name": "De La Piedra Law",
+  "description": "De La Piedra Law Firm represents subjects of abuse or neglect in nursing homes and assisted living facilities. Gulf Breeze, Pensacola, Florida.",
+  "url": "http://delapiedralawfirm.com",
+  "image": "http://delapiedralawfirm.com/app/uploads/2016/07/callmejack.jpg",
+  "telephone": "850 932-8560",
+  "email": "info@delapiedralawfirm.com",
+  "hasMap": "https://www.google.com/maps/place/913+Gulf+Breeze+Pkwy+%2325,+Gulf+Breeze,+FL+32561/@30.3569864,-87.1641402,17z/data=!3m1!4b1!4m5!3m4!1s0x8890c65fdb929adb:0x738cbb5ea80ac4ce!8m2!3d30.3569864!4d-87.1619515",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Gulf Breeze",
+    "addressRegion": "FL",
+    "postalCode": "32561",
+    "streetAddress": "913 Gulf Breeze Parkway, Suite 25"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "30° 23' 24.2088\"",
+    "longitude": "-87° 4' 11.1432\""
+  },
+  "sameAs": [
+    "https://www.facebook.com/DeLaPiedraLawFirm/",
+    "https://plus.google.com/105549618794304040186"
+  ],
+  "openingHours": "Mo,Tu,We,Th,Fr, 09:00-17:00"
+}
+</script>
