@@ -44,7 +44,8 @@
     "wpackagist-plugin/wp-maintenance-mode": "*",
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/the-seo-framework-title-fix": "*",
-    "wpackagist-plugin/google-sitemap-generator": "*"
+    "wpackagist-plugin/google-sitemap-generator": "*",
+    "johnpbloch/wordpress": "^4.9"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
