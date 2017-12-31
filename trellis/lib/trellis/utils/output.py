@@ -8,7 +8,7 @@ import re
 import textwrap
 
 from ansible import __version__
-from ansible.utils.unicode import to_unicode
+from ansible.module_utils._text import to_text
 
 def system(vagrant_version=None):
     # Get most recent Trellis CHANGELOG entry
@@ -70,7 +70,7 @@ def display(obj, result):
 
     # Display additional info when failed
     if failed:
-        items = (item for item in ['reason', 'module_stderr', 'module_stdout', 'stderr'] if item in result and to_unicode(result[item]) != '')
+        items = (item for item in ['reason', 'module_stderr', 'module_stdout', 'stderr'] if item in result and to_text(result[item]) != '')
         for item in items:
             msg = result[item] if msg == '' else '\n'.join([msg, result.pop(item, '')])
 
@@ -79,9 +79,9 @@ def display(obj, result):
 
     # Must pass unicode strings to Display.display() to prevent UnicodeError tracebacks
     if isinstance(msg, list):
-        msg = '\n'.join([to_unicode(x) for x in msg])
+        msg = '\n'.join([to_text(x) for x in msg])
     elif not isinstance(msg, unicode):
-        msg = to_unicode(msg)
+        msg = to_text(msg)
 
     # Wrap text
     msg = '\n'.join([textwrap.fill(line, wrap_width, replace_whitespace=False)
