@@ -45,8 +45,7 @@
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/the-seo-framework-title-fix": "*",
     "wpackagist-plugin/google-sitemap-generator": "*",
-    "johnpbloch/wordpress-core-installer": "^1.0",
-    "johnpbloch/wordpress-core": "^4.9"
+    "johnpbloch/wordpress": "^4.9"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
