@@ -118,3 +118,51 @@ server {
   {% endif %}
 }
 {% endfor %}
+
+server {
+  # Comet Cache Configs
+
+  # ↓ See: http://nginx.org/en/docs/http/ngx_http_core_module.html#etag
+  # This reduces load on your server by supporting the If-Modified-Since header,
+  # since by browsers for static resources.
+
+  etag on;
+  expires 7d;
+  if_modified_since before;
+
+  # ↓ See: http://nginx.org/en/docs/http/ngx_http_gzip_module.html#gzip
+  # This enables GZIP compression in Nginx, making all static
+  # resources load faster in browsers.
+
+  gzip on;
+  gzip_vary on;
+  gzip_comp_level 6;
+  gzip_types text/plain text/xml image/svg+xml # text/html in core already.
+    application/rss+xml application/atom+xml application/xhtml+xml
+    text/css application/json application/x-javascript
+    application/font-otf application/font-ttf;
+
+  # Do not allow public access to private cache directory.
+  if ($uri ~* /wp\-content/cache/comet\-cache/cache(?:/|$)) {
+      return 403;
+  }
+  # Do not allow public access to private cache directory.
+  if ($uri ~* /wp\-content/cache/comet\-cache/htmlc/private(?:/|$)) {
+      return 403;
+  }
+
+  # ↓ See: http://davidwalsh.name/cdn-fonts
+  # This prevents cross-domain security issues related to fonts.
+  # Only needed if you use Static CDN Filters in Comet Cache.
+
+  location ~* \.(?:ttf|ttc|otf|eot|woff|woff2|css|js)$ {
+      add_header Access-Control-Allow-Origin *;
+  }
+
+  # ↓ This is optional, but suggested. It's a flag to tell Comet Cache
+  # that you completed this Nginx configuration.
+
+  location ~* \.php$ {
+      fastcgi_param WP_NGINX_CONFIG done;
+  }
+}
